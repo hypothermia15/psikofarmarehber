@@ -1,3 +1,5 @@
+> **Uyarlama:** Bu depo, **lipsumation** tarafından geliştirilen [Psikofarmakoloji Rehberi](https://github.com/lipsumation/psikofarmarehber)'nin Doç. Dr. Miraç Barış Usta tarafından yapılan uyarlamasıdır ve özgün çalışma gibi [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr) lisansıyla paylaşılır. Özgün yazar bu uyarlamayı onaylamış ya da desteklemiş değildir. Kaynak bilgisi, değişiklik listesi ve özgün depodan güncelleme alma yolu: [UYARLAMA.md](UYARLAMA.md). Bu bildirimden sonraki metin özgün README'dir.
+
 # Psikofarmakoloji Rehberi
 
 Psikiyatrik ilaçların başlanması, titrasyonu, sürdürümü, kesilmesi ve başka ilaca geçişi için hazırlanmış, hekimlere yönelik bir karar destek ve eğitim uygulaması. Çocuk-ergen ve erişkin psikiyatrisi için iki ayrı görünümü vardır.
