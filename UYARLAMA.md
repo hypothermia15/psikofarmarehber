@@ -2,6 +2,8 @@
 
 Bu depo, **lipsumation** tarafından geliştirilen *Psikofarmakoloji Rehberi*'nin uyarlamasıdır.
 
+**Bu uyarlamanın canlı sürümü:** https://hypothermia15.github.io/psikofarmarehber/
+
 | | |
 |---|---|
 | **Özgün çalışma** | Psikofarmakoloji Rehberi, © 2026 lipsumation |
@@ -17,8 +19,11 @@ Bu depo, **lipsumation** tarafından geliştirilen *Psikofarmakoloji Rehberi*'ni
 
 **13 Kasım 2026**
 
-- Uygulamanın alt bilgisine kaynak, lisans ve uyarlayan bildirimi eklendi (`index.html`).
+- Uygulamanın alt bilgisine kaynak, lisans ve uyarlayan bildirimi eklendi.
+- Üst barda, marka adının ve hasta grubu seçicisinin altına uyarlayan satırı eklendi.
+- İlk açılış: hasta grubu daha önce seçilmemişse rehber çocuk-ergen görünümüyle açılır ve karşılama penceresi gösterilmez. Erişkin görünümü üst bardaki seçiciden ya da bağlantıya `?kitle=eri` eklenerek açılır; tasarım, üst bardaki tasarım düğmesinden seçilir.
 - README'nin başına uyarlama bildirimi eklendi; bu dosya oluşturuldu.
+- Yayın: Site GitHub Pages ile `main` dalının kökünden yayınlanır. Özgün README'deki "Yayın" bölümü (`gh-pages` dalı) özgün depoya aittir; bu depoda `main` dalına gönderilen her değişiklik siteye yansır.
 
 Klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
@@ -33,7 +38,7 @@ git merge upstream/main
 git push origin main
 ```
 
-Uyarlamaya ait değişiklikler `index.html` alt bilgisi, README'nin ilk paragrafı ve bu dosyayla sınırlı tutulmuştur; özgün depodaki düzeltmeler bu sayede çakışmadan alınabilir. Yeni değişiklikler yukarıdaki listeye tarihiyle eklenmelidir.
+Uyarlamaya ait değişiklikler `index.html` (üst bardaki satır ve stilleri, ilk açılış ayarı, alt bilgi), README'nin ilk paragrafı ve bu dosyayla sınırlı tutulmuştur; özgün depodaki düzeltmeler bu sayede büyük olasılıkla çakışmadan alınabilir. Yeni değişiklikler yukarıdaki listeye tarihiyle eklenmelidir.
 
 ## Lisans koşulları (özet)
 
