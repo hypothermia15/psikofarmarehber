@@ -30,19 +30,19 @@
     ped: {
       bas: '20–30 kg: 300 mg ×2 · > 30 kg: 300 mg ×3', artis: '20–30 kg: haftada 300 mg · > 30 kg: 3 günde bir 300 mg (serum düzeyine göre)', hedef: 'Akut: 0,8–1,2 mEq/L · sürdürüm: 0,6–1,0 mEq/L', maks: 'Serum düzeyi 1,2 mEq/L\'yi geçmemeli',
       birim: 'mg/gün', adim: [[0, 900], [3, 1200], [8, 1500]], bant: [900, 1500], tavan: 1800,
-      not: ['Grafik > 30 kg için örnek şemadır; doz her zaman serum düzeyi ile belirlenir.', 'Düzey: son dozdan 12 saat sonra, her doz değişiminden 5–7 gün sonra.', 'Çocuklarda böbrek klirensi yüksek olduğundan kg başına doz gereksinimi erişkinden fazladır.', 'Aileye sıvı alımı, tuz kısıtlamama, ateş/kusma/ishalde ilacı durdurup başvurma eğitimi verin.']
+      not: ['Grafik > 30 kg için örnek şemadır; doz her zaman serum düzeyi ile belirlenir.', 'Düzey: son dozdan 12 saat sonra, her doz değişiminden 5–7 gün sonra.', 'Çocuklarda böbrek klirensi yüksek olduğundan kg başına doz gereksinimi erişkinden fazladır.', 'Aileye sıvı alımı, tuz kısıtlamama, ateş/kusma/ishalde ilacı durdurup başvurma eğitimi verin.', 'FDA etiketi (10/2022) sürdürüm hedefini 0,8–1,0 mEq/L verir; bu rehberdeki 0,6 alt sınırı kılavuz uygulamasını yansıtır.', 'Başlamadan önce böbrek işlevi, elektrolitler, tiroid işlevi ve gebelik durumu; ilk düzey 3. günde. Tiroid 3. ayda, sonra 6–12 ayda bir; serum kalsiyumu düzenli aralıklarla.']
     },
     eri: {
       bas: '300 mg ×2–3', artis: '5–7 günde bir 300 mg (düzeye göre)', hedef: 'Akut: 0,8–1,2 mEq/L · sürdürüm: 0,6–0,8 mEq/L', maks: 'Serum düzeyi 1,2 mEq/L',
-      birim: 'mg/gün', adim: [[0, 600], [5, 900], [12, 1200]], bant: [900, 1200], tavan: 1800, not: ['Sürdürümde tek gece dozu böbrek açısından avantajlı olabilir.']
+      birim: 'mg/gün', adim: [[0, 600], [5, 900], [12, 1200]], bant: [900, 1200], tavan: 1800, not: ['Sürdürümde tek gece dozu böbrek açısından avantajlı olabilir.', 'Kreatinin klirensi 30–89 mL/dk: düşük dozla başlayın, yavaş artırın, düzeyi sık ölçün. 30 mL/dk altında önerilmez.']
     },
     surdurum: SURDURUM_DD.concat(['Stabil dönemde 3–6 ayda bir lityum düzeyi; 6 ayda bir böbrek işlevi ve TSH.', 'Dehidratasyon, ateşli hastalık, yeni ilaç (NSAİİ, ACE inhibitörü, diüretik) başlandığında düzey bakın.']),
     kesme: { risk: 3, sure: 'En az 4 hafta; tercihen 3 ay', adim: [[0, 100], [21, 75], [42, 50], [63, 25], [84, 0]],
       not: ['Hızlı kesme (< 2 hafta) erken manik nüks ve intihar riskini belirgin artırır.', 'Toksisite veya ağır yan etki dışında ani kesmeyin.', 'Kesme sonrası ilk 3 ay nüks açısından yakın izleyin.'] },
     izlem: 'lityum', profil: { sed: 1, kilo: 2, gis: 2, eps: 0, kes: 3 },
     kutu: 'Lityum toksisitesi terapötik düzeylere yakın dozlarda gelişebilir. Düzey ölçümü yapılamayan koşullarda başlanmamalıdır.',
-    uyari: ['Toksisite (> 1,5 mEq/L): kaba tremor, ataksi, dizartri, kusma, ishal, konfüzyon, nöbet', 'Poliüri, polidipsi, enürezis; uzun dönemde böbrek işlevinde azalma', 'Hipotiroidi, guatr, hiperparatiroidi', 'Akne, psoriazis alevlenmesi, kilo artışı, ince tremor', 'Gebelikte kardiyak malformasyon (Ebstein) riski'],
-    etkilesim: ['NSAİİ (ibuprofen vb.), ACE inhibitörleri, ARB, tiyazid diüretikler düzeyi artırır', 'Dehidratasyon ve düşük sodyum alımı düzeyi artırır', 'Kafein ve teofilin düzeyi düşürür', 'Haloperidol/antipsikotiklerle nörotoksisite, serotonerjiklerle serotonin sendromu bildirilmiştir'],
+    uyari: ['Toksisite (> 1,5 mEq/L): kaba tremor, ataksi, dizartri, kusma, ishal, konfüzyon, nöbet', 'Poliüri, polidipsi, enürezis; uzun dönemde böbrek işlevinde azalma', 'Hipotiroidi, guatr, hiperparatiroidi', 'Akne, psoriazis alevlenmesi, kilo artışı, ince tremor', 'Gebelikte kardiyak malformasyon (Ebstein) riski', 'Hiponatremi, hiperkalsemi; Brugada sendromunun açığa çıkması; psödotümör serebri'],
+    etkilesim: ['NSAİİ (ibuprofen vb.), ACE inhibitörleri, ARB, tiyazid diüretikler düzeyi artırır', 'Dehidratasyon ve düşük sodyum alımı düzeyi artırır', 'Kafein ve teofilin düzeyi düşürür', 'Haloperidol/antipsikotiklerle nörotoksisite, serotonerjiklerle serotonin sendromu bildirilmiştir', 'Metronidazol düzeyi artırır; asetazolamid, üre ve alkalileştiriciler düşürür'],
     oz: ['lityum']
   },
   {
@@ -54,19 +54,19 @@
     ped: {
       bas: '10–15 mg/kg/gün (2 doza bölünmüş)', artis: 'Haftada 5–10 mg/kg/gün', hedef: 'Serum düzeyi 50–100 µg/mL (akut manide 85–125)', maks: '60 mg/kg/gün',
       birim: 'mg/kg/gün', adim: [[0, 15], [7, 20], [14, 25], [21, 30]], bant: [20, 30], tavan: 60,
-      not: ['Çocuk doğurma potansiyeli olan kız ergenlerde, diğer tedaviler etkisiz/tolere edilemez olmadıkça kullanmayın; kullanılacaksa gebelik önleme programı uygulayın.', 'Erkek hastalarda da babalık öncesi maruziyetle nörogelişimsel risk uyarısı bulunmaktadır; aileyi bilgilendirin.', '2 yaş altı ve mitokondriyal hastalık (POLG) şüphesinde kontrendikedir.', 'GİS yan etkisi için yemekle ve enterik/uzatılmış salımlı form ile verin.']
+      not: ['Çocuk doğurma potansiyeli olan kız ergenlerde, diğer tedaviler etkisiz/tolere edilemez olmadıkça kullanmayın; kullanılacaksa gebelik önleme programı uygulayın.', 'Erkek hastalarda da babalık öncesi maruziyetle nörogelişimsel risk uyarısı bulunmaktadır; aileyi bilgilendirin.', '2 yaş altı ve mitokondriyal hastalık (POLG) şüphesinde kontrendikedir.', 'GİS yan etkisi için yemekle ve enterik/uzatılmış salımlı form ile verin.', 'Karaciğer testleri başlangıçta ve özellikle ilk 6 ayda sık aralıklarla; trombosit ve pıhtılaşma izlemi. Açıklanamayan letarji, kusma ya da bilinç değişikliğinde amonyak bakın.', 'FDA etiketinde (Depakote, 3/2026) epilepside kompleks parsiyel nöbet onayı ≥ 10 yaştır.']
     },
     eri: {
       bas: '750 mg/gün (bölünmüş) veya 20 mg/kg/gün', artis: '2–3 günde bir 250–500 mg', hedef: 'Serum düzeyi 50–125 µg/mL (1000–2000 mg/gün)', maks: '60 mg/kg/gün',
-      birim: 'mg/gün', adim: [[0, 750], [3, 1000], [7, 1250], [14, 1500]], bant: [1000, 2000], tavan: 2500, not: []
+      birim: 'mg/gün', adim: [[0, 750], [3, 1000], [7, 1250], [14, 1500]], bant: [1000, 2000], tavan: 2500, not: ['Çocuk doğurma potansiyeli olan kadında folik asit desteği önerilir. Yaşlıda başlangıç dozunu azaltın, yavaş artırın.']
     },
     surdurum: SURDURUM_DD.concat(['Stabil dönemde 6–12 ayda bir KCFT, tam kan ve gerektiğinde düzey.', { ped: 'Kız ergenlerde adet düzeni, kilo ve hirsutizmi her vizitte sorun.', eri: 'Kadınlarda adet düzeni, kilo ve hirsutizmi her vizitte sorun (polikistik over sendromu).' }]),
     kesme: { risk: 2, sure: 'En az 4 hafta', adim: [[0, 100], [7, 75], [14, 50], [21, 25], [28, 0]],
       not: ['Haftada dozun yaklaşık %25\'i kadar azaltın.', 'Epilepsi eş tanısında nöroloji ile birlikte ve çok daha yavaş (aylar içinde).', 'Ani kesmede duygudurum nüksü ve nöbet riski.'] },
     izlem: 'valproat', profil: { sed: 2, kilo: 3, gis: 2, eps: 0, kes: 2 },
     kutu: 'Kara kutu uyarıları: hepatotoksisite (özellikle < 2 yaş ve mitokondriyal hastalık), pankreatit ve teratojenite (nöral tüp defekti, nörogelişimsel bozukluk).',
-    uyari: ['Kilo artışı, iştah artışı', 'Tremor, sedasyon, saç dökülmesi', 'Trombositopeni (doza bağlı)', 'Hiperamonyemik ensefalopati', 'Polikistik over sendromu, adet düzensizliği'],
-    etkilesim: ['Lamotrijin düzeyini yaklaşık 2 kat artırır: lamotrijin dozunu yarıya indirin (SJS riski)', 'Karbapenem antibiyotikler valproat düzeyini hızla düşürür: birlikte kullanmayın', 'Aspirin serbest valproat düzeyini artırır', 'Karbamazepin, fenitoin düzeyi düşürür; topiramat ile hiperamonyemi'],
+    uyari: ['Kilo artışı, iştah artışı', 'Tremor, sedasyon, saç dökülmesi', 'Trombositopeni (doza bağlı)', 'Hiperamonyemik ensefalopati', 'Polikistik over sendromu, adet düzensizliği', 'Kontrendikasyon: karaciğer hastalığı ya da belirgin karaciğer işlev bozukluğu, üre döngüsü bozuklukları, POLG ilişkili mitokondriyal hastalık', 'Hipotermi, DRESS, anjiyoödem; yaşlıda somnolans'],
+    etkilesim: ['Lamotrijin düzeyini yaklaşık 2 kat artırır: lamotrijin dozunu yarıya indirin (SJS riski)', 'Karbapenem antibiyotikler valproat düzeyini hızla düşürür: birlikte kullanmayın', 'Aspirin serbest valproat düzeyini artırır', 'Karbamazepin, fenitoin düzeyi düşürür; topiramat ile hiperamonyemi', 'Rufinamid alan hastada valproata düşük dozla başlanır; felbamat valproat düzeyini artırır'],
     oz: ['vpa']
   },
   {
@@ -83,19 +83,19 @@
     ped: {
       bas: '≥ 12 yaş: 25 mg/gün (valproat ile: 25 mg gün aşırı)', artis: '2 haftada bir iki katına; 5. haftadan sonra haftada bir', hedef: '100–200 mg/gün (valproat ile 100 mg)', maks: '200 mg/gün (indükleyici ile 400 mg)',
       birim: 'mg/gün', adim: [[0, 25], [14, 50], [28, 100], [35, 200]], bant: [100, 200], tavan: 200,
-      not: ['Titrasyon şeması asla hızlandırılmaz: döküntü riski başlangıç dozu ve artış hızı ile doğrudan ilişkilidir.', '12 yaş altında döküntü riski daha yüksektir; kiloya göre epilepsi şemaları (ör. monoterapi 0,3 mg/kg/gün) kullanılır.', 'İlk 8 haftada yeni ilaç, yiyecek, kozmetik başlanmaması önerilir (döküntü ayırıcı tanısı).', '5 günden uzun ara verildiyse baştan titre edin.']
+      not: ['Titrasyon şeması asla hızlandırılmaz: döküntü riski başlangıç dozu ve artış hızı ile doğrudan ilişkilidir.', '12 yaş altında döküntü riski daha yüksektir; kiloya göre epilepsi şemaları (ör. monoterapi 0,3 mg/kg/gün) kullanılır.', 'İlk 8 haftada yeni ilaç, yiyecek, kozmetik başlanmaması önerilir (döküntü ayırıcı tanısı).', '5 günden uzun ara verildiyse baştan titre edin.', 'FDA etiketi (Lamictal, 10/2025) yeniden başlama kuralını yarı ömre bağlar: 5 yarı ömürden uzun ara verildiyse başlangıç şemasına dönülür. Döküntü nedeniyle kesildiyse yeniden başlanması önerilmez.']
     },
     eri: {
       bas: '25 mg/gün', artis: '1–2. hf 25 mg · 3–4. hf 50 mg · 5. hf 100 mg · 6. hf 200 mg', hedef: '200 mg/gün', maks: '200 mg/gün (indükleyici ile 400 mg; valproat ile 100 mg)',
-      birim: 'mg/gün', adim: [[0, 25], [14, 50], [28, 100], [35, 200]], bant: [100, 200], tavan: 200, not: []
+      birim: 'mg/gün', adim: [[0, 25], [14, 50], [28, 100], [35, 200]], bant: [100, 200], tavan: 200, not: ['İndükleyiciyle (valproatsız) şema: 1–2. hf 50 mg · 3–4. hf 100 mg · 5. hf 200 mg · 6. hf 300 mg · 7. hf 400 mg\'a kadar (bölünmüş).', 'Karaciğer yetmezliği: orta ya da ağır (assitsiz) dozu yaklaşık %25, assitli ağır yetmezlikte %50 azaltın. Belirgin böbrek yetmezliğinde sürdürüm dozu düşürülebilir.']
     },
     surdurum: SURDURUM_DD.concat(['Östrojenli kontraseptif başlanması/kesilmesinde doz ayarı gerekir (düzey ~%50 düşer / yükselir).', 'Valproat eklenirse dozu yarıya indirin; valproat kesilirse 2 hafta içinde kademeli iki katına çıkarın.']),
     kesme: { risk: 2, sure: 'En az 2 hafta', adim: [[0, 100], [7, 50], [14, 25], [21, 0]],
       not: ['Haftada yaklaşık %50 azaltın.', 'Döküntü geliştiğinde kademeli azaltım yapmadan hemen kesin ve yeniden başlamayın.', 'Epilepsi eş tanısında daha yavaş azaltın.'] },
     izlem: 'lamotrijin', profil: { sed: 0, kilo: 0, gis: 1, akt: 1, kes: 2 },
     kutu: 'Kara kutu uyarısı: Stevens-Johnson sendromu / toksik epidermal nekroliz dahil yaşamı tehdit eden döküntüler. Risk çocuklarda, hızlı titrasyonda ve valproat ile birlikte kullanımda artar; çoğu ilk 2–8 haftada görülür.',
-    uyari: ['Döküntü (%5–10 benign; ağır döküntü nadir ama acil)', 'Baş ağrısı, baş dönmesi, diplopi, ataksi', 'Uykusuzluk, canlı rüyalar', 'Aseptik menenjit, hemofagositik lenfohistiyositoz (çok nadir)'],
-    etkilesim: ['Valproat düzeyi 2 kat artırır', 'Karbamazepin, fenitoin, fenobarbital, rifampisin düzeyi düşürür', 'Östrojen içeren kontraseptifler düzeyi ~%50 düşürür', 'Sertralin düzeyi hafif artırabilir'],
+    uyari: ['Döküntü (%5–10 benign; ağır döküntü nadir ama acil)', 'Baş ağrısı, baş dönmesi, diplopi, ataksi', 'Uykusuzluk, canlı rüyalar', 'Aseptik menenjit, hemofagositik lenfohistiyositoz (çok nadir)', 'Kalp ritmi ve ileti bozuklukları (etiket uyarısı)', 'Kan diskrazileri; çoklu organ aşırı duyarlılığı (DRESS)'],
+    etkilesim: ['Valproat düzeyi 2 kat artırır', 'Karbamazepin, fenitoin, fenobarbital, rifampisin düzeyi düşürür', 'Östrojen içeren kontraseptifler düzeyi ~%50 düşürür', 'Sertralin düzeyi hafif artırabilir', 'Östrojenli kontraseptif başlanınca sürdürüm dozunu 2 katına kadar artırmak gerekebilir; kontraseptif kesilince doz haftada en fazla %25 azaltılarak yarıya kadar indirilir', 'Lopinavir/ritonavir düzeyi yaklaşık %50, atazanavir/ritonavir yaklaşık %32 düşürür'],
     oz: ['ltg']
   },
   {
@@ -107,7 +107,7 @@
     ped: {
       bas: '6–12 yaş: 100 mg ×2 · > 12 yaş: 200 mg ×2', artis: 'Haftada bir 100 mg (6–12 yaş) / 200 mg (> 12 yaş)', hedef: '6–12 yaş: 400–800 mg/gün · > 12 yaş: 800–1200 mg/gün (düzey 4–12 µg/mL)', maks: '6–12 yaş: 1000 mg · 13–15 yaş: 1000 mg · > 15 yaş: 1200 mg/gün',
       birim: 'mg/gün', adim: [[0, 200], [7, 300], [14, 400], [21, 600]], bant: [400, 800], tavan: 1000,
-      not: ['Grafik 6–12 yaş için örnek şemadır.', 'Otoindüksiyon nedeniyle 3–5. haftada düzey düşer; doz artışı gerekebilir.', 'Yavaş titrasyon baş dönmesi, diplopi ve döküntü riskini azaltır.']
+      not: ['Grafik 6–12 yaş için örnek şemadır.', 'Otoindüksiyon nedeniyle 3–5. haftada düzey düşer; doz artışı gerekebilir.', 'Yavaş titrasyon baş dönmesi, diplopi ve döküntü riskini azaltır.', 'Asya kökenli hastalarda başlamadan önce HLA-B*1502 bakın; pozitifse yarar riski açıkça aşmadıkça başlamayın.', 'Başlangıçta tam kan sayımı (trombosit dahil), karaciğer testleri, idrar tetkiki ve üre; sonra aralıklı. Etiket başlangıçta ve aralıklı göz muayenesi de önerir.']
     },
     eri: {
       bas: '200 mg ×2', artis: 'Haftada bir 200 mg', hedef: '800–1200 mg/gün (düzey 4–12 µg/mL)', maks: '1600 mg/gün',
@@ -118,31 +118,31 @@
       not: ['Haftada dozun %25\'i kadar azaltın.', 'Kesildikten sonra enzim indüksiyonu 2–4 haftada geriler: birlikte kullanılan ilaçların düzeyi yükselir, doz ayarı gerekebilir.'] },
     izlem: 'karbamazepin', profil: { sed: 2, kilo: 1, gis: 2, ach: 1, kes: 2 },
     kutu: 'Kara kutu uyarıları: ağır deri reaksiyonları (SJS/TEN; HLA-B*1502 taşıyıcılarında) ile aplastik anemi ve agranülositoz.',
-    uyari: ['Baş dönmesi, diplopi, ataksi, sedasyon', 'Hiponatremi (SIADH)', 'Lökopeni (çoğunlukla benign), nadiren agranülositoz', 'Karaciğer enzim artışı, döküntü, DRESS', 'Teratojenite (nöral tüp defekti)'],
-    etkilesim: ['Güçlü CYP3A4 indükleyicisi: hormonal kontraseptif, antipsikotikler, lamotrijin, valproat, metilfenidat ve birçok ilacın düzeyini düşürür', 'Klozapin ile birlikte kullanılmaz (kemik iliği)', 'Eritromisin, klaritromisin, fluoksetin, fluvoksamin, valproat karbamazepin toksisitesine yol açabilir', 'MAOİ ile kontrendike'],
+    uyari: ['Baş dönmesi, diplopi, ataksi, sedasyon', 'Hiponatremi (SIADH)', 'Lökopeni (çoğunlukla benign), nadiren agranülositoz', 'Karaciğer enzim artışı, döküntü, DRESS', 'Teratojenite (nöral tüp defekti)', 'Kontrendikasyon: kemik iliği baskılanması öyküsü, trisiklik bileşiklere duyarlılık, nefazodon ile birlikte kullanım', 'HLA-A*3101 taşıyıcılığı aşırı duyarlılık reaksiyonu riskini artırır; anafilaksi ve anjiyoödem bildirilmiştir'],
+    etkilesim: ['Güçlü CYP3A4 indükleyicisi: hormonal kontraseptif, antipsikotikler, lamotrijin, valproat, metilfenidat ve birçok ilacın düzeyini düşürür', 'Klozapin ile birlikte kullanılmaz (kemik iliği)', 'Eritromisin, klaritromisin, fluoksetin, fluvoksamin, valproat karbamazepin toksisitesine yol açabilir', 'MAOİ ile kontrendike', 'Nefazodon ile kontrendike; MAOİ en az 14 gün önce kesilmiş olmalı', 'Trazodon, azol antifungaller, verapamil, greyfurt suyu düzeyi artırır; fenitoin, fenobarbital, rifampisin düşürür'],
     oz: ['induk', 'cbz']
   },
   {
     id: 'okskarbazepin', ad: 'Okskarbazepin', sinif: 'dd', altSinif: 'Duygudurum dengeleyici (antiepileptik)', grup: 'dd',
     mek: { ped: 'Karbamazepinin keto türevi; voltaja bağlı sodyum kanallarını bloke eder. Enzim indüksiyonu ve kan tablosu üzerine etkisi karbamazepinden az, hiponatremi riski daha fazladır. Pediatrik bipolar manide plaseboya üstünlük gösterilememiştir; karbamazepini tolere edemeyenlerde düşünülür.', eri: 'Karbamazepinin keto türevi; voltaja bağlı sodyum kanallarını bloke eder. Enzim indüksiyonu ve kan tablosu üzerine etkisi karbamazepinden az, hiponatremi riski (özellikle yaşlıda) daha fazladır. Bipolar bozuklukta kanıtı sınırlıdır; karbamazepini tolere edemeyenlerde düşünülür.' },
     t12: 'Ön ilaç 2 saat; aktif metabolit ~9 saat', t12s: 9, etki: '1–2 hafta', form: 'Tablet 150 / 300 / 600 mg; oral süspansiyon 60 mg/mL',
-    onay: [], onayNot: 'Psikiyatrik endikasyonda pediatrik onay yok (epilepside ≥ 4 yaş onaylı)',
+    onay: [], onayNot: 'Psikiyatrik endikasyonda pediatrik onay yok (epilepside monoterapi ≥ 4 yaş, ek tedavi ≥ 2 yaş onaylı)',
     onayEri: [], onayEriNot: 'Psikiyatrik endikasyonda onay yok · bipolar bozuklukta endikasyon dışı (epilepside onaylı)',
     ped: {
       bas: '8–10 mg/kg/gün, ikiye bölünmüş (en fazla 600 mg/gün)', artis: 'Haftada bir 5–10 mg/kg/gün (150–300 mg)', hedef: '20–30 mg/kg/gün (900–1800 mg/gün)', maks: 'Kiloya göre 900–2100 mg/gün',
       birim: 'mg/gün', adim: [[0, 300], [7, 600], [14, 900], [21, 1200]], bant: [900, 1800], tavan: 2100,
-      not: ['Grafik yaklaşık 30–40 kg bir çocuk içindir; doz kiloya göre hesaplanır.', 'Günde iki doza bölünür; yemekten bağımsızdır.', 'Karbamazepinden geçişte 200 mg karbamazepin yaklaşık 300 mg okskarbazepine karşılık gelir.', 'Asya kökenli hastalarda başlamadan önce HLA-B*1502 bakın.', 'Hormonal kontraseptif etkinliğini azaltır: ergenlerde ek yöntem önerin.']
+      not: ['Grafik yaklaşık 30–40 kg bir çocuk içindir; doz kiloya göre hesaplanır.', 'Günde iki doza bölünür; yemekten bağımsızdır.', 'Karbamazepinden geçişte 200 mg karbamazepin yaklaşık 300 mg okskarbazepine karşılık gelir.', 'Asya kökenli hastalarda başlamadan önce HLA-B*1502 bakın.', 'Hormonal kontraseptif etkinliğini azaltır: ergenlerde ek yöntem önerin.', 'FDA etiketi (Trileptal, 9/2025) ek tedavide 2 haftada ulaşılacak hedefi kiloya göre verir: 20–29 kg 900 mg/gün · 29,1–39 kg 1200 mg/gün · > 39 kg 1800 mg/gün.', 'Sürdürümde serum sodyumu ölçümü düşünülmeli; özellikle sodyum düşüren ilaç kullananlarda ve belirti varlığında.']
     },
     eri: {
       bas: '300 mg ×2', artis: 'Haftada bir 300–600 mg/gün', hedef: '1200–2400 mg/gün', maks: '2400 mg/gün',
-      birim: 'mg/gün', adim: [[0, 600], [7, 900], [14, 1200], [28, 1800]], bant: [1200, 2400], tavan: 2400, not: []
+      birim: 'mg/gün', adim: [[0, 600], [7, 900], [14, 1200], [28, 1800]], bant: [1200, 2400], tavan: 2400, not: ['Kreatinin klirensi 30 mL/dk altında başlangıç dozunun yarısı (300 mg/gün) ile başlayın, yavaş artırın.', 'Ek tedavide önerilen doz 1200 mg/gün; 2400 mg/gün çalışmalarda çoğu hastaca tolere edilememiştir.']
     },
     surdurum: SURDURUM_DD.concat(['İlk 3 ayda ve belirti olduğunda sodyum bakın.', 'Hormonal kontrasepsiyon etkinliği azalır: alternatif yöntem danışmanlığı verin.']),
     kesme: { risk: 2, sure: '4–8 hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]], not: ['Her 1–2 haftada dozun %25\'i kadar azaltın.', 'Ani kesmede nöbet (epilepsi öyküsü olmasa da) ve duygudurum nüksü riski.'] },
     izlem: 'karbamazepin', izlemEk: [['Sodyum', [1, 1, 1, 2, 1], 'Hiponatremi karbamazepinden sıktır: ilk 3 ayda ve bulantı, baş ağrısı, uyuşukluk, konfüzyon olduğunda.'], ['Serum düzeyi', [0, 0, 0, 0, 0], 'Rutin düzey izlemi gerekmez.'], ['Tam kan sayımı', [1, 0, 2, 0, 2], 'Kan tablosu etkisi karbamazepinden azdır; başlangıçta ve belirti varsa.']],
     profil: { sed: 2, kilo: 1, gis: 2, ach: 0, kes: 2 },
     kutu: 'Ağır deri reaksiyonları (Stevens-Johnson sendromu, toksik epidermal nekroliz) ve klinik olarak anlamlı hiponatremi bildirilmiştir. Karbamazepine aşırı duyarlılığı olanların dörtte birinde çapraz reaksiyon görülür.',
-    uyari: ['Hiponatremi (çoğu ilk 3 ayda)', 'Baş dönmesi, çift görme, ataksi, uyuklama', 'Döküntü; karbamazepinle çapraz duyarlılık', 'Bulantı, kusma', 'Antiepileptik sınıf uyarısı: intihar düşüncesi'],
+    uyari: ['Hiponatremi (çoğu ilk 3 ayda)', 'Baş dönmesi, çift görme, ataksi, uyuklama', 'Döküntü; karbamazepinle çapraz duyarlılık', 'Bulantı, kusma', 'Antiepileptik sınıf uyarısı: intihar düşüncesi', 'Kontrendikasyon: okskarbazepin ya da eslikarbazepin asetata aşırı duyarlılık', 'Anafilaksi ve anjiyoödem; DRESS; hematolojik olaylar; bilişsel ve nöropsikiyatrik yan etkiler'],
     etkilesim: ['Hormonal kontraseptif etkinliğini azaltır', 'Karbamazepin, fenitoin, fenobarbital aktif metabolit düzeyini %30–40 düşürür', 'Yüksek dozda fenitoin düzeyini artırır (CYP2C19 inhibisyonu)', 'Lamotrijin düzeyini hafif düşürebilir', 'Diüretikler ve SSRI\'larla hiponatremi riski artar'],
     oz: []
   },
@@ -177,7 +177,7 @@
     ped: {
       bas: '0,5 mg/kg/doz (genellikle 10–12,5 mg, gece)', artis: 'Gerekirse günde 2–3 doza', hedef: '1–2 mg/kg/gün (bölünmüş)', maks: '≤ 40 kg: 2 mg/kg/gün · > 40 kg: 100 mg/gün',
       birim: 'mg/gün', adim: [[0, 12.5], [3, 25], [7, 50]], bant: [25, 50], tavan: 100,
-      not: ['Mümkün olan en düşük dozda ve en kısa süreyle kullanın (QT uyarısı).', 'Tolerans 1–2 haftada gelişebilir; uzun süreli anksiyete tedavisi için uygun değildir.', 'Küçük çocuklarda paradoksal ajitasyon görülebilir.']
+      not: ['Mümkün olan en düşük dozda ve en kısa süreyle kullanın (QT uyarısı).', 'Tolerans 1–2 haftada gelişebilir; uzun süreli anksiyete tedavisi için uygun değildir.', 'Küçük çocuklarda paradoksal ajitasyon görülebilir.', 'ABD etiketi (Vistaril, 11/2016) anksiyetede 6 yaş altına 50 mg/gün, 6 yaş üstüne 50–100 mg/gün (bölünmüş) verir ve üst sınır belirtmez; erişkinde 50–100 mg ×4. Bu rehberdeki daha düşük sınırlar Avrupa\'nın QT kısıtlamasını yansıtır.']
     },
     eri: {
       bas: '25 mg (gece) veya 12,5–25 mg ×2–3', artis: 'Yanıta göre', hedef: '50–100 mg/gün (bölünmüş)', maks: '100 mg/gün',
@@ -186,7 +186,7 @@
     surdurum: ['Kısa süreli (günler–birkaç hafta) kullanım için uygundur.', 'Süregelen anksiyetede SSRI ve psikoterapi planlayın.'],
     kesme: { risk: 0, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Doğrudan kesilebilir; uzun süreli düzenli kullanımda birkaç günde azaltmak rebound uykusuzluğu önler.'] },
     izlem: 'hidroksizin', profil: { sed: 3, kilo: 1, ach: 2, qt: 2, kes: 0 },
-    uyari: [{ ped: 'Sedasyon, dikkat ve okul performansında azalma', eri: 'Sedasyon, dikkat ve psikomotor performansta azalma; yaşlıda antikolinerjik etki ve konfüzyon' }, 'QT uzaması: uzun QT sendromu ve risk faktörlerinde kontrendike', 'Ağız kuruluğu, kabızlık, idrar retansiyonu', 'Paradoksal ajitasyon'],
+    uyari: [{ ped: 'Sedasyon, dikkat ve okul performansında azalma', eri: 'Sedasyon, dikkat ve psikomotor performansta azalma; yaşlıda antikolinerjik etki ve konfüzyon' }, 'QT uzaması: uzun QT sendromu ve risk faktörlerinde kontrendike', 'Ağız kuruluğu, kabızlık, idrar retansiyonu', 'Paradoksal ajitasyon', 'Kontrendikasyon (ABD etiketi): gebeliğin erken dönemi, uzamış QT aralığı, hidroksizin, setirizin ya da levosetirizine aşırı duyarlılık', 'Akut jeneralize ekzantematöz püstülozis (nadir)'],
     etkilesim: ['QT uzatan ilaçlarla (sitalopram, ziprasidon, makrolidler) birlikte kullanmayın', 'Alkol ve diğer sedatiflerle additif etki', 'Antikolinerjik yükü artırır'],
     oz: ['qt', 'antikol']
   },
@@ -199,7 +199,7 @@
     ped: {
       bas: '0,25 mg (gece) veya 0,01 mg/kg/gün', artis: '3–7 günde bir 0,25 mg', hedef: '0,25–1 mg/gün (2 doza bölünmüş)', maks: 'Anksiyetede genellikle ≤ 2 mg/gün',
       birim: 'mg/gün', adim: [[0, 0.25], [4, 0.5], [10, 1]], bant: [0.25, 1], tavan: 2,
-      not: ['Kullanım süresini baştan sınırlayın (ideal olarak 2–4 hafta) ve kesme planını aileyle paylaşın.', 'Paradoksal disinhibisyon, irritabilite ve agresyon çocuklarda sık görülür.', 'Madde kullanım öyküsü olan ergenlerde kaçının.']
+      not: ['Kullanım süresini baştan sınırlayın (ideal olarak 2–4 hafta) ve kesme planını aileyle paylaşın.', 'Paradoksal disinhibisyon, irritabilite ve agresyon çocuklarda sık görülür.', 'Madde kullanım öyküsü olan ergenlerde kaçının.', 'FDA etiketi (Klonopin, 2/2021): panik bozuklukta 18 yaş altında güvenlilik ve etkinlik belirlenmemiştir.']
     },
     eri: {
       bas: '0,25 mg ×2', artis: '3 gün sonra 1 mg/gün; gerekirse 3 günde bir 0,25–0,5 mg', hedef: '1–2 mg/gün', maks: '4 mg/gün (panik)',
@@ -210,8 +210,8 @@
       not: ['Her 1–2 haftada dozun %10–25\'i kadar azaltın; son basamakları daha küçük tutun.', 'Ani kesme nöbet, rebound anksiyete, uykusuzluk, tremor ve deliryuma yol açabilir.', '4 haftadan kısa kullanımda 1–2 haftalık azaltım yeterlidir.'] },
     izlem: 'benzo', profil: { sed: 3, kilo: 0, gis: 0, akt: 0, kes: 3 },
     kutu: 'Kötüye kullanım, bağımlılık ve kesilme reaksiyonları; opioidlerle birlikte kullanımda solunum depresyonu ve ölüm riski.',
-    uyari: ['Sedasyon, ataksi, bilişsel yavaşlama', 'Paradoksal disinhibisyon', 'Tolerans ve bağımlılık', { ped: 'Siyalore (küçük çocuklar)', eri: null }],
-    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'CYP3A4 inhibitörleri düzeyi artırır; karbamazepin düşürür', 'Klozapin başlangıcında birlikte kullanımda dikkat'],
+    uyari: ['Sedasyon, ataksi, bilişsel yavaşlama', 'Paradoksal disinhibisyon', 'Tolerans ve bağımlılık', { ped: 'Siyalore (küçük çocuklar)', eri: null }, 'Kontrendikasyon: belirgin karaciğer hastalığı, akut dar açılı glokom, benzodiazepin duyarlılığı', 'Solunum depresyonu ve sekresyon artışı: kronik solunum hastalığında dikkat; porfiride dikkat'],
+    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'CYP3A4 inhibitörleri düzeyi artırır; karbamazepin düşürür', 'Klozapin başlangıcında birlikte kullanımda dikkat', 'Valproat ile birlikte absans statusu bildirilmiştir', 'Fenitoin, fenobarbital ve lamotrijin de düzeyi düşürür (yaklaşık %38)'],
     ozel: [{
       baslik: 'Alkol yoksunluğunda kullanım', etiket: 'ilk seçenek değil', onaysiz: true,
       giris: 'Klonazepam alkol yoksunluğunda kılavuzların ilk seçenekleri arasında değildir; Türkiye KÜB\'ünde (yalnız epilepsi) ve FDA\'da bu endikasyon yoktur. Uzun yarı ömrüne karşın kanıt sınırlıdır: diazepam, ileri yaşta ve karaciğer hastalığında lorazepam tercih edilir.',
@@ -232,15 +232,15 @@
     },
     eri: {
       bas: '0,5–1 mg ×2–3', artis: 'Yanıta göre', hedef: '2–6 mg/gün (bölünmüş)', maks: '10 mg/gün',
-      birim: 'mg/gün', adim: [[0, 1], [3, 2], [7, 3]], bant: [2, 6], tavan: 10, not: []
+      birim: 'mg/gün', adim: [[0, 1], [3, 2], [7, 3]], bant: [2, 6], tavan: 10, not: ['Yaşlı ya da düşkün hastada başlangıç 1–2 mg/gün (bölünmüş); 2 mg\'ı geçmeyin. Ağır karaciğer yetmezliğinde dozu dikkatle ayarlayın.', 'Uykusuzlukla giden anksiyetede yatarken tek doz 2–4 mg (FDA etiketi, 1/2023).']
     },
     surdurum: ['Sürdürüm tedavisi olarak önerilmez; altta yatan bozukluğun asıl tedavisini planlayın.', 'Katatonide belirtiler düzeldikten sonra haftalar içinde yavaş azaltın; erken kesmede nüks sıktır.'],
     kesme: { risk: 3, sure: 'Kullanım süresine göre haftalar–aylar', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]],
       not: ['Her 1–2 haftada dozun %10–25\'i kadar azaltın.', 'Kısa yarı ömür nedeniyle doz araları kesilme belirtisi yapabilir; gerekirse eşdeğer dozda uzun etkili benzodiazepine geçip azaltın.', 'Ani kesmede nöbet riski.'] },
     izlem: 'benzo', profil: { sed: 3, kilo: 0, gis: 0, akt: 0, kes: 3 },
     kutu: 'Kötüye kullanım, bağımlılık ve kesilme reaksiyonları; opioidlerle birlikte kullanımda solunum depresyonu ve ölüm riski.',
-    uyari: ['Sedasyon, ataksi, anterograd amnezi', 'Paradoksal disinhibisyon', 'Solunum depresyonu (parenteral/yüksek doz)', 'Tolerans ve bağımlılık'],
-    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'Valproat lorazepam düzeyini artırır (dozu yarıya indirin)', 'Parenteral olanzapin ile birlikte kullanmayın'],
+    uyari: ['Sedasyon, ataksi, anterograd amnezi', 'Paradoksal disinhibisyon', 'Solunum depresyonu (parenteral/yüksek doz)', 'Tolerans ve bağımlılık', 'Kontrendikasyon: akut dar açılı glokom, benzodiazepin duyarlılığı', 'Depresyon ve intihar riski olan hastada dikkat'],
+    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'Valproat lorazepam düzeyini artırır (dozu yarıya indirin)', 'Parenteral olanzapin ile birlikte kullanmayın', 'Probenesid ile lorazepam dozu yaklaşık yarıya indirilir', 'Klozapin ile belirgin sedasyon, aşırı tükürük salgısı, hipotansiyon, deliryum ve solunum durması bildirilmiştir'],
     ozel: [{
       baslik: 'Alkol yoksunluğunda kullanım', etiket: 'endikasyon dışı (Türkiye ve FDA)', onaysiz: true,
       uyari: ALKOL_UYARI, giris: ALKOL_GIRIS + ' Lorazepam oksidatif metabolizmaya uğramaz (glukuronidasyon), aktif metaboliti yoktur: ileri yaşta ve karaciğer hastalığında diazepama tercih edilir.',
@@ -263,7 +263,7 @@
     ped: {
       bas: 'Çocuk: 2,5–5 mg ×2 · ergen: 5 mg ×2', artis: 'Haftada bir 5–10 mg/gün', hedef: '15–30 mg/gün (2–3 doza bölünmüş)', maks: '60 mg/gün',
       birim: 'mg/gün', adim: [[0, 10], [7, 15], [14, 20], [28, 30]], bant: [15, 30], tavan: 60,
-      not: ['Endikasyon dışı kullanım. Gerektiğinde değil düzenli kullanılmalıdır.', 'Yemekle veya aç, ancak her zaman aynı şekilde alınmalı (emilim değişir).', 'Benzodiazepin yoksunluğunu önlemez: benzodiazepinden geçişte örtüşme gerekir.']
+      not: ['Endikasyon dışı kullanım. Gerektiğinde değil düzenli kullanılmalıdır.', 'Yemekle veya aç, ancak her zaman aynı şekilde alınmalı (emilim değişir).', 'Benzodiazepin yoksunluğunu önlemez: benzodiazepinden geçişte örtüşme gerekir.', 'ABD etiketi (BuSpar, 11/2010): 6–17 yaş yaygın anksiyete bozukluğunda iki plasebo kontrollü çalışmada (15–60 mg/gün) plasebodan fark gösterilememiştir.', 'İdrarda metanefrin ölçümünü yanlış pozitif yapabilir: katekolamin toplamasından en az 48 saat önce kesin.']
     },
     eri: {
       bas: '7,5 mg ×2', artis: '2–3 günde bir 5 mg/gün', hedef: '20–30 mg/gün', maks: '60 mg/gün',
@@ -272,8 +272,8 @@
     surdurum: ['Yeterli dozda 4–6 hafta sonunda yanıt yoksa kesin.', 'Yanıt varsa 6–12 ay sürdürüp kesmeyi deneyin.'],
     kesme: { risk: 0, sure: 'Kademeli azaltım genellikle gerekmez', adim: [[0, 100], [7, 50], [14, 0]], not: ['Kesilme sendromu tanımlanmamıştır; 1–2 haftada azaltmak yeterlidir.'] },
     izlem: 'buspiron', profil: { sed: 1, kilo: 0, gis: 2, akt: 1, kes: 0 },
-    uyari: ['Baş dönmesi, bulantı, baş ağrısı', 'Huzursuzluk, uykusuzluk', 'Serotonerjiklerle birlikte serotonin sendromu (nadir)'],
-    etkilesim: ['MAOİ ile kontrendike', 'Güçlü CYP3A4 inhibitörleri (eritromisin, itrakonazol, greyfurt suyu) düzeyi belirgin artırır', 'Karbamazepin, rifampisin düzeyi düşürür'],
+    uyari: ['Baş dönmesi, bulantı, baş ağrısı', 'Huzursuzluk, uykusuzluk', 'Serotonerjiklerle birlikte serotonin sendromu (nadir)', 'Ağır karaciğer ya da böbrek yetmezliğinde önerilmez', 'Akatizi, distoni (nadir; dopamin reseptörlerine bağlanır)'],
+    etkilesim: ['MAOİ ile kontrendike', 'Güçlü CYP3A4 inhibitörleri (eritromisin, itrakonazol, greyfurt suyu) düzeyi belirgin artırır', 'Karbamazepin, rifampisin düzeyi düşürür', 'Doz ayarı: eritromisin ile 2,5 mg ×2, itrakonazol ya da nefazodon ile günde tek doz 2,5 mg ile başlanır', 'Diltiazem ve verapamil düzeyi artırır'],
     oz: ['sero']
   },
   {
@@ -289,15 +289,15 @@
     },
     eri: {
       bas: '2–5 mg ×2–3', artis: '3–4 günde bir', hedef: '5–30 mg/gün (bölünmüş)', maks: '40 mg/gün',
-      birim: 'mg/gün', adim: [[0, 6], [4, 15], [8, 30]], bant: [6, 30], tavan: 40, not: []
+      birim: 'mg/gün', adim: [[0, 6], [4, 15], [8, 30]], bant: [6, 30], tavan: 40, not: ['Yaşlı ya da düşkün hastada başlangıç 2–2,5 mg, günde 1–2 kez; kademeli artırın. Sirozda yarı ömür 2–5 kat uzar.']
     },
     surdurum: ['Kullanımı 2–4 hafta ile sınırlayın; daha uzun kullanım gerekiyorsa gerekçeyi yazın ve çıkış planını baştan yapın.', 'Asıl tedavi (SSRI, psikoterapi) etkisini gösterene dek köprü olarak kullanın.'],
     kesme: { risk: 3, sure: 'Kullanım süresine göre 4–12+ hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 10], [70, 0]],
       not: ['Her 1–2 haftada dozun %10–25\'i kadar azaltın; son basamakları daha yavaş inin.', 'Uzun yarı ömür azaltımı kolaylaştırır: kesilme belirtileri geç (5–10. gün) başlar ve daha hafif seyreder.', 'Ani kesmede nöbet riski.'] },
     izlem: 'benzo', profil: { sed: 3, kilo: 0, gis: 0, akt: 0, kes: 3 },
     kutu: 'Kötüye kullanım, bağımlılık ve kesilme reaksiyonları; opioidlerle birlikte kullanımda solunum depresyonu ve ölüm riski.',
-    uyari: ['Sedasyon, ataksi, anterograd amnezi', 'Paradoksal disinhibisyon', { ped: 'Birikime bağlı gündüz uyuklaması, okul performansında düşme', eri: 'Birikime bağlı gündüz uyuklaması (özellikle yaşlıda), düşme riski' }, 'Tolerans ve bağımlılık', 'Solunum depresyonu (parenteral/yüksek doz)'],
-    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'Fluvoksamin, fluoksetin, omeprazol (CYP2C19) düzeyi artırır', 'Güçlü CYP3A4 inhibitörleri düzeyi artırır', 'Karbamazepin, fenitoin, rifampisin düzeyi düşürür'],
+    uyari: ['Sedasyon, ataksi, anterograd amnezi', 'Paradoksal disinhibisyon', { ped: 'Birikime bağlı gündüz uyuklaması, okul performansında düşme', eri: 'Birikime bağlı gündüz uyuklaması (özellikle yaşlıda), düşme riski' }, 'Tolerans ve bağımlılık', 'Solunum depresyonu (parenteral/yüksek doz)', 'Kontrendikasyon: miyastenia gravis, ağır solunum yetmezliği, ağır karaciğer yetmezliği, uyku apnesi, akut dar açılı glokom, 6 aydan küçük bebek'],
+    etkilesim: ['Opioid, alkol ve diğer sedatiflerle solunum depresyonu', 'Fluvoksamin, fluoksetin, omeprazol (CYP2C19) düzeyi artırır', 'Güçlü CYP3A4 inhibitörleri düzeyi artırır', 'Karbamazepin, fenitoin, rifampisin düzeyi düşürür', 'Simetidin ve ketokonazol de düzeyi artırır; antasitler doruk düzeyi yaklaşık %30 düşürür'],
     ozel: [{
       baslik: 'Alkol yoksunluğunda kullanım', etiket: 'Türkiye KÜB\'ünde endike (tablet, ampul) · FDA onaylı',
       uyari: ALKOL_UYARI, giris: ALKOL_GIRIS + ' Diazepam uzun yarı ömrü sayesinde kendiliğinden azalır, nöbet koruması uzun sürer; ilk seçeneklerdendir.',
@@ -325,7 +325,7 @@
     },
     eri: {
       bas: '0,25–0,5 mg ×3', artis: '3–4 günde bir en fazla 1 mg/gün', hedef: 'Anksiyete: 0,75–4 mg/gün · panik: 4–6 mg/gün', maks: 'Anksiyete: 4 mg/gün',
-      birim: 'mg/gün', adim: [[0, 0.75], [4, 1.5], [8, 3]], bant: [0.75, 4], tavan: 4, not: []
+      birim: 'mg/gün', adim: [[0, 0.75], [4, 1.5], [8, 3]], bant: [0.75, 4], tavan: 4, not: ['Kesme: 3 günde bir en fazla 0,5 mg azaltın; bazı hastalarda daha yavaş (FDA etiketi, 1/2023).', 'Yaşlıda ve karaciğer yetmezliğinde başlangıç 0,25 mg, günde 2–3 kez.']
     },
     surdurum: ['Kullanımı 2–4 hafta ile sınırlayın; daha uzun kullanım gerekiyorsa gerekçeyi yazın ve çıkış planını baştan yapın.', 'Asıl tedavi (SSRI, psikoterapi) etkisini gösterene dek köprü olarak kullanın.'],
     kesme: { risk: 3, sure: 'Kullanım süresine göre 6–12+ hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 10], [70, 0]],
@@ -333,7 +333,7 @@
     izlem: 'benzo', profil: { sed: 2, kilo: 0, gis: 0, akt: 0, kes: 3 },
     kutu: 'Kötüye kullanım, bağımlılık ve kesilme reaksiyonları; opioidlerle birlikte kullanımda solunum depresyonu ve ölüm riski.',
     uyari: ['Sedasyon, dikkat ve bellek bozukluğu', 'Doz arası rebound anksiyete', 'Paradoksal disinhibisyon', 'Tolerans ve bağımlılık (diğer benzodiazepinlerden yüksek)'],
-    etkilesim: ['Ketokonazol, itrakonazol ile kontrendike (düzey 3–4 kat)', 'Fluvoksamin düzeyi 2 kat artırır: dozu yarıya indirin', 'Klaritromisin, eritromisin, greyfurt suyu düzeyi artırır', 'Karbamazepin düzeyi düşürür', 'Opioid, alkol ve sedatiflerle solunum depresyonu'],
+    etkilesim: ['Ketokonazol, itrakonazol ile kontrendike (düzey 3–4 kat)', 'Fluvoksamin düzeyi 2 kat artırır: dozu yarıya indirin', 'Klaritromisin, eritromisin, greyfurt suyu düzeyi artırır', 'Karbamazepin düzeyi düşürür', 'Opioid, alkol ve sedatiflerle solunum depresyonu', 'Nefazodon, simetidin gibi orta ya da zayıf CYP3A inhibitörleriyle kaçının ya da dozu azaltın; ritonavir ile başlanırken alprazolam dozu yarıya indirilir', 'Digoksin düzeyini artırabilir: düzey izleyin'],
     ozel: [{
       baslik: 'Alkol yoksunluğunda kullanım', etiket: 'önerilmez', onaysiz: true,
       giris: 'Alprazolam alkol yoksunluğunda önerilmez: kısa etki süresi doz aralarında yoksunluk belirtilerine ve nöbet riskine yol açar, kötüye kullanım potansiyeli yüksektir. Diazepam ya da (ileri yaş, karaciğer hastalığı) lorazepam kullanın.',
@@ -350,11 +350,11 @@
     ped: {
       bas: '25–50 mg ×2 (ergen)', artis: 'Haftada bir 50–75 mg/gün', hedef: '150–300 mg/gün (2–3 doza bölünmüş)', maks: '300 mg/gün',
       birim: 'mg/gün', adim: [[0, 75], [7, 150], [14, 225], [21, 300]], bant: [150, 300], tavan: 300,
-      not: ['Endikasyon dışı kullanım; çocuk ve ergen anksiyetesinde kontrollü çalışma yoktur.', 'Madde kullanım öyküsünü sorgulayın; kötüye kullanım ergenlerde bildirilmiştir.', 'Sedasyon ve baş dönmesi ilk haftalarda belirgindir: okul ve araç kullanımı konusunda uyarın.']
+      not: ['Endikasyon dışı kullanım; çocuk ve ergen anksiyetesinde kontrollü çalışma yoktur.', 'Madde kullanım öyküsünü sorgulayın; kötüye kullanım ergenlerde bildirilmiştir.', 'Sedasyon ve baş dönmesi ilk haftalarda belirgindir: okul ve araç kullanımı konusunda uyarın.', 'ABD etiketinde (Lyrica, 12/2023) pediatrik onay yalnızca parsiyel başlangıçlı nöbetlerde ek tedavidir (≥ 1 ay): ≥ 30 kg 2,5 mg/kg/gün ile başlanır, en fazla 10 mg/kg/gün (600 mg/gün); < 30 kg 3,5 mg/kg/gün, en fazla 14 mg/kg/gün.']
     },
     eri: {
       bas: '75 mg ×2', artis: 'Haftada bir 150 mg/gün', hedef: '300–450 mg/gün', maks: '600 mg/gün',
-      birim: 'mg/gün', adim: [[0, 150], [7, 300], [14, 450], [21, 600]], bant: [300, 450], tavan: 600, not: []
+      birim: 'mg/gün', adim: [[0, 150], [7, 300], [14, 450], [21, 600]], bant: [300, 450], tavan: 600, not: ['Böbrek yetmezliği (kreatinin klirensi): 30–60 mL/dk 75–300 mg/gün · 15–30 mL/dk 25–150 mg/gün · < 15 mL/dk 25–75 mg/gün tek doz; hemodiyaliz sonrası ek doz.', 'ABD etiketinde üst sınır endikasyona göre değişir: fibromiyaljide 450 mg/gün, diyabetik nöropatide 300 mg/gün.']
     },
     surdurum: ['Yeterli dozda 4–6 hafta sonunda yanıt yoksa kademeli keserek başka seçeneğe geçin.', 'Her vizitte doz artırma eğilimi ve kötüye kullanım belirtilerini sorgulayın.'],
     kesme: { risk: 2, sure: 'En az 1–2 hafta (uzun kullanımda daha yavaş)', adim: [[0, 100], [7, 50], [14, 0]],
@@ -362,7 +362,7 @@
     izlem: 'benzo', izlemEk: [['Böbrek işlevi', [1, 0, 0, 0, 2], 'Doz kreatinin klirensine göre ayarlanır.'], ['Kilo / ödem', [1, 1, 1, 1, 1], 'Kilo artışı ve periferik ödem.'], ['İntihar düşüncesi', [1, 1, 1, 1, 1], 'Antiepileptik sınıf uyarısı.']],
     profil: { sed: 2, kilo: 2, gis: 1, akt: 0, kes: 2 },
     kutu: 'Kötüye kullanım ve bağımlılık bildirilmiştir; opioidlerle birlikte kullanımda solunum depresyonu riski.',
-    uyari: ['Baş dönmesi, somnolans', 'Kilo artışı, periferik ödem', 'Bulanık görme, dikkat bozukluğu', 'Kötüye kullanım, bağımlılık', 'İntihar düşüncesi (antiepileptik sınıf uyarısı)'],
+    uyari: ['Baş dönmesi, somnolans', 'Kilo artışı, periferik ödem', 'Bulanık görme, dikkat bozukluğu', 'Kötüye kullanım, bağımlılık', 'İntihar düşüncesi (antiepileptik sınıf uyarısı)', 'Anjiyoödem ve aşırı duyarlılık reaksiyonları', 'Ani ya da hızlı kesmede yan etki riski artar: kademeli kesin', 'PR aralığında uzama, kreatin kinaz yükselmesi, trombosit sayısında azalma'],
     etkilesim: ['Opioid, benzodiazepin ve alkolle additif sedasyon ve solunum depresyonu', 'CYP üzerinden etkileşimi yoktur', 'Tiyazolidindionlarla ödem artar'],
     oz: []
   }
