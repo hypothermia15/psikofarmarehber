@@ -69,7 +69,7 @@
   {
     id: 'atomoksetin', ad: 'Atomoksetin', sinif: 'dehb', altSinif: 'Noradrenalin geri alım inhibitörü', grup: 'nonstim',
     mek: 'Seçici presinaptik noradrenalin geri alım inhibitörü. Kötüye kullanım potansiyeli yoktur; tik, anksiyete veya madde kullanımı eş tanısında tercih edilebilir. 24 saat etki sağlar.',
-    t12: '~5 saat (CYP2D6 zayıf metabolizör: ~21 saat)', t12s: 5, etki: '2–4 hafta; tam etki 6–12 hafta', form: 'Kapsül 10 / 18 / 25 / 40 / 60 / 80 mg; oral solüsyon 4 mg/mL',
+    t12: '~5 saat (CYP2D6 zayıf metabolizör: ~21 saat)', t12s: 5, etki: '2–4 hafta; tam etki 6–12 hafta', form: 'Kapsül 10 / 18 / 25 / 40 / 60 / 80 mg (ABD\'de 100 mg da var); oral solüsyon 4 mg/mL',
     onay: [['DEHB', '≥ 6 yaş']],
     onayEri: [['DEHB']],
     ped: {
@@ -89,8 +89,8 @@
     kesme: { risk: 1, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Doğrudan kesilebilir; kesilme sendromu tanımlanmamıştır.', 'Belirtilerin geri dönüşü günler–haftalar içinde yavaş olur.'] },
     izlem: 'atomoksetin', profil: { sed: 2, kilo: 0, gis: 2, akt: 1, kv: 2, istah: 2, kes: 0 },
     kutu: { ped: 'Kara kutu uyarısı: çocuk ve ergenlerde intihar düşüncesinde artış. Özellikle ilk aylarda ve doz değişimlerinde yakın izleyin.', eri: 'Kara kutu uyarısı (çocuk ve ergenler): intihar düşüncesinde artış. Erişkin çalışmalarında bu sinyal gösterilmemiştir; yine de ilk aylarda duygudurum değişikliklerini izleyin.' },
-    uyari: ['Nadir ağır karaciğer hasarı: sarılık, koyu idrar, kaşıntı, sağ üst kadran ağrısında ilacı kesin ve yeniden başlamayın', 'Kan basıncı ve nabız artışı', 'Bulantı, karın ağrısı, iştah azalması, somnolans', 'İrritabilite, duygudurum dalgalanması; nadiren psikotik/manik belirtiler', 'İdrar retansiyonu, priapizm (nadir)'],
-    etkilesim: ['Güçlü CYP2D6 inhibitörleri (fluoksetin, paroksetin, bupropion) düzeyi 6–8 kat artırabilir', 'MAOİ ile kontrendike', 'Salbutamol ve diğer beta-2 agonistlerle kardiyovasküler etki artar', 'Dar açılı glokom ve feokromositomada kontrendike'],
+    uyari: ['Nadir ağır karaciğer hasarı: sarılık, koyu idrar, kaşıntı, sağ üst kadran ağrısında ilacı kesin ve yeniden başlamayın', 'Kan basıncı ve nabız artışı', 'Bulantı, karın ağrısı, iştah azalması, somnolans', 'İrritabilite, duygudurum dalgalanması; nadiren psikotik/manik belirtiler', 'Saldırgan davranış ya da düşmanlık: başlangıçta ve doz değişimlerinde izleyin', 'İdrar retansiyonu, priapizm (nadir)', 'Aşırı duyarlılık reaksiyonları (anjiyoödem, ürtiker, döküntü)'],
+    etkilesim: ['Güçlü CYP2D6 inhibitörleri (fluoksetin, paroksetin, bupropion) düzeyi 6–8 kat artırabilir', 'MAOİ ile kontrendike', 'Salbutamol ve diğer beta-2 agonistlerle kardiyovasküler etki artar', 'Antihipertansiflerle birlikte kan basıncı ve nabzı daha sık izleyin', 'Dar açılı glokom ve feokromositomada kontrendike'],
     oz: ['2d6sub']
   },
   {
@@ -102,7 +102,7 @@
     ped: {
       bas: '1 mg/gün (sabah veya akşam)', artis: 'Haftada en fazla 1 mg', hedef: '0,05–0,12 mg/kg/gün', maks: '6–12 yaş: 4 mg/gün · 13–17 yaş: 7 mg/gün (kiloya göre)',
       birim: 'mg/gün', adim: [[0, 1], [7, 2], [14, 3], [21, 4]], bant: [2, 4], tavan: 7,
-      not: ['Tablet bütün yutulmalı; ezilmez, çiğnenmez. Yüksek yağlı öğünle alınmamalı (emilim artar).', 'Sedasyon belirginse akşam dozuna geçin.', 'Doz atlanmamalı: iki veya daha fazla ardışık doz atlandıysa yeniden titrasyon düşünün.']
+      not: ['Tablet bütün yutulmalı; ezilmez, çiğnenmez. Yüksek yağlı öğünle alınmamalı (emilim artar).', 'Sedasyon belirginse akşam dozuna geçin.', 'Doz atlanmamalı: iki veya daha fazla ardışık doz atlandıysa yeniden titrasyon düşünün.', 'Stimulana ek tedavide 4 mg/gün üzeri dozlar çalışılmamıştır.']
     },
     eri: {
       bas: '1 mg/gün', artis: 'Haftada 1 mg', hedef: '2–4 mg/gün', maks: '7 mg/gün',
@@ -112,8 +112,8 @@
     kesme: { risk: 3, sure: 'Her 3–7 günde en fazla 1 mg azaltın', adim: [[0, 100], [5, 75], [10, 50], [15, 25], [20, 0]],
       not: ['Ani kesme rebound hipertansiyon ve taşikardiye yol açabilir; hipertansif ensefalopati bildirilmiştir.', 'Azaltım sırasında ve kestikten sonra kan basıncı ve nabzı ölçün.', { ped: 'Aileyi ilacın ani bırakılmaması konusunda yazılı/sözlü uyarın.', eri: 'Hastayı ilacın ani bırakılmaması konusunda yazılı/sözlü uyarın.' }] },
     izlem: 'alfa2', profil: { sed: 3, kilo: 1, gis: 1, akt: 0, kv: 3, qt: 1, kes: 3 },
-    uyari: ['Somnolans ve sedasyon (özellikle ilk haftalar)', 'Hipotansiyon, bradikardi, senkop', 'Kilo artışı', 'Ani kesmede rebound hipertansiyon'],
-    etkilesim: ['Güçlü CYP3A4 inhibitörleri (ketokonazol, klaritromisin): dozu yarıya indirin', 'CYP3A4 indükleyicileri (karbamazepin, rifampisin): doz artışı gerekebilir', 'Valproat düzeyini artırabilir', 'Diğer antihipertansif ve sedatiflerle additif etki'],
+    uyari: ['Somnolans ve sedasyon (özellikle ilk haftalar)', 'Hipotansiyon, bradikardi, senkop', 'Kalp iletim bozuklukları: AV blok ya da bradikardi öyküsünde ve iletimi yavaşlatan ilaçlarla dikkat', 'Kilo artışı', 'Ani kesmede rebound hipertansiyon'],
+    etkilesim: ['Güçlü ve orta düzey CYP3A4 inhibitörleri (ketokonazol, klaritromisin): dozu yarıya indirin', 'Güçlü ve orta düzey CYP3A4 indükleyicileri (karbamazepin, rifampisin): doz iki katına kadar artırılabilir', 'Valproat düzeyini artırabilir (ABD etiketinin etkileşim tablosunda yoktur)', 'Diğer antihipertansif ve sedatiflerle additif etki'],
     oz: ['alfa2']
   },
   {
@@ -125,7 +125,7 @@
     ped: {
       bas: '0,05 mg (gece)', artis: '3–7 günde bir 0,05 mg; günde 2–4 doza bölünür', hedef: '0,1–0,3 mg/gün (3–5 µg/kg/gün)', maks: '27–40 kg: 0,2 mg · 40–45 kg: 0,3 mg · > 45 kg: 0,4 mg/gün',
       birim: 'mg/gün', adim: [[0, 0.05], [7, 0.1], [14, 0.15], [21, 0.2]], bant: [0.1, 0.3], tavan: 0.4,
-      not: ['Kısa etkili form sedasyon ve KB dalgalanması nedeniyle bölünmüş dozda verilir.', 'Uyku için tek gece dozu 0,05–0,1 mg.', 'Aşırı dozda bradikardi, hipotansiyon, solunum depresyonu: evde güvenli saklama.']
+      not: ['Onaylı uzatılmış salımlı formun etiket şeması: 0,1 mg gece başlanır, haftada bir 0,1 mg/gün artırılır, en çok 0,4 mg/gün; günlük doz sabah ve gece olarak ikiye bölünür.', 'Kısa etkili form sedasyon ve KB dalgalanması nedeniyle bölünmüş dozda verilir.', 'Uyku için tek gece dozu 0,05–0,1 mg.', 'Aşırı dozda bradikardi, hipotansiyon, solunum depresyonu: evde güvenli saklama.']
     },
     eri: {
       bas: '0,1 mg (gece)', artis: 'Haftada 0,1 mg', hedef: '0,2–0,4 mg/gün', maks: '0,4 mg/gün (DEHB)',
@@ -135,7 +135,7 @@
     kesme: { risk: 3, sure: 'Her 3–7 günde en fazla 0,05–0,1 mg azaltın', adim: [[0, 100], [5, 75], [10, 50], [15, 25], [20, 0]],
       not: ['Ani kesme rebound hipertansiyon, taşikardi, ajitasyon ve baş ağrısı yapar (guanfasinden daha belirgin).', 'Azaltım boyunca kan basıncı ve nabız izleyin.', 'Beta bloker kullananlarda önce beta blokeri kesin.'] },
     izlem: 'alfa2', profil: { sed: 3, kilo: 0, gis: 1, akt: 0, kv: 3, qt: 0, kes: 3 },
-    uyari: ['Belirgin sedasyon', 'Hipotansiyon, bradikardi, senkop', 'Ağız kuruluğu, kabızlık', 'Depresif duygudurum (nadir)'],
+    uyari: ['Belirgin sedasyon', 'Hipotansiyon, bradikardi, senkop', 'Kalp iletim bozuklukları: iletimi yavaşlatan ilaçlarla birlikte dikkat', 'Ağız kuruluğu, kabızlık', 'Depresif duygudurum (nadir)', 'Alerjik reaksiyonlar (döküntü, ürtiker, anjiyoödem)'],
     etkilesim: ['Diğer antihipertansifler, beta blokerler, digoksin: bradikardi/AV blok', 'Sedatifler ve alkolle additif etki', 'TCA\'lar antihipertansif etkiyi azaltabilir'],
     ozel: [{
       baslik: 'Opioid yoksunluğunda kullanım', etiket: 'endikasyon dışı', onaysiz: true,
@@ -174,8 +174,8 @@
     kesme: { risk: 1, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Doğrudan kesilebilir; uzun süreli yüksek dozdan sonra birkaç gün yorgunluk ve iştah artışı olabilir.'] },
     izlem: 'stimulan', profil: { sed: 0, kilo: 0, gis: 1, akt: 3, kv: 2, istah: 3, kes: 1 },
     kutu: { ped: 'Kötüye kullanım ve bağımlılık potansiyeli: madde kullanım öyküsünü sorgulayın; ergenlerde ilacın başkasına verilmesi açısından uyarın.', eri: 'Kötüye kullanım, yanlış kullanım ve bağımlılık potansiyeli: madde kullanım öyküsünü sorgulayın; ilacın başkasına verilmesine karşı uyarın, reçete miktarını takip edin.' },
-    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme hızında hafif yavaşlama', eri: 'İştah azalması, kilo kaybı' }, 'Uykuya dalma güçlüğü', 'Kan basıncı ve nabız artışı; yapısal kalp hastalığı/aritmide kaçının', 'Tik, irritabilite, anksiyete, nadiren psikotik/manik belirtiler'],
-    etkilesim: ['MAOİ ile kontrendike (14 gün ara)', 'Metilfenidat ile birlikte kullanılmaz (aynı etkin madde)', 'Klonidin/guanfasin ile birlikte kullanımda KB ve nabız izlenmeli'],
+    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme hızında hafif yavaşlama', eri: 'İştah azalması, kilo kaybı' }, 'Uykuya dalma güçlüğü', 'Kan basıncı ve nabız artışı; yapısal kalp hastalığı/aritmide kaçının', 'Tik, irritabilite, anksiyete, nadiren psikotik/manik belirtiler', 'Priapizm, periferik vaskülopati (Raynaud) – nadir', 'Göz içi basıncında artış ve glokom; dar açılı glokom riski olanlarda göz değerlendirmesi'],
+    etkilesim: ['MAOİ ile kontrendike (14 gün ara)', 'Metilfenidat ile birlikte kullanılmaz (aynı etkin madde)', 'Antihipertansiflerin etkisini azaltabilir: kan basıncını izleyin', 'Halojenli anesteziklerle ameliyat sırasında ani kan basıncı ve nabız artışı riski', 'Risperidonla birlikte kullanımda ekstrapiramidal belirti riski artabilir', 'Klonidin/guanfasin ile birlikte kullanımda KB ve nabız izlenmeli'],
     oz: ['stim']
   },
   {
@@ -191,18 +191,18 @@
     ped: {
       bas: '3–5 yaş: IR 2,5 mg/gün · ≥ 6 yaş: IR 5 mg ×1–2 veya XR 5–10 mg sabah', artis: 'Haftada bir 2,5 mg (3–5 yaş) veya 5–10 mg (≥ 6 yaş)', hedef: '10–30 mg/gün', maks: 'XR: 30 mg/gün (6–12 yaş), 20 mg/gün (13–17 yaş için önerilen) · IR: 40 mg/gün',
       birim: 'mg/gün (XR)', adim: [[0, 10], [7, 15], [14, 20], [21, 30]], bant: [10, 30], tavan: 30,
-      not: ['İştah ve uyku üzerine etkisi metilfenidattan daha belirgin ve uzun olabilir.', 'Asitli içecekler (meyve suyu, C vitamini) emilimi azaltır: ilaçtan bir saat önce ve sonra vermeyin.', 'Lisdeksamfetaminden veya lisdeksamfetamine geçişte kesin bir doz eşdeğerliği yoktur; düşük dozdan başlayın.']
+      not: ['İştah ve uyku üzerine etkisi metilfenidattan daha belirgin ve uzun olabilir.', 'Asitli içecekler (meyve suyu, C vitamini) emilimi azaltır: ilaçtan bir saat önce ve sonra vermeyin.', 'Lisdeksamfetaminden veya lisdeksamfetamine geçişte kesin bir doz eşdeğerliği yoktur; düşük dozdan başlayın.', 'Ağır böbrek yetmezliğinde (uzun salımlı form): 6–12 yaşta 5 mg/gün ile başlanır, en çok 20 mg/gün; son dönem böbrek hastalığında önerilmez.']
     },
     eri: {
       bas: 'XR: 20 mg sabah', artis: 'Haftada bir 10 mg', hedef: '20–40 mg/gün', maks: '60 mg/gün',
-      birim: 'mg/gün (XR)', adim: [[0, 20], [7, 30], [14, 40]], bant: [20, 40], tavan: 60, not: []
+      birim: 'mg/gün (XR)', adim: [[0, 20], [7, 30], [14, 40]], bant: [20, 40], tavan: 60, not: ['Ağır böbrek yetmezliğinde (uzun salımlı form) önerilen doz 15 mg/gün; son dönem böbrek hastalığında önerilmez.']
     },
     surdurum: SURDURUM_DEHB,
     kesme: { risk: 1, sure: 'Kademeli azaltım genellikle gerekmez', adim: [[0, 100], [7, 0]], not: ['Uzun süreli yüksek dozdan sonra birkaç günlük yorgunluk, uyku artışı, disfori olabilir; gerekirse 1–2 haftada azaltın.'] },
     izlem: 'stimulan', profil: { sed: 0, kilo: 0, gis: 1, akt: 3, kv: 2, istah: 3, kes: 1 },
     kutu: 'Kötüye kullanım ve bağımlılık potansiyeli yüksektir; madde kullanım öyküsünü sorgulayın.',
-    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme yavaşlaması', eri: 'İştah azalması, kilo kaybı' }, 'Uykusuzluk, irritabilite', 'Kan basıncı ve nabız artışı; ciddi kardiyak hastalıkta kontrendike', 'Psikotik/manik belirtiler, tik'],
-    etkilesim: ['MAOİ ile kontrendike', 'Serotonerjik ilaçlarla serotonin sendromu riski', 'İdrarı asitleştiren/alkalileştiren ajanlar düzeyi değiştirir', 'CYP2D6 inhibitörleri amfetamin maruziyetini artırabilir'],
+    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme yavaşlaması', eri: 'İştah azalması, kilo kaybı' }, 'Uykusuzluk, irritabilite', 'Kan basıncı ve nabız artışı; ciddi kardiyak hastalıkta kontrendike', 'Psikotik/manik belirtiler, tik', 'Periferik vaskülopati (Raynaud)', 'Nöbet eşiğini düşürebilir'],
+    etkilesim: ['MAOİ ile kontrendike', 'Serotonerjik ilaçlarla serotonin sendromu riski', 'İdrarı asitleştiren/alkalileştiren ajanlar düzeyi değiştirir', 'CYP2D6 inhibitörleri amfetamin maruziyetini artırabilir', 'Trisiklik antidepresanlarla kardiyovasküler etki artabilir', 'Proton pompa inhibitörleri uzun salımlı formun emilimini hızlandırır (doruk süresi kısalır)'],
     oz: ['stim', 'sero']
   },
   {

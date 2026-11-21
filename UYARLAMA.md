@@ -41,7 +41,20 @@ Metilfenidat, lisdeksamfetamin ve viloksazin kayıtları güncel FDA etiketleriy
 | Metilfenidat | Ergende OROS üst sınırına "2 mg/kg/günü aşmadan" eklendi | Bölüm 2.3 |
 | Viloksazin | Böbrek yetmezliği notu (eGFR < 30: başlangıç 100 mg, en çok 200 mg) ve pudinge serpme seçeneği eklendi | Qelbree etiketi, Bölüm 2.3–2.4 |
 
-Halojenli anestezik maddesindeki "ameliyat günü vermeyin" ifadesi etiketin tam cümlesiyle karşılaştırılmadı. Atomoksetin, guanfasin, klonidin, deksmetilfenidat, amfetamin ve modafinil kayıtları okundu ama etiketle karşılaştırılmadı; değiştirilmedi.
+**21 Kasım 2026, ikinci tur:** Kalan altı DEHB ilacı da FDA etiketleriyle karşılaştırıldı (Strattera 6/2026, Intuniv 12/2019, Kapvay 2/2020, Focalin XR 10/2023, Adderall XR 9/2025, Provigil 1/2015). Doz, onay yaşı ve üst sınırlarda etiketle çelişen bir kayıt bulunmadı; hiçbir doz değiştirilmedi. Yalnızca ekleme ve açıklama yapıldı:
+
+| İlaç | Ekleme | Dayanak |
+|---|---|---|
+| Atomoksetin | Uyarılara saldırgan davranış/düşmanlık ve aşırı duyarlılık; etkileşimlere antihipertansifler; forma "ABD'de 100 mg da var" | Strattera, Bölüm 3, 5.7, 5.8, Highlights |
+| Guanfasin | Kalp iletim bozuklukları uyarısı; ek tedavide 4 mg üzeri çalışılmadığı notu; CYP3A4 için "güçlü ve orta düzey" ve "iki katına kadar" ifadeleri | Intuniv, Bölüm 2.2, 2.7, 5.3 |
+| Guanfasin | "Valproat düzeyini artırabilir" cümlesi korundu; ABD etiketinde yer almadığı notu eklendi | Intuniv Bölüm 7'de yok; Türkiye KÜB'üyle **doğrulanmalıdır** |
+| Klonidin | Onaylı uzatılmış salımlı formun etiket şeması not olarak eklendi; kalp iletim bozuklukları ve alerjik reaksiyon uyarıları | Kapvay, Bölüm 2.2, 5.4, 5.5 |
+| Deksmetilfenidat | Priapizm, periferik vaskülopati ve glokom uyarıları; antihipertansif, halojenli anestezik ve risperidon etkileşimleri | Focalin XR, Bölüm 5.5–5.9, 7.1 |
+| Amfetamin | Böbrek yetmezliği dozu; periferik vaskülopati ve nöbet uyarıları; trisiklik antidepresan ve proton pompa inhibitörü etkileşimleri | Adderall XR, Bölüm 2.6, 5.6, 5.7, 7.1 |
+
+Bu turda denetlenemeyenler: yarılanma ömürleri (etiketlerin farmakokinetik bölümleri okunamadı); atomoksetinde CYP2D6 inhibitörleriyle "6–8 kat" artış; klonidinde "önce beta blokeri kesin" notu (uzatılmış salımlı form etiketinde yok, kısa etkili form etiketi okunmadı); kısa etkili amfetamin etiketi (≥ 3 yaş onayı, 40 mg üst sınır); modafinilde ketiapin ve aripiprazol örnekleri (etiket midazolam, triazolam ve siklosporini adlandırır). Intuniv, Kapvay ve Provigil için okunan etiketler en güncel sürüm olmayabilir. Klonidin ve modafinilin pediatrik dozları etiket dışı kullanıma dayanır ve etiketle karşılaştırılamaz.
+
+Halojenli anestezik maddesindeki "ameliyat günü vermeyin" ifadesi etiketin tam cümlesiyle karşılaştırılmadı.
 
 DEHB ilaçları dışındaki klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
