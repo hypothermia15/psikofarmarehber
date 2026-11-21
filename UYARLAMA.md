@@ -108,7 +108,7 @@ Bu turda karşılaştırılamayan on üç kayıt için aşağıdaki "kalan kayı
 
 **22 Kasım 2026: kalan kayıtlar (FDA dışı kaynaklarla)**
 
-Önceki turlarda FDA etiketi bulunamayan on üç kayıttan on biri başka resmî ürün bilgileriyle karşılaştırıldı. Hiçbir doz değiştirilmedi; etiket dayanaklı eklemeler yapıldı.
+Önceki turlarda FDA etiketi bulunamayan on üç kayıttan onu başka resmî ürün bilgileriyle karşılaştırıldı. Hiçbir doz değiştirilmedi; etiket dayanaklı eklemeler yapıldı.
 
 | Kayıt | Kaynak | Okunan kısım |
 |---|---|---|
