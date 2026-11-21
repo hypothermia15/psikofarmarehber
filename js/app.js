@@ -43,7 +43,19 @@
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
   function renk(i) { return window.SINIFLAR[i.sinif].renk; }
-  function liste(d) { return '<ul class="notlar">' + window.kitleDizi(d, kitle).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; }
+  /* Uyarlama: kontrendikasyon satırları başa alınıp etiketlenir; ruhsat etiketiyle karşılaştırma notları sona alınıp işaretlenir. */
+  var ETIKET_NOT = /(FDA|ABD) etiket|etiketi,? \(?\d{1,2}\/\d{4}|Türkiye KÜB/;
+  function liste(d) {
+    var a = window.kitleDizi(d, kitle), kon = [], duz = [], eti = [];
+    a.forEach(function (x) {
+      var t = String(x);
+      if (/^Kontrendikasyon/.test(t)) kon.push(t); else if (ETIKET_NOT.test(t)) eti.push(t); else duz.push(t);
+    });
+    return '<ul class="notlar">' +
+      kon.map(function (x) { var k = x.indexOf(':'); return '<li class="not-kon"><b>' + esc(x.slice(0, k)) + '</b>' + esc(x.slice(k)) + '</li>'; }).join('') +
+      duz.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') +
+      eti.map(function (x) { return '<li class="not-eti"><span class="not-rozet">Etiket</span>' + esc(x) + '</li>'; }).join('') + '</ul>';
+  }
 
   var SIMGE = {
     ara: '<svg viewBox="0 0 24 24" width="17" height="17"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',

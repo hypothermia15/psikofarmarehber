@@ -108,6 +108,14 @@ Karşılaştırılamayan kayıtlar (FDA etiketi yok ya da bulunamadı; Türkiye 
 
 İlaç kayıtları dışındaki klinik içerik (titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
+**22 Kasım 2026: okunurluk**
+
+Klinik içerik değişmedi; yalnızca gösterim değişti (`js/app.js` içindeki `liste` işlevi, `css/stil.css` sonu).
+
+- "Kontrendikasyon" ile başlayan satırlar listenin başına alınır ve kırmızı yazılır.
+- Ruhsat etiketiyle karşılaştırma notları (FDA ya da ABD etiketi, Türkiye KÜB'ü anılan satırlar) listenin sonuna alınır ve "Etiket" rozetiyle işaretlenir. Böylece gündelik uygulama notları önce okunur.
+- Dar ekranda yana kayan tabloların altında "Tablo yana kayar" ipucu görünür.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:
