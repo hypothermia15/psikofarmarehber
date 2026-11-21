@@ -86,7 +86,7 @@ window.DEPOLAR = [
     enj: [[0, 'Test 100 mg'], [7, '200–400 mg'], [21, null], [35, null], [49, null], [63, null], [77, null]],
     kararli: 'Doruk düzey 4–7. günde; kararlı durum yaklaşık 3 ayda.',
     donusum: [['Oral günlük doz (mg) × 8', '2 haftada bir depo dozu (mg)'], ['Oral 25 mg/gün', '200 mg / 2 hafta'], ['Oral 50 mg/gün', '400 mg / 2 hafta']],
-    dikkat: ['Sedasyon ve EPS sık görülür.', 'Zuklopentiksol asetat (kısa etkili, 2–3 gün) ile karıştırmayın: farklı preparattır.', 'Ajitasyon ve agresyonun eşlik ettiği psikozda tercih edilir.'],
+    dikkat: ['Sedasyon ve EPS sık görülür.', 'Zuklopentiksol asetat (kısa etkili, 2–3 gün) ile karıştırmayın: farklı preparattır.', 'Ajitasyon ve agresyonun eşlik ettiği psikozda tercih edilir.', 'İngiltere ürün bilgisi (Clopixol, 4/2026): 200–500 mg, 1–4 haftada bir; tek enjeksiyonda en fazla 600 mg. Gluteal üst dış kadran ya da uyluk yan yüzü; 2 mL\'yi aşan hacim iki bölgeye bölünür.', 'Yaşlı ya da düşkün hastada başlangıç dozunun ¼–½\'si. Böbrek yetmezliğinde ve karaciğer yetmezliğinde yarı doz.', 'Kontrendikasyon: dolaşım kollapsı, bilinç baskılanması (alkol, barbitürat, opioid), koma.', 'Lityumla birlikte kullanımdan kaçının (nörotoksisite, QT); CYP2D6 inhibitörleri düzeyi artırır. Çocuklarda önerilmez.'],
     kacirma: 'Geciken dozu en kısa sürede uygulayın.'
   },
   {
@@ -98,7 +98,7 @@ window.DEPOLAR = [
     enj: [[0, 'Test 20 mg'], [7, '20–40 mg'], [21, null], [35, null], [49, null], [63, null], [77, null]],
     kararli: 'Doruk düzey 4–7. günde; kararlı durum yaklaşık 3 ayda.',
     donusum: [['Oral günlük doz (mg) × 4', '2 haftada bir depo dozu (mg)'], ['Oral 10 mg/gün', '40 mg / 2 hafta']],
-    dikkat: ['EPS ve akatizi sık; sedasyon zuklopentiksole göre azdır.', 'Aktive edici olabilir: ajite ve aşırı uyarılmış hastalarda uygun değildir.'],
+    dikkat: ['EPS ve akatizi sık; sedasyon zuklopentiksole göre azdır.', 'Aktive edici olabilir: ajite ve aşırı uyarılmış hastalarda uygun değildir.', 'İngiltere ürün bilgisi (Depixol, 1/2021): yalnızca oral tedaviyle stabilleşmiş hastada. Tek enjeksiyonda en fazla 400 mg. Gluteal üst dış kadran ya da uyluk yan yüzü; 2 mL\'yi aşan hacim iki bölgeye bölünür.', 'Yaşlı ya da düşkün hastada başlangıç dozunun ¼–½\'si. Karaciğer yetmezliğinde özel dikkat ve serum düzeyi izlemi.', 'Kontrendikasyon: dolaşım kollapsı, bilinç baskılanması, koma. İntihar düşüncesi ürün bilgisinde ayrı uyarıdır.', 'Lityumla birlikte kullanımdan kaçının (nörotoksisite, QT). Çocuklarda önerilmez.'],
     kacirma: 'Geciken dozu en kısa sürede uygulayın.'
   }
 ];

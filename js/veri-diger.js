@@ -150,22 +150,22 @@
     id: 'melatonin', ad: 'Melatonin', sinif: 'anks', altSinif: 'Uyku düzenleyici', grup: 'diger',
     mek: 'MT1/MT2 reseptör agonisti; uykuya dalmayı kolaylaştırır ve sirkadiyen fazı öne çeker. Otizm ve DEHB\'de uykuya dalma güçlüğünde davranışsal önlemlerden sonra ilk seçenek.',
     t12: '30–60 dakika (uzatılmış salımlı formda etki 8–10 saat)', t12s: 0.8, etki: '30–60 dakika; faz kaydırma 1–2 hafta', form: 'Tablet 1 / 3 / 5 mg; damla; uzatılmış salımlı mini tablet 1 / 5 mg',
-    onay: [['Otizmde uykusuzluk (uzatılmış salımlı form, Avrupa)', '2–18 yaş']],
+    onay: [['Otizmde uykusuzluk (uzatılmış salımlı form, Avrupa)', '2–18 yaş'], ['DEHB\'de uykusuzluk (uzatılmış salımlı form, Avrupa)', '6–17 yaş']],
     onayEri: [['Primer uykusuzluk', '≥ 55 yaş, uzatılmış salımlı, kısa süreli · Avrupa']],
     ped: {
       bas: '0,5–1 mg (yatmadan 30–60 dk önce)', artis: '1–2 haftada bir 0,5–1 mg', hedef: '1–5 mg/gece', maks: '10 mg/gece',
       birim: 'mg/gece', adim: [[0, 1], [14, 2], [28, 3], [42, 5]], bant: [1, 5], tavan: 10,
-      not: ['Önce uyku hijyeni: düzenli yatış saati, ekran kısıtlaması, kafeinin kesilmesi.', 'Gecikmiş uyku fazında düşük doz (0,5–1 mg) hedef uyku saatinden 3–5 saat önce verilebilir.', 'Uzatılmış salımlı pediatrik form: 2 mg ile başlanır, yanıta göre 5 mg ve en fazla 10 mg.', 'Yüksek doz her zaman daha etkili değildir; yanıt yoksa dozu artırmak yerine zamanlamayı ve tanıyı gözden geçirin.']
+      not: ['Önce uyku hijyeni: düzenli yatış saati, ekran kısıtlaması, kafeinin kesilmesi.', 'Gecikmiş uyku fazında düşük doz (0,5–1 mg) hedef uyku saatinden 3–5 saat önce verilebilir.', 'Uzatılmış salımlı pediatrik form: 2 mg ile başlanır, yanıta göre 5 mg ve en fazla 10 mg.', 'Yüksek doz her zaman daha etkili değildir; yanıt yoksa dozu artırmak yerine zamanlamayı ve tanıyı gözden geçirin.', 'Uzatılmış salımlı pediatrik form (Slenyto, EMA): yatmadan 30–60 dakika önce, yemekle ya da yemekten sonra, bütün yutulur. DEHB\'de 1–2 mg ile başlanır, 5 mg\'a, gerekirse 10 mg\'a çıkılır.', 'Etkiyi yaklaşık 3. ayda değerlendirin; en az 6 ayda bir gözden geçirin. DEHB\'de yılda en az bir kez kesmeyi deneyin.']
     },
     eri: {
       bas: '1–2 mg (yatmadan 1–2 saat önce)', artis: 'Gerekirse 1–2 haftada', hedef: '2–5 mg/gece', maks: '10 mg/gece',
-      birim: 'mg/gece', adim: [[0, 2], [14, 3], [28, 5]], bant: [2, 5], tavan: 10, not: []
+      birim: 'mg/gece', adim: [[0, 2], [14, 3], [28, 5]], bant: [2, 5], tavan: 10, not: ['Erişkin uzatılmış salımlı form (Circadin, EMA): 2 mg, yatmadan 1–2 saat önce, yemekten sonra; en fazla 13 hafta.']
     },
     surdurum: ['3–6 ayda bir gerekliliği gözden geçirin; uyku düzeni oturduysa ilaçsız dönem deneyin (tercihen tatil döneminde).', { ped: 'Uzun süreli (2 yıla dek) kullanım verileri büyüme ve puberte açısından güven vericidir; yine de yıllık izleyin.', eri: null }],
     kesme: { risk: 0, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Doğrudan kesilebilir; bağımlılık veya kesilme sendromu yapmaz.', 'Uyku sorunu yinelerse aynı dozla yeniden başlanabilir.'] },
     izlem: 'melatonin', profil: { sed: 1, kilo: 0, gis: 0, akt: 0, kes: 0 },
-    uyari: ['Sabah sersemliği, baş ağrısı', 'Canlı rüyalar, nadiren enürezis', 'Takviye ürünlerde içerik ve doz tutarsızlığı olabilir; ilaç formunu tercih edin'],
-    etkilesim: ['Fluvoksamin melatonin düzeyini çok belirgin artırır (CYP1A2)', 'Östrojen, siprofloksasin düzeyi artırır; sigara ve karbamazepin düşürür', 'Diğer sedatiflerle additif etki'],
+    uyari: ['Sabah sersemliği, baş ağrısı', 'Canlı rüyalar, nadiren enürezis', 'Takviye ürünlerde içerik ve doz tutarsızlığı olabilir; ilaç formunu tercih edin', 'Otoimmün hastalıkta ve karaciğer yetmezliğinde önerilmez (Avrupa ürün bilgisi)'],
+    etkilesim: ['Fluvoksamin melatonin düzeyini çok belirgin artırır (CYP1A2)', 'Östrojen, siprofloksasin düzeyi artırır; sigara ve karbamazepin düşürür', 'Diğer sedatiflerle additif etki', 'Fluvoksamin maruziyeti yaklaşık 17 kat artırır: birlikte kullanmayın', 'Benzodiazepin ve benzeri hipnotikler, alkol, tiyoridazin ve imipraminle birlikte kullanımdan kaçının; simetidin düzeyi artırır, rifampisin düşürür'],
     oz: ['1a2sub']
   },
   {

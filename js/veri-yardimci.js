@@ -52,7 +52,7 @@
     eri: {
       bas: '18 mg gerektiğinde: içme riski olan günlerde, beklenen içmeden 1–2 saat önce tek tablet', kart: '18 mg gerektiğinde', artis: 'Titrasyon yapılmaz', hedef: 'İçme riski olan günlerde 18 mg', maks: '18 mg/gün (günde bir tablet)',
       birim: 'mg', adim: [], semaNot: 'Gerektiğinde kullanılır: içme riski olan günlerde tek tablet alınır, doz titrasyonu yapılmaz.',
-      not: ['İlk görüşmeden sonra hasta 2 hafta içme günlüğü tutar; yüksek içme risk düzeyi sürerse başlanır (Türkiye KÜB\'ü).', 'Yalnız fiziksel yoksunluğu olmayan ve acil arınma gerektirmeyen hastada; tedaviye uyum ve tüketimi azaltmaya odaklı psikososyal destekle birlikte.', 'Hasta tableti almadan içmeye başladıysa en kısa sürede alır.', 'Tablet bütün yutulur; bölünmez (ciltle temasta hassasiyet yapabilir).']
+      not: ['İlk görüşmeden sonra hasta 2 hafta içme günlüğü tutar; yüksek içme risk düzeyi sürerse başlanır (Türkiye KÜB\'ü).', 'Yalnız fiziksel yoksunluğu olmayan ve acil arınma gerektirmeyen hastada; tedaviye uyum ve tüketimi azaltmaya odaklı psikososyal destekle birlikte.', 'Hasta tableti almadan içmeye başladıysa en kısa sürede alır.', 'Tablet bütün yutulur; bölünmez (ciltle temasta hassasiyet yapabilir).', 'Avrupa değerlendirme özeti (Selincro, EMA): hedef hasta günde erkekte 60 g, kadında 40 g\'dan fazla alkol tüketen bağımlıdır. Veriler 6–12 aylıktır; 1 yıldan uzun reçetede dikkat.']
     },
     surdurum: ['Yanıtı ve gereksinimi ayda bir değerlendirin: içme günleri, içilen miktar, işlevsellik, uyum.', 'Randomize çalışmalarda veri 6–12 aylıktır; 1 yıldan uzun kullanımda dikkatli olun (Türkiye KÜB\'ü).', 'İçmeyi tamamen bırakmayı hedefleyen hastada naltrekson değerlendirilir.'],
     kesme: { risk: 0, sure: 'Doğrudan kesilebilir', adim: [[0, 100], [1, 0]],
@@ -152,13 +152,13 @@
     eri: {
       bas: '1 mg/gün', artis: '3–5 günde bir 1–2 mg', hedef: 'İlaca bağlı EPS: 5–15 mg/gün (FDA); çoğu hastada 2 mg ×2–3 yeterli', maks: '15 mg/gün (EPS)',
       birim: 'mg/gün', adim: [[0, 1], [3, 2], [6, 4], [10, 6]], bant: [4, 10], tavan: 15,
-      not: ['Günde 2–3 doza bölünerek, yemekle alınır.', 'Ekstrapiramidal belirtiler birkaç günde kontrol altına alınırsa doz azaltılabilir.', 'Yaşlıda konfüzyon ve deliryum riski: mümkünse kaçının.', 'Türkiye\'de ruhsatlı ürünü olmadığından biperiden kullanılır.']
+      not: ['Günde 2–3 doza bölünerek, yemekle alınır.', 'Ekstrapiramidal belirtiler birkaç günde kontrol altına alınırsa doz azaltılabilir.', 'Yaşlıda konfüzyon ve deliryum riski: mümkünse kaçının.', 'Türkiye\'de ruhsatlı ürünü olmadığından biperiden kullanılır.', 'ABD etiketi (DailyMed, Natco, 9/2010) antipsikotikle birlikte koruyucu (profilaktik) antikolinerjik kullanımını önermez: geç diskinezi riskini artırabilir.', '60 yaş üstünde düşük dozla başlayıp yavaş artırın; kalp, karaciğer, böbrek hastalığı ve hipertansiyonda yakın izlem.']
     },
     surdurum: SURDURUM_ANTIKOL,
     kesme: KESME_ANTIKOL,
     izlem: 'antikolinerjik', profil: { sed: 1, akt: 1, ach: 3, kes: 2 },
-    uyari: ['Ağız kuruluğu, bulanık görme, kabızlık, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu, halüsinasyon (özellikle yaşlıda ve yüksek dozda)', 'Taşikardi', 'Öforizan etki: kötüye kullanım potansiyeli', 'Dar açılı glokomda kontrendike; terleme azalmasına bağlı sıcak çarpması riski', 'Geç diskineziyi kötüleştirebilir'],
-    etkilesim: ['Diğer antikolinerjiklerle (trisiklikler, klozapin, düşük potensli antipsikotikler, antihistaminikler) additif antikolinerjik yük', 'Alkol ve sedatiflerle santral yan etkiler artar', 'Mide boşalmasını yavaşlatarak bazı ilaçların emilimini değiştirebilir'],
+    uyari: ['Ağız kuruluğu, bulanık görme, kabızlık, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu, halüsinasyon (özellikle yaşlıda ve yüksek dozda)', 'Taşikardi', 'Öforizan etki: kötüye kullanım potansiyeli', 'Dar açılı glokomda kontrendike; terleme azalmasına bağlı sıcak çarpması riski', 'Geç diskineziyi kötüleştirebilir', 'Başlamadan önce gonyoskopi ve tedavi boyunca göz içi basıncı izlemi önerilir (ABD etiketi)', 'Doz azaltılırken ya da kesilirken nöroleptik malign sendrom bildirilmiştir: ani kesmeyin'],
+    etkilesim: ['Diğer antikolinerjiklerle (trisiklikler, klozapin, düşük potensli antipsikotikler, antihistaminikler) additif antikolinerjik yük', 'Alkol ve sedatiflerle santral yan etkiler artar', 'Mide boşalmasını yavaşlatarak bazı ilaçların emilimini değiştirebilir', 'MAOİ ve antikolinerjik etkili trisikliklerle antikolinerjik etkiler şiddetlenir', 'Levodopa ile birlikte her iki ilacın dozu azaltılır (genellikle 3–6 mg/gün, bölünmüş)'],
     gecisNotu: 'Antikolinerjiklerde "geçiş" yerine gereksinim yeniden değerlendirilir: ekstrapiramidal belirtide önce antipsikotik dozu ya da seçimi gözden geçirilir. Türkiye\'de triheksifenidil ruhsatlı olmadığından biperiden kullanılır.',
     oz: ['antikol']
   },

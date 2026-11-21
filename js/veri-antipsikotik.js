@@ -161,7 +161,7 @@
     ped: {
       bas: '3–12 yaş (15–40 kg): 0,25–0,5 mg/gün (2–3 doza bölünmüş)', artis: '5–7 günde bir 0,25–0,5 mg', hedef: 'Tik/davranış: 0,05–0,075 mg/kg/gün · psikoz: 0,05–0,15 mg/kg/gün', maks: 'Çocuk: 0,15 mg/kg/gün · ergen: genellikle ≤ 6–10 mg/gün',
       birim: 'mg/gün', adim: [[0, 0.5], [7, 1], [14, 1.5], [21, 2]], bant: [1, 3], tavan: 6,
-      not: ['Damla formu küçük doz adımlarına olanak verir.', 'Genç erkeklerde akut distoni riski yüksektir; aileyi bilgilendirin, biperiden bulundurmayı düşünün.', '3 yaş altında kullanılmaz.']
+      not: ['Damla formu küçük doz adımlarına olanak verir.', 'Genç erkeklerde akut distoni riski yüksektir; aileyi bilgilendirin, biperiden bulundurmayı düşünün.', '3 yaş altında kullanılmaz.', 'ABD etiketi (DailyMed, Mylan, 1/2025) endikasyonlarda çocukları anar (Tourette, ağır davranış sorunları), pediatrik kullanım bölümünde ise güvenlilik ve etkinliğin belirlenmediğini yazar. Davranış endikasyonu yalnızca psikoterapi ve antipsikotik dışı ilaçlara yanıt alınamadığında geçerlidir.']
     },
     eri: {
       bas: '0,5–5 mg ×2–3', artis: 'Yanıta göre', hedef: '5–10 mg/gün', maks: '20 mg/gün (oral)',
@@ -173,8 +173,8 @@
     izlem: 'antipsikotik', izlemEk: [['EKG (QTc)', [1, 2, 0, 0, 1], 'Başlangıçta önerilir; yüksek doz ve parenteral kullanımda tekrarlayın.'], ['EPS, akatizi, diskinezi (AIMS)', [1, 'Her vizit', 1, 1, 1], 'Akut distoni ilk günlerde; AIMS 3–6 ayda bir.']],
     profil: { sed: 1, kilo: 1, eps: 3, prl: 3, qt: 2, ach: 0, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Akut distoni, parkinsonizm, akatizi', 'Geç diskinezi (uzun süreli kullanım)', 'Nöroleptik malign sendrom', 'QT uzaması, torsades de pointes (özellikle IV/yüksek doz)', 'Hiperprolaktinemi'],
-    etkilesim: ['CYP2D6/3A4 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Karbamazepin düzeyi yarıya düşürür', 'Lityum ile nörotoksisite bildirilmiştir', 'Diğer QT uzatan ilaçlarla kaçının'],
+    uyari: ['Akut distoni, parkinsonizm, akatizi', 'Geç diskinezi (uzun süreli kullanım)', 'Nöroleptik malign sendrom', 'QT uzaması, torsades de pointes (özellikle IV/yüksek doz)', 'Hiperprolaktinemi', 'Kontrendikasyon (ABD etiketi): ağır santral sinir sistemi depresyonu ya da koma, Parkinson hastalığı, ilaca aşırı duyarlılık', 'Lökopeni, nötropeni, agranülositoz: başlangıç lökosit sayısı düşükse ilk aylarda tam kan sayımını sık yineleyin', 'Nöbet eşiğini düşürebilir; düşme riski'],
+    etkilesim: ['CYP2D6/3A4 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Karbamazepin düzeyi yarıya düşürür', 'Lityum ile nörotoksisite bildirilmiştir', 'Diğer QT uzatan ilaçlarla kaçının', 'Rifampisin düzeyi yaklaşık %70 düşürür', 'Hipotansiyonda adrenalin kullanılmaz; antikolinerjiklerle göz içi basıncı artabilir'],
     oz: ['qt', 'd2', '2d6sub']
   },
   {
@@ -261,15 +261,15 @@
     },
     eri: {
       bas: 'Akut psikoz: 400 mg/gün · negatif belirti: 50–100 mg/gün', artis: '3–7 günde bir 200 mg', hedef: 'Akut: 400–800 mg/gün · negatif belirti: 50–300 mg/gün', maks: '1200 mg/gün',
-      birim: 'mg/gün', adim: [[0, 400], [4, 600], [10, 800]], bant: [400, 800], tavan: 1200, not: []
+      birim: 'mg/gün', adim: [[0, 400], [4, 600], [10, 800]], bant: [400, 800], tavan: 1200, not: ['Böbrek yetmezliği (kreatinin klirensi): 30–60 mL/dk dozu yarıya, 10–30 mL/dk üçte bire indirin; 10 mL/dk altında deneyim yoktur. Karaciğer yetmezliğinde doz azaltmak gerekmez.', '400 mg\'a kadar tek doz; üstü ikiye bölünür. 1200 mg/gün aşılmaz (emc, 6/2026).']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '4–8 hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]], not: ['Her 1–2 haftada dozun %25\'i kadar azaltın.', 'Ani kesmede kesilme diskinezisi, bulantı, uykusuzluk ve nüks riski.'] },
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [1, 0, 1, 2, 2], 'Prolaktini en çok artıran antipsikotiklerdendir; başlangıçta ve 3. ayda bakın.'], ['Böbrek işlevi', [1, 0, 0, 0, 2], 'Doz kreatinin klirensine göre ayarlanır.'], ['EKG (QTc)', [1, 2, 0, 0, 2], 'Doza bağlı QT uzaması; başlangıçta önerilir.']],
     profil: { sed: 1, kilo: 1, eps: 2, prl: 3, qt: 2, ach: 0, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Belirgin hiperprolaktinemi (amenore, galaktore, jinekomasti, cinsel işlev bozukluğu)', 'Doza bağlı EPS ve akatizi', 'Doza bağlı QT uzaması', 'Uykusuzluk, anksiyete, ajitasyon', 'Nöroleptik malign sendrom'],
-    etkilesim: ['QT uzatan ilaçlarla additif etki', 'Levodopa ve dopamin agonistleriyle karşılıklı antagonizma', 'CYP üzerinden etkileşimi yoktur', 'Lityum böbrek atılımıyla yarışabilir'],
+    uyari: ['Belirgin hiperprolaktinemi (amenore, galaktore, jinekomasti, cinsel işlev bozukluğu)', 'Doza bağlı EPS ve akatizi', 'Doza bağlı QT uzaması', 'Uykusuzluk, anksiyete, ajitasyon', 'Nöroleptik malign sendrom', 'Kontrendikasyon (İngiltere ürün bilgisi): prolaktine bağımlı tümör (prolaktinoma, meme kanseri), feokromositoma, ergenlik öncesi çocuk, levodopa ile birlikte kullanım', 'Hiperglisemi; nöbet eşiğinde düşme; lökopeni ve agranülositoz; venöz tromboemboli; ağır karaciğer toksisitesi (nadir)'],
+    etkilesim: ['QT uzatan ilaçlarla additif etki', 'Levodopa ve dopamin agonistleriyle karşılıklı antagonizma', 'CYP üzerinden etkileşimi yoktur', 'Lityum böbrek atılımıyla yarışabilir', 'Klozapin amisülpirid düzeyini artırır; alkolle birlikte önerilmez'],
     oz: ['d2', 'qt']
   },
   {
@@ -281,7 +281,7 @@
     ped: {
       bas: '0,5 mg/kg/doz, 4–6 saatte bir (pratikte 10–25 mg ×2–3)', artis: '3–4 günde bir 10–25 mg/gün', hedef: 'Çocuk: 50–100 mg/gün · ergen psikoz: 100–400 mg/gün', maks: '5 yaş altı 40 mg/gün, 5–12 yaş 75 mg/gün (ağır yatan olguda 200 mg/gün\'e dek)',
       birim: 'mg/gün', adim: [[0, 25], [4, 50], [8, 75], [14, 100]], bant: [50, 100], tavan: 200,
-      not: ['Altı aydan küçük bebeklerde kullanılmaz.', 'Günümüzde çocuklarda ilk seçenek değildir; sedasyon, hipotansiyon ve antikolinerjik etkiler sınırlayıcıdır.', 'İlk dozlardan sonra ortostatik hipotansiyon açısından kan basıncını ölçün.', 'Güneş koruyucu önerin (fotosensitivite).']
+      not: ['Altı aydan küçük bebeklerde kullanılmaz.', 'Günümüzde çocuklarda ilk seçenek değildir; sedasyon, hipotansiyon ve antikolinerjik etkiler sınırlayıcıdır.', 'İlk dozlardan sonra ortostatik hipotansiyon açısından kan basıncını ölçün.', 'Güneş koruyucu önerin (fotosensitivite).', 'ABD etiketi (DailyMed, Novadoz, 1/2022): ağır davranış sorunları endikasyonu 1–12 yaş içindir; sürdürüm dozunu aralıklı olarak yeniden değerlendirin.']
     },
     eri: {
       bas: '25 mg ×3', artis: '3–4 günde bir 25–50 mg/gün', hedef: '200–600 mg/gün', maks: '800–1000 mg/gün',
@@ -292,8 +292,8 @@
     izlem: 'antipsikotik', izlemEk: [['EKG (QTc)', [1, 2, 0, 0, 2], 'Başlangıçta önerilir; yüksek doz ve parenteral kullanımda tekrarlayın.'], ['Kan basıncı / nabız', [1, 'Her vizit', 1, 1, 1], 'Ortostatik hipotansiyon ve taşikardi.']],
     profil: { sed: 3, kilo: 2, eps: 2, prl: 2, qt: 2, ach: 3, kv: 3, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Belirgin sedasyon', 'Ortostatik hipotansiyon, taşikardi', 'Antikolinerjik etkiler (ağız kuruluğu, kabızlık, idrar retansiyonu)', 'Fotosensitivite, deride pigmentasyon', 'Nöbet eşiğinde düşme', 'Kolestatik sarılık, nadiren agranülositoz', 'EPS, geç diskinezi, nöroleptik malign sendrom'],
-    etkilesim: ['Sedatifler ve alkolle additif sedasyon', 'Antihipertansiflerle additif hipotansiyon', 'QT uzatan ilaçlarla additif etki', 'CYP2D6 inhibitörüdür: trisiklik düzeyini artırabilir', 'Lityum ile nörotoksisite bildirilmiştir'],
+    uyari: ['Belirgin sedasyon', 'Ortostatik hipotansiyon, taşikardi', 'Antikolinerjik etkiler (ağız kuruluğu, kabızlık, idrar retansiyonu)', 'Fotosensitivite, deride pigmentasyon', 'Nöbet eşiğinde düşme', 'Kolestatik sarılık, nadiren agranülositoz', 'EPS, geç diskinezi, nöroleptik malign sendrom', 'Kontrendikasyon (ABD etiketi): fenotiyazinlere aşırı duyarlılık, koma ya da yüksek doz santral sinir sistemi depresanı alımı', 'Lökopeni, nötropeni: başlangıç lökosit sayısı düşükse erken dönemde tam kan sayımını sık yineleyin', 'Antiemetik etkisi Reye sendromu gibi tabloların belirtilerini örtebilir (etiket uyarısı)'],
+    etkilesim: ['Sedatifler ve alkolle additif sedasyon', 'Antihipertansiflerle additif hipotansiyon', 'QT uzatan ilaçlarla additif etki', 'CYP2D6 inhibitörüdür: trisiklik düzeyini artırabilir', 'Lityum ile nörotoksisite bildirilmiştir', 'Santral sinir sistemi depresanları (opioid, barbitürat) birlikte verilecekse onların dozu olağanın ¼–½\'sine indirilir', 'Propranolol ile her iki ilacın düzeyi artar; fenitoin toksisitesi bildirilmiştir; oral antikoagülan etkisi azalabilir'],
     oz: ['d2', 'qt', 'nobet', 'antikol', '2d6sub']
   },
   {

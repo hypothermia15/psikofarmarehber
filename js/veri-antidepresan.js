@@ -398,19 +398,19 @@
     ped: {
       bas: '25 mg gece (ergen)', artis: '2 hafta sonra yanıt yoksa 50 mg', hedef: '25 mg gece', maks: '50 mg/gün',
       birim: 'mg/gün', adim: [[0, 25], [14, 50]], bant: [25, 50], tavan: 50,
-      not: ['Endikasyon dışı kullanım; ergen depresyonunda 25 mg ile tek olumlu çalışma vardır, çocuklarda (7–11 yaş) etkinlik gösterilememiştir.', 'Yatmadan önce tek doz.', 'Tedaviye başlamadan önce ve doz artışında karaciğer enzimlerine bakın; değerler üst sınırın 3 katını aşıyorsa başlamayın.']
+      not: ['Endikasyon dışı kullanım; ergen depresyonunda 25 mg ile tek olumlu çalışma vardır, çocuklarda (7–11 yaş) etkinlik gösterilememiştir.', 'Yatmadan önce tek doz.', 'Tedaviye başlamadan önce ve doz artışında karaciğer enzimlerine bakın; değerler üst sınırın 3 katını aşıyorsa başlamayın.', 'Avrupa ürün bilgisi (Valdoxan, EMA) 18 yaş altında önermez.', 'Karaciğer testleri: başlangıçta, sonra yaklaşık 3, 6, 12 ve 24. haftalarda ve klinik gerekçe olduğunda; doz artırılınca aynı takvim yeniden başlar. Yükseklik saptanırsa 48 saat içinde yineleyin; transaminazlar üst sınırın 3 katını aşarsa ya da karaciğer hasarı belirtisi olursa kesin.']
     },
     eri: {
       bas: '25 mg gece', artis: '2 hafta sonra yanıt yoksa 50 mg', hedef: '25–50 mg gece', maks: '50 mg/gün',
-      birim: 'mg/gün', adim: [[0, 25], [14, 50]], bant: [25, 50], tavan: 50, not: ['75 yaş ve üzerinde etkinliği gösterilmemiştir; kullanılmamalıdır.']
+      birim: 'mg/gün', adim: [[0, 25], [14, 50]], bant: [25, 50], tavan: 50, not: ['75 yaş ve üzerinde etkinliği gösterilmemiştir; kullanılmamalıdır.', 'Tedavi en az 6 ay sürdürülür; keserken dozu azaltmak gerekmez (Valdoxan ürün bilgisi, EMA).', 'Böbrek yetmezliğinde dikkat (veri sınırlı).']
     },
     surdurum: SURDURUM_AD,
     kesme: { risk: 0, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Kesilme belirtisi tanımlanmamıştır; doğrudan kesilebilir.'] },
     izlem: 'ssri', izlemEk: [['Karaciğer işlev testleri', [1, '3. ve 6. hafta', 1, 1, 2], 'Başlangıçta, 3., 6., 12. ve 24. haftada ve her doz artışından sonra aynı sıklıkla; üst sınırın 3 katını aşarsa ilacı kesin.']],
     profil: { sed: 1, kilo: 0, gis: 1, akt: 0, qt: 0, kes: 0 },
     kutu: KUTU_AD,
-    uyari: ['Karaciğer enzim yükselmesi, nadiren hepatit ve karaciğer yetmezliği', 'Baş ağrısı, baş dönmesi, bulantı', 'Somnolans veya uykusuzluk', 'Karaciğer hastalığında kontrendike'],
-    etkilesim: ['Fluvoksamin ve siprofloksasin (güçlü CYP1A2 inhibitörleri) ile kontrendike: düzey 60 kata dek artar', 'Östrojen içeren kontraseptifler düzeyi artırır', 'Sigara düzeyi düşürür', 'Alkol karaciğer riskini artırır'],
+    uyari: ['Karaciğer enzim yükselmesi, nadiren hepatit ve karaciğer yetmezliği', 'Baş ağrısı, baş dönmesi, bulantı', 'Somnolans veya uykusuzluk', 'Karaciğer hastalığında kontrendike', 'İntihar düşüncesi ve davranışı (antidepresan sınıf uyarısı); bipolar bozuklukta mani ya da hipomani'],
+    etkilesim: ['Fluvoksamin ve siprofloksasin (güçlü CYP1A2 inhibitörleri) ile kontrendike: düzey 60 kata dek artar', 'Östrojen içeren kontraseptifler düzeyi artırır', 'Sigara düzeyi düşürür', 'Alkol karaciğer riskini artırır', 'Propranolol gibi orta düzey CYP1A2 inhibitörleriyle dikkat; rifampisin düzeyi düşürebilir'],
     oz: ['1a2sub']
   },
   {
@@ -422,11 +422,11 @@
     ped: {
       bas: '12,5 mg ×2 (≥ 15 yaş)', artis: '1 hafta sonra 12,5 mg ×3', hedef: '25–37,5 mg/gün', maks: '37,5 mg/gün',
       birim: 'mg/gün', adim: [[0, 25], [7, 37.5]], bant: [25, 37.5], tavan: 37.5,
-      not: ['15 yaş altında güvenlilik ve etkinlik verisi yoktur.', 'Yemeklerden önce, günde 2–3 doza bölünmüş.', 'Madde kullanım öyküsü olan gençte kullanmayın; reçeteyi kısa süreli yazın.']
+      not: ['15 yaş altında güvenlilik ve etkinlik verisi yoktur.', 'Yemeklerden önce, günde 2–3 doza bölünmüş.', 'Madde kullanım öyküsü olan gençte kullanmayın; reçeteyi kısa süreli yazın.', 'Fransa ürün bilgisi (Stablon, ANSM, 1/2018): 15 yaş altında kontrendike, 15–18 yaşta kullanılmamalıdır; 18 yaş altında güvenlilik ve etkinlik belirlenmemiştir. Bu rehberdeki ≥ 15 yaş dozu endikasyon dışıdır.', 'Keserken dozu 7–14 günde azaltın.']
     },
     eri: {
       bas: '12,5 mg ×3', artis: 'Titrasyon gerekmez', hedef: '37,5 mg/gün', maks: '37,5 mg/gün',
-      birim: 'mg/gün', adim: [[0, 37.5], [14, 37.5]], bant: [25, 37.5], tavan: 37.5, not: ['Böbrek yetmezliği ve ileri yaşta 12,5 mg ×2.']
+      birim: 'mg/gün', adim: [[0, 37.5], [14, 37.5]], bant: [25, 37.5], tavan: 37.5, not: ['Böbrek yetmezliği ve ileri yaşta 12,5 mg ×2.', 'En fazla 12,5 mg ×2: 70 yaş üstü, düşük kilolu düşkün hasta, kreatinin klirensi 19 mL/dk altı, Child-Pugh C. Alkol bağımlılığında ve hafif-orta sirozda doz ayarı gerekmez.', 'MAOİ geçişi (Stablon ürün bilgisi): tianeptinden MAOİ\'ye 2 hafta, MAOİ\'den tianeptine 24 saat ara; ürün bilgisi birlikte kullanımı \'önerilmez\' diye sınıflar.']
     },
     surdurum: SURDURUM_AD,
     kesme: { risk: 2, sure: '1–2 hafta', adim: [[0, 100], [7, 50], [14, 0]], not: ['7–14 günde kademeli azaltın.', 'Önerilenin üzerinde doz kullanmış hastada opioid benzeri yoksunluk (ağrı, terleme, ajitasyon) görülebilir; daha yavaş azaltın.'] },
@@ -434,7 +434,7 @@
     profil: { sed: 1, kilo: 0, gis: 2, akt: 1, qt: 0, kes: 2 },
     kutu: { ped: 'Kötüye kullanım ve bağımlılık potansiyeli: önerilen dozun üzerine çıkılmamalı, madde kullanım öyküsü sorgulanmalıdır. ' + KUTU_AD.ped,
       eri: 'Kötüye kullanım ve bağımlılık potansiyeli: önerilen dozun üzerine çıkılmamalı, madde kullanım öyküsü sorgulanmalıdır. ' + KUTU_AD.eri },
-    uyari: ['Bulantı, karın ağrısı, kabızlık, ağız kuruluğu', 'Baş ağrısı, baş dönmesi, uykusuzluk veya uyuklama', 'Kötüye kullanım, bağımlılık, yüksek dozda solunum depresyonu', 'Nadiren karaciğer enzim yükselmesi'],
+    uyari: ['Bulantı, karın ağrısı, kabızlık, ağız kuruluğu', 'Baş ağrısı, baş dönmesi, uykusuzluk veya uyuklama', 'Kötüye kullanım, bağımlılık, yüksek dozda solunum depresyonu', 'Nadiren karaciğer enzim yükselmesi', 'İntihar düşüncesi ve davranışı (özellikle 25 yaş altı; antidepresan sınıf uyarısı)', 'Genel anesteziden 24–48 saat önce kesilir; hiponatremi bildirilmiştir'],
     etkilesim: ['MAOİ ile kontrendike (14 gün ara)', 'Opioid, alkol ve sedatiflerle additif etki', 'CYP üzerinden etkileşimi yoktur'],
     oz: []
   }

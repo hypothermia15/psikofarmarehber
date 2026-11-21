@@ -104,7 +104,36 @@ Etiketle rehber arasında fark görülüp **değiştirilmeyen, yalnızca not dü
 - **Klonopin** için 2023 sürümü açılamadı; 2/2021 sürümü kullanıldı. Eski sürümler: BuSpar 2010, Inderal 2010, Revia 2013, Minipress 2015, Vistaril 2016, Glucophage 2018, Narcan 2020.
 - Etiketlerin çoğunda metnin yalnızca ilk %40–50'si okunabildi (endikasyon, doz, kontrendikasyon, uyarılar). Etkileşim, özel popülasyon ve farmakokinetik bölümleri çoğunlukla okunamadı.
 
-Karşılaştırılamayan kayıtlar (FDA etiketi yok ya da bulunamadı; Türkiye KÜB'leri bu ortamdan açılamadı): **melatonin, nalmefen (oral), biperiden, triheksifenidil, bornaprin, zuklopentiksol dekanoat, flupentiksol dekanoat**; önceki turdan **haloperidol (oral), klorpromazin, agomelatin, tianeptin, amisulpirid, zuklopentiksol**. Bu on üç kayıt değiştirilmedi.
+Bu turda karşılaştırılamayan on üç kayıt için aşağıdaki "kalan kayıtlar" bölümüne bakın.
+
+**22 Kasım 2026: kalan kayıtlar (FDA dışı kaynaklarla)**
+
+Önceki turlarda FDA etiketi bulunamayan on üç kayıttan on biri başka resmî ürün bilgileriyle karşılaştırıldı. Hiçbir doz değiştirilmedi; etiket dayanaklı eklemeler yapıldı.
+
+| Kayıt | Kaynak | Okunan kısım |
+|---|---|---|
+| Haloperidol (oral) | DailyMed, Mylan, 1/2025 | İlk yarı; doz bölümü okunamadı |
+| Klorpromazin | DailyMed, Novadoz, 1/2022 | İlk yarı; doz bölümü okunamadı |
+| Triheksifenidil | DailyMed, Natco, 9/2010 | Tamamı |
+| Agomelatin | EMA, Valdoxan ürün bilgisi | Tamamı |
+| Melatonin | EMA, Slenyto ve Circadin ürün bilgileri | Tamamı |
+| Nalmefen (oral) | EMA, Selincro halk özeti (2013) | Yalnızca özet; ürün bilgisi değil |
+| Tianeptin | ANSM (Fransa), Stablon, 1/2018 | Tamamı |
+| Amisülpirid | emc (İngiltere), 6/2026 | Tamamı |
+| Zuklopentiksol dekanoat | emc, Clopixol, 4/2026 | Tamamı |
+| Flupentiksol dekanoat | emc, Depixol, 1/2021 | Tamamı |
+
+Tek içerik eklemesi **melatonin** onayındadır: uzatılmış salımlı pediatrik formun Avrupa'daki ikinci endikasyonu (DEHB'de uykusuzluk, 6–17 yaş) onay listesine eklendi.
+
+Kaynakla rehber arasında fark görülüp **değiştirilmeyen, yalnızca not düşülen** noktalar:
+
+| İlaç | Rehber | Kaynak | Yapılan |
+|---|---|---|---|
+| Tianeptin | ≥ 15 yaşa doz verir; "15 yaş altında önerilmez" | Fransa: 15 yaş altında kontrendike, 15–18 yaşta kullanılmamalı | Not eklendi; **doz satırını kaldırıp kaldırmamak kullanıcı kararı** |
+| Tianeptin | MAOİ ile "kontrendike (14 gün ara)" | Tianeptinden MAOİ'ye 2 hafta, MAOİ'den tianeptine 24 saat; "önerilmez" | Not eklendi |
+| Haloperidol | Onay ≥ 3 yaş | Etiket endikasyonda çocukları anar, pediatrik bölümde "belirlenmemiş" der; 3 yaş sınırı okunan metinde yok | Not eklendi |
+
+Hâlâ karşılaştırılamayanlar: **biperiden** (İrlanda ürün bilgisinin klinik bölümleri boş; Türkiye KÜB aynasında metin yüklenmedi), **bornaprin** (aynı nedenle), **oral zuklopentiksol** (ayrı ürün bilgisi aranmadı; depo formun bilgisi okundu). Oral haloperidol ve klorpromazinin doz satırları da doğrulanmadı.
 
 İlaç kayıtları dışındaki klinik içerik (titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
