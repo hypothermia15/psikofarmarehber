@@ -11,7 +11,7 @@ window.DEPOLAR = [
     enj: [[0, '25 mg'], [14, '25 mg'], [28, '25 mg'], [42, null], [56, null], [70, null], [84, null]],
     kararli: 'Asıl salım 3. haftada başlar; kararlı durum 4. enjeksiyondan sonra (6–8 hafta).',
     donusum: [['Oral risperidon ≤ 4 mg/gün', '25 mg / 2 hafta'], ['Oral risperidon > 4 mg/gün', '37,5 mg / 2 hafta düşünülür'], ['Yanıt yetersizse', '4 haftadan sık olmamak üzere 12,5 mg artış']],
-    dikkat: ['İlk 3 hafta ilaç salımı çok azdır: oral örtüşme atlanırsa hasta korumasız kalır.', 'Doz değişikliğinin etkisi 3 hafta sonra görülür; 4 haftadan sık doz artırmayın.', 'Buzdolabında saklanır; uygulamadan önce oda sıcaklığına getirilir.', 'Prolaktin artışı ve EPS oral risperidon ile aynıdır.'],
+    dikkat: ['İlk 3 hafta ilaç salımı çok azdır: oral örtüşme atlanırsa hasta korumasız kalır.', 'Doz değişikliğinin etkisi 3 hafta sonra görülür; 4 haftadan sık doz artırmayın.', 'Buzdolabında saklanır; uygulamadan önce oda sıcaklığına getirilir.', 'Prolaktin artışı ve EPS oral risperidon ile aynıdır.', 'Klinik gerekçe varsa 12,5 mg ile başlanabilir: böbrek ya da karaciğer yetmezliği, fluoksetin ya da paroksetin kullanımı (FDA etiketi, 1/2025).', 'Karbamazepin gibi indükleyiciler düzeyi düşürür: eklendikten sonra 4–8 hafta yakın izleyin; indükleyici kesilecekse dozu 2–4 hafta önce gözden geçirin.', 'Böbrek ya da karaciğer yetmezliğinde önce oral risperidon titre edilir (1. hafta 0,5 mg ×2, 2. hafta 2 mg/gün); 2 mg/gün tolere edilirse 25 mg ya da 12,5 mg ile başlanır.', 'FDA etiketinde 18 yaş altında güvenlilik ve etkinlik belirlenmemiştir.'],
     kacirma: 'Geciken dozu en kısa sürede uygulayın. Uzun aradan sonra kararlı durum bozulmuşsa 3 haftalık oral örtüşmeyi yineleyin.'
   },
   {
@@ -24,7 +24,7 @@ window.DEPOLAR = [
     kararli: 'Yükleme şemasıyla ilk haftada terapötik düzeye ulaşılır. 8. gün dozu ± 4 gün, aylık dozlar ± 7 gün esneyebilir.',
     donusum: [['Oral paliperidon 3 mg/gün', '25–50 mg / ay'], ['Oral paliperidon 6 mg/gün', '75 mg / ay'], ['Oral paliperidon 9 mg/gün', '100 mg / ay'], ['Oral paliperidon 12 mg/gün', '150 mg / ay'],
       ['Risperidon depo 25 mg / 2 hf', '50 mg / ay'], ['Risperidon depo 37,5 mg / 2 hf', '75 mg / ay'], ['Risperidon depo 50 mg / 2 hf', '100 mg / ay']],
-    dikkat: ['Oral antipsikotik ilk enjeksiyon günü kesilebilir.', 'Başka bir depo antipsikotikten geçişte yükleme şeması uygulanmaz: sıradaki enjeksiyon günü sürdürüm dozuyla başlanır.', 'Böbrek yetmezliğinde doz azaltılır (kreatinin klirensi < 50 mL/dk ise önerilmez).', 'Prolaktin artışı belirgindir.'],
+    dikkat: ['Oral antipsikotik ilk enjeksiyon günü kesilebilir.', 'Başka bir depo antipsikotikten geçişte yükleme şeması uygulanmaz: sıradaki enjeksiyon günü sürdürüm dozuyla başlanır.', 'Böbrek yetmezliğinde doz azaltılır (kreatinin klirensi < 50 mL/dk ise önerilmez).', 'Prolaktin artışı belirgindir.', 'Kreatinin klirensi 50–80 mL/dk: 1. gün 100 mg, 8. gün 75 mg, sonra ayda 50 mg; en fazla 100 mg/ay (FDA etiketi, 9/2024; ABD\'de aynı dozlar palmitat tuzu olarak 156, 117, 78 mg diye yazılır).', 'Güçlü CYP3A4 ve P-glikoprotein indükleyicilerinden doz aralığı boyunca kaçının; gerekiyorsa oral paliperidona geçmeyi düşünün.', '8. gün dozu atlandıysa: ilk enjeksiyondan 4 haftadan az geçtiyse 100 mg, 5. haftada 75 mg; 4–7 hafta geçtiyse bir hafta arayla iki kez 100 mg; 7 haftadan fazlaysa baştan yükleme.', 'FDA etiketinde endikasyon erişkinle sınırlıdır; 18 yaş altında belirlenmemiştir.'],
     kacirma: 'Sürdürümde 6 haftaya kadar gecikmede normal doza devam edin. 6 hafta–6 ay arası gecikmede iki enjeksiyonlu yeniden başlatma, 6 aydan uzun arada baştan yükleme şeması gerekir (KÜB şemasına bakın).'
   },
   {
@@ -36,7 +36,7 @@ window.DEPOLAR = [
     enj: [[0, 'Aylık doz × 3,5'], [91, 'Aynı doz'], [182, 'Aynı doz']], sureGun: 196,
     kararli: 'İlk doz, sıradaki aylık enjeksiyon gününde (± 7 gün) yapılır; sonraki dozlar ± 2 hafta esneyebilir.',
     donusum: [['Aylık 50 mg', '175 mg / 3 ay'], ['Aylık 75 mg', '263 mg / 3 ay'], ['Aylık 100 mg', '350 mg / 3 ay'], ['Aylık 150 mg', '525 mg / 3 ay']],
-    dikkat: ['Oral ilaçtan veya başka depodan doğrudan 3 aylık forma geçilmez.', 'Doz ayarı gerekiyorsa etkisi aylar sonra görülür: stabil olmayan hastada aylık forma dönün.', 'Kesildikten sonra ilaç 1 yıla kadar dolaşımda kalabilir.'],
+    dikkat: ['Oral ilaçtan veya başka depodan doğrudan 3 aylık forma geçilmez.', 'Doz ayarı gerekiyorsa etkisi aylar sonra görülür: stabil olmayan hastada aylık forma dönün.', 'Kesildikten sonra ilaç 1 yıla kadar dolaşımda kalabilir.', 'Kreatinin klirensi 50 mL/dk altında önerilmez; 50–80 mL/dk ise doz önce aylık formda ayarlanır, sonra geçilir (FDA etiketi, 1/2025).', 'Güçlü CYP3A4 ve P-glikoprotein indükleyicilerinden doz aralığı boyunca kaçının.', 'ABD\'de dozlar palmitat tuzu olarak yazılır: 273, 410, 546, 819 mg (bu rehberdeki 175, 263, 350, 525 mg ile aynı).'],
     kacirma: '3,5–4 ay arası gecikmede en kısa sürede uygulayın. 4–9 ay arası gecikmede aylık formla yeniden başlatma şeması; 9 aydan uzun arada aylık formla baştan başlayın.'
   },
   {
@@ -48,7 +48,7 @@ window.DEPOLAR = [
     enj: [[0, '400 mg'], [28, '400 mg'], [56, '400 mg'], [84, null]],
     kararli: 'Kararlı durum 4. enjeksiyonda. Alternatif (iki enjeksiyonlu başlama): aynı gün farklı bölgelere iki ayrı 400 mg enjeksiyon + tek doz oral 20 mg; sonrasında oral ek tedavi gerekmez.',
     donusum: [['Standart', '400 mg / ay'], ['CYP2D6 zayıf metabolizör', '300 mg / ay'], ['Güçlü CYP2D6 veya CYP3A4 inhibitörü (> 14 gün)', '300 mg / ay'], ['Her iki inhibitör birlikte', '200 mg / ay'], ['CYP3A4 indükleyici (karbamazepin)', 'Birlikte kullanmaktan kaçının']],
-    dikkat: ['Başka antipsikotikten geçiliyorsa önce oral aripiprazole geçip stabilize edin, sonra depoya başlayın.', 'Akatizi ve uykusuzluk ilk haftalarda görülebilir.', 'Fluoksetin, paroksetin gibi inhibitörlerle doz azaltın.'],
+    dikkat: ['Başka antipsikotikten geçiliyorsa önce oral aripiprazole geçip stabilize edin, sonra depoya başlayın.', 'Akatizi ve uykusuzluk ilk haftalarda görülebilir.', 'Fluoksetin, paroksetin gibi inhibitörlerle doz azaltın.', 'CYP2D6 zayıf metabolizörü ayrıca CYP3A4 inhibitörü alıyorsa 200 mg/ay; iki enjeksiyonlu başlama bu hastada ve iki inhibitörü birlikte alanlarda kullanılmaz (FDA etiketi, 3/2025).', 'Atlanan doz: 2. ya da 3. dozda 4–5 hafta, sonraki dozlarda 4–6 hafta arası gecikmede oral ek tedavi gerekmeden en kısa sürede uygulanır.', 'FDA etiketinde endikasyon erişkinle sınırlıdır (şizofreni, bipolar I sürdürüm).'],
     kacirma: '2. veya 3. doz 5 haftadan, 4. ve sonraki dozlar 6 haftadan fazla gecikirse enjeksiyonla birlikte 14 gün oral aripiprazol yeniden başlanır.'
   },
   {
@@ -62,7 +62,7 @@ window.DEPOLAR = [
     donusum: [['Oral 10 mg/gün · ilk 2 ay', '210 mg / 2 hf veya 405 mg / 4 hf'], ['Oral 10 mg/gün · sürdürüm', '150 mg / 2 hf veya 300 mg / 4 hf'],
       ['Oral 15 mg/gün · ilk 2 ay', '300 mg / 2 hf'], ['Oral 15 mg/gün · sürdürüm', '210 mg / 2 hf veya 405 mg / 4 hf'],
       ['Oral 20 mg/gün · ilk 2 ay', '300 mg / 2 hf'], ['Oral 20 mg/gün · sürdürüm', '300 mg / 2 hf']],
-    dikkat: ['Enjeksiyon sonrası deliryum/sedasyon sendromu (yaklaşık her 1400 enjeksiyonda 1): sedasyon, konfüzyon, dizartri, ataksi, koma.', 'Her enjeksiyondan sonra sağlık kuruluşunda en az 3 saat gözlem zorunludur; hasta o gün araç kullanmamalı ve eve refakatçiyle gitmelidir.', 'Kilo artışı ve metabolik etkiler oral olanzapin ile aynıdır.'],
+    dikkat: ['Enjeksiyon sonrası deliryum/sedasyon sendromu (yaklaşık her 1400 enjeksiyonda 1): sedasyon, konfüzyon, dizartri, ataksi, koma.', 'Her enjeksiyondan sonra sağlık kuruluşunda en az 3 saat gözlem zorunludur; hasta o gün araç kullanmamalı ve eve refakatçiyle gitmelidir.', 'Kilo artışı ve metabolik etkiler oral olanzapin ile aynıdır.', 'Düşkün ya da hipotansiyona yatkın hastada 4 haftada bir 150 mg ile başlanması düşünülür (FDA etiketi, 1/2025).', 'Fluvoksamin olanzapin düzeyini artırır: daha düşük doz düşünün. Karbamazepin klirensi yaklaşık %50 artırır.', 'ABD\'de yalnızca kayıtlı merkezlerde, risk yönetim programı kapsamında uygulanır; 18 yaş altında güvenlilik ve etkinlik belirlenmemiştir.'],
     kacirma: 'Geciken dozu en kısa sürede uygulayın; uzun aradan sonra yükleme dozunu yeniden değerlendirin.'
   },
   {
@@ -74,7 +74,7 @@ window.DEPOLAR = [
     enj: [[0, 'Oral doz × 10–15'], [28, null], [56, null], [84, null]],
     kararli: 'Doruk düzey 3–9. günde; kararlı durum 2–4 ayda. Yarı ömür yaklaşık 3 hafta.',
     donusum: [['Oral 5 mg/gün', '50–75 mg / 4 hafta'], ['Oral 10 mg/gün', '100–150 mg / 4 hafta'], ['İlk doz 100 mg\'ı aşacaksa', 'Kalanı 3–7 gün sonra ikinci enjeksiyonla']],
-    dikkat: ['EPS, akatizi ve geç diskinezi riski yüksektir; akut distoni için antikolinerjik hazır bulundurun.', 'Susam yağı içerir (alerji sorgusu).', 'QT uzaması açısından başlangıç EKG.'],
+    dikkat: ['EPS, akatizi ve geç diskinezi riski yüksektir; akut distoni için antikolinerjik hazır bulundurun.', 'Susam yağı içerir (alerji sorgusu).', 'QT uzaması açısından başlangıç EKG.', 'Kontrendikasyon (FDA etiketi, 11/2020): ağır santral sinir sistemi depresyonu ya da koma, Parkinson hastalığı, Lewy cisimcikli demans.', 'Damar içine verilmez. Hipotansiyon gelişirse adrenalin kullanılmaz.', 'CYP3A4 ve CYP2D6 inhibitörleri (itrakonazol, ritonavir, paroksetin) düzeyi artırır; karbamazepin, fenitoin, rifampisin düşürür: dozu buna göre ayarlayın.', 'FDA etiketinde pediatrik güvenlilik ve etkinlik belirlenmemiştir.'],
     kacirma: 'Geciken dozu en kısa sürede uygulayın; belirti alevlenirse geçici oral ek tedavi verin.'
   },
   {

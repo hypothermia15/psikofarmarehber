@@ -77,9 +77,36 @@ Etiketle rehber arasında fark görülüp **değiştirilmeyen, yalnızca not dü
 
 Karşılaştırılamayanlar: **haloperidol** ve **klorpromazin** (etiket metni alınamadı); **agomelatin, tianeptin, amisulpirid, zuklopentiksol** (ABD'de ruhsatsız, FDA etiketi yok; Türkiye KÜB'leri bu ortamdan açılamadı). Bu altı ilacın kaydı değiştirilmedi.
 
-Henüz karşılaştırılmayan gruplar: duygudurum düzenleyiciler ve anksiyolitikler, yardımcı ilaçlar, uzun etkili enjektabl antipsikotikler.
+**22 Kasım 2026: duygudurum düzenleyiciler, anksiyolitikler, yardımcı ilaçlar ve uzun etkili enjektabl antipsikotikler**
 
-DEHB ilaçları, antidepresanlar ve antipsikotikler dışındaki klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
+Yirmi üç kayıt daha FDA etiketleriyle karşılaştırıldı: lityum, valproat, lamotrijin, karbamazepin, okskarbazepin, pregabalin, klonazepam, lorazepam, alprazolam, diazepam, buspiron, hidroksizin; naltrekson, buprenorfin/nalokson, nalokson, propranolol, metformin, prazosin; risperidon mikroküre, aylık ve 3 aylık paliperidon palmitat, aylık aripiprazol, olanzapin pamoat, haloperidol dekanoat.
+
+Bu turda hiçbir doz değiştirilmedi. Tek metin düzeltmesi **okskarbazepin** onay notundadır: "epilepside ≥ 4 yaş onaylı" yerine "monoterapi ≥ 4 yaş, ek tedavi ≥ 2 yaş" (Trileptal etiketi 9/2025). Geri kalan her şey etiket dayanaklı eklemedir: kontrendikasyon listeleri, eksik uyarı başlıkları, böbrek ve karaciğer yetmezliğinde doz, etkileşimlerde sayısal doz ayarı, başlangıç tetkikleri. Nalokson kaydı etiketle uyumlu bulundu, eklenmedi.
+
+Etiketle rehber arasında fark görülüp **değiştirilmeyen, yalnızca not düşülen** noktalar:
+
+| İlaç | Rehber | FDA etiketi | Yapılan |
+|---|---|---|---|
+| Lityum | Çocukta sürdürüm hedefi 0,6–1,0 mEq/L | 0,8–1,0 mEq/L (10/2022) | Not eklendi |
+| Lamotrijin | "5 günden uzun ara verildiyse baştan titre edin" | Kural 5 yarı ömre bağlanır (10/2025) | Not eklendi |
+| Hidroksizin | Erişkin üst sınır 100 mg/gün; çocukta 2 mg/kg/gün | Erişkin 50–100 mg ×4; çocukta 50–100 mg/gün; üst sınır yok (11/2016) | Not eklendi; rehber Avrupa QT kısıtlamasını izliyor |
+| Buprenorfin/nalokson | 1. gün 4 mg, ek dozlarla (Türkiye KÜB'ü) | 1. gün 8 mg'a, 2. gün 16 mg'a kadar (5/2025) | Not eklendi |
+| Metformin | Çocukta başlangıç 500 mg ×1 | 500 mg ×2 (5/2018) | Not eklendi |
+| Metformin | Erişkin üst sınır 2000 mg (kilo artışı) | Diyabette 2550 mg/gün | Not eklendi |
+| Prazosin | 1 mg yatarken (endikasyon dışı kullanım) | Hipertansiyonda 1 mg ×2–3; üst sınır 20, bazı hastada 40 mg/gün | Not eklendi |
+
+**Doğrulanamayan ve kullanıcıya bırakılan noktalar**
+
+- **Haloperidol dekanoat:** rehber başlangıcı günlük oral dozun 10–15 katı, üst sınırı 300 mg/4 hafta verir. Etiketin doz bölümü okunamadı; otomatik özet "başlangıç 10–20 kat, ilk doz en fazla 100 mg" diyor. Özet güvenilir sayılmadığı için rehber değiştirilmedi.
+- **Buspiron:** rehber MAOİ ile "kontrendike" der. Okunan 2010 tarihli BuSpar etiketi "birlikte kullanım önerilmez" diyor ve kontrendikasyon listesinde yalnızca aşırı duyarlılık var. Güncel jenerik etiket okunamadı; ifade değiştirilmedi.
+- **Buprenorfin/nalokson:** rehberdeki "FDA: 16 yaş altında güvenlilik belirlenmemiş" notu doğrulanamadı; 2025 etiketinin pediatrik bölümü okunamadı.
+- **Karbamazepin, klonazepam, diazepam:** etiketlerin doz bölümleri okunamadı; bu üç ilacın doz satırları karşılaştırılmadı.
+- **Klonopin** için 2023 sürümü açılamadı; 2/2021 sürümü kullanıldı. Eski sürümler: BuSpar 2010, Inderal 2010, Revia 2013, Minipress 2015, Vistaril 2016, Glucophage 2018, Narcan 2020.
+- Etiketlerin çoğunda metnin yalnızca ilk %40–50'si okunabildi (endikasyon, doz, kontrendikasyon, uyarılar). Etkileşim, özel popülasyon ve farmakokinetik bölümleri çoğunlukla okunamadı.
+
+Karşılaştırılamayan kayıtlar (FDA etiketi yok ya da bulunamadı; Türkiye KÜB'leri bu ortamdan açılamadı): **melatonin, nalmefen (oral), biperiden, triheksifenidil, bornaprin, zuklopentiksol dekanoat, flupentiksol dekanoat**; önceki turdan **haloperidol (oral), klorpromazin, agomelatin, tianeptin, amisulpirid, zuklopentiksol**. Bu on üç kayıt değiştirilmedi.
+
+İlaç kayıtları dışındaki klinik içerik ( titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
 ## Özgün depodan güncelleme alma
 
