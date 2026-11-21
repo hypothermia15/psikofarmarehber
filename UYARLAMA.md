@@ -56,7 +56,30 @@ Bu turda denetlenemeyenler: yarılanma ömürleri (etiketlerin farmakokinetik b�
 
 Halojenli anestezik maddesindeki "ameliyat günü vermeyin" ifadesi etiketin tam cümlesiyle karşılaştırılmadı.
 
-DEHB ilaçları dışındaki klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
+**22 Kasım 2026: antidepresanlar ve antipsikotikler**
+
+On altı antidepresan ve on iki antipsikotik güncel FDA etiketleriyle karşılaştırıldı. Etiketlerin her birinin yalnızca ilk bölümü (endikasyon, doz, kontrendikasyon, uyarı başlıkları) okunabildi; etkileşim ve özel popülasyon bölümlerinin çoğu okunamadı.
+
+Yapılan tek düzeltme: **risperidon**, otizmde irritabilite onay yaşı "5–16" yerine "5–17" (Risperdal etiketi 2/2021).
+
+Bunun dışında hiçbir doz ya da onay bilgisi değiştirilmedi. Her ilaca etiket dayanaklı eklemeler yapıldı: eksik uyarı başlıkları (ör. QT uzaması, nöbet, dar açılı glokom, ortostatik hipotansiyon, lökopeni), böbrek ve karaciğer yetmezliğinde doz, MAOİ ile ara süreleri, enzim inhibitörü ve indükleyicileriyle doz ayarı. Eklenen her satır `git log -p` ile görülebilir.
+
+Etiketle rehber arasında fark görülüp **değiştirilmeyen, yalnızca not düşülen** noktalar:
+
+| İlaç | Rehber | FDA etiketi | Yapılan |
+|---|---|---|---|
+| Essitalopram | Çocukta başlangıç 2,5–5 mg, ergende 5–10 mg | Her iki pediatrik endikasyonda başlangıç 10 mg | Not eklendi; rehberin daha düşük başlangıcı korundu |
+| Bupropion XL | Erişkin üst sınır 450 mg | Nöbet bölümünde 300 mg, özet bölümünde 450 mg (etiket içi tutarsızlık) | Not eklendi; **Türkiye KÜB'üyle doğrulanmalı** |
+| Amitriptilin | Onay: depresyon ≥ 12 yaş | Kutulu uyarı pediatrik onay bulunmadığını söyler; 12 yaş altında önerilmez, ergen dozu verilir | Onay satırına açıklama eklendi |
+| Ketiapin | Erişkin üst sınır 800 mg | Şizofrenide 750 mg, bipolar depresyonda 300 mg | Not eklendi |
+| Klozapin | Başlama eşiği nötrofil ≥ 2000/mm³ | Mutlak nötrofil ≥ 1500/µL; ara verme kuralı 2025'te değişmiş | ABD eşiği ve yeni ara verme kuralı not olarak eklendi |
+| Pimozid | Onay ≥ 12 yaş | Açık yaş alt sınırı yok; 12 yaş altında doz-yanıt verisi yok | Not eklendi |
+
+Karşılaştırılamayanlar: **haloperidol** ve **klorpromazin** (etiket metni alınamadı); **agomelatin, tianeptin, amisulpirid, zuklopentiksol** (ABD'de ruhsatsız, FDA etiketi yok; Türkiye KÜB'leri bu ortamdan açılamadı). Bu altı ilacın kaydı değiştirilmedi.
+
+Henüz karşılaştırılmayan gruplar: duygudurum düzenleyiciler ve anksiyolitikler, yardımcı ilaçlar, uzun etkili enjektabl antipsikotikler.
+
+DEHB ilaçları, antidepresanlar ve antipsikotikler dışındaki klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
 ## Özgün depodan güncelleme alma
 
