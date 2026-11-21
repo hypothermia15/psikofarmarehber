@@ -13,7 +13,7 @@
     id: 'risperidon', ad: 'Risperidon', sinif: 'ap', altSinif: 'İkinci kuşak antipsikotik', grup: 'ap',
     mek: 'Güçlü D2 ve 5-HT2A antagonisti. Otizmde irritabilite, davranım sorunları ve tik bozukluklarında en çok deneyim olan antipsikotik. Aktif metaboliti paliperidondur.',
     t12: '3 saat (aktif metabolit ~21 saat)', t12s: 21, etki: 'İrritabilite: 1–2 hafta · psikoz: 2–6 hafta', form: 'Tablet 1 / 2 / 3 / 4 mg; oral solüsyon 1 mg/mL; ağızda dağılan tablet',
-    onay: [['Otizmde irritabilite', '5–16 yaş'], ['Bipolar mani', '≥ 10 yaş'], ['Şizofreni', '≥ 13 yaş']],
+    onay: [['Otizmde irritabilite', '5–17 yaş'], ['Bipolar mani', '≥ 10 yaş'], ['Şizofreni', '≥ 13 yaş']],
     onayEri: [['Şizofreni'], ['Bipolar I mani / karma dönem']],
     endikasyon: [
       ['Otizmde irritabilite, < 20 kg', '0,25 mg/gün', '0,5 mg/gün', '≥ 4 gün sonra 0,5 mg; sonra ≥ 2 haftada bir 0,25 mg'],
@@ -26,11 +26,11 @@
     ped: {
       bas: '< 20 kg: 0,25 mg/gün · ≥ 20 kg: 0,5 mg/gün', artis: '≥ 4 gün sonra iki katına; sonrasında ≥ 2 haftada bir 0,25–0,5 mg', hedef: 'İrritabilite: 0,5–3 mg/gün · psikoz/mani: 1–3 mg/gün', maks: '6 mg/gün (3 mg üzerinde ek yarar sınırlı, EPS artar)',
       birim: 'mg/gün', adim: [[0, 0.5], [4, 1], [18, 1.5], [32, 2]], bant: [0.5, 3], tavan: 6,
-      not: ['Grafik ≥ 20 kg otizmde irritabilite şemasını gösterir.', 'Tek doz (gece) veya ikiye bölünmüş; somnolans varsa gece verin.', '15 kg altındaki çocuklarda dikkatli kullanın.', 'Solüsyon formu 0,25 mg basamaklarla titrasyonu kolaylaştırır.']
+      not: ['Grafik ≥ 20 kg otizmde irritabilite şemasını gösterir.', 'Tek doz (gece) veya ikiye bölünmüş; somnolans varsa gece verin.', '15 kg altındaki çocuklarda dikkatli kullanın.', 'Solüsyon formu 0,25 mg basamaklarla titrasyonu kolaylaştırır.', 'FDA etiketi: ergen şizofrenisinde hedef 3 mg/gün (1–6 mg), pediatrik bipolar manide hedef 1–2,5 mg/gün; 6 mg üzeri çalışılmamıştır.']
     },
     eri: {
       bas: '1–2 mg/gün', artis: 'Günde 1–2 mg (≥ 24 saat arayla)', hedef: '4–6 mg/gün', maks: '16 mg/gün (pratikte 8 mg)',
-      birim: 'mg/gün', adim: [[0, 2], [2, 4], [14, 6]], bant: [4, 6], tavan: 8, not: []
+      birim: 'mg/gün', adim: [[0, 2], [2, 4], [14, 6]], bant: [4, 6], tavan: 8, not: ['Ağır böbrek ya da karaciğer yetmezliğinde başlangıç 0,5 mg ×2; artışlar 0,5 mg\'ı geçmez, 1,5 mg ×2 üzerine en az 1 hafta arayla çıkılır.', 'Fluoksetin ya da paroksetinle birlikte 8 mg/gün aşılmaz; karbamazepin gibi indükleyicilerle doz iki katına kadar artırılabilir.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '4–8 hafta (uzun kullanımda daha yavaş)', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]],
@@ -38,7 +38,7 @@
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [2, 0, 1, 2, 2], 'Risperidon prolaktini en çok artıran atipiktir; 3. ayda veya belirti varsa bakın (adet düzensizliği, galaktore, jinekomasti).']],
     profil: { sed: 2, kilo: 2, eps: 2, prl: 3, qt: 1, ach: 0, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Hiperprolaktinemi (jinekomasti, galaktore, amenore)', 'Kilo artışı, iştah artışı, metabolik sendrom', 'EPS, akatizi, geç diskinezi', 'Somnolans, siyalore, enürezis', 'Nöroleptik malign sendrom'],
+    uyari: ['Hiperprolaktinemi (jinekomasti, galaktore, amenore)', 'Kilo artışı, iştah artışı, metabolik sendrom', 'EPS, akatizi, geç diskinezi', 'Somnolans, siyalore, enürezis', 'Nöroleptik malign sendrom', 'Ortostatik hipotansiyon, düşme; nöbet öyküsünde dikkat', 'Lökopeni, nötropeni (nadiren agranülositoz); priapizm (nadir)'],
     etkilesim: ['CYP2D6 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır: dozu azaltın', 'Karbamazepin düzeyi düşürür', 'QT uzatan ilaçlarla dikkat'],
     oz: ['2d6sub', 'd2']
   },
@@ -70,8 +70,8 @@
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [0, 0, 2, 0, 0], 'Prolaktini düşürür; rutin gerekmez.'], ['Dürtü kontrol sorgusu', [1, 1, 1, 1, 1], 'Kumar, aşırı yeme, alışveriş, hiperseksüalite.']],
     profil: { sed: 1, kilo: 1, eps: 2, prl: 0, qt: 0, akt: 2, gis: 2, kes: 1 },
     kutu: KUTU_AP,
-    uyari: ['Akatizi, huzursuzluk, uykusuzluk', 'Bulantı, kusma (başlangıçta)', 'Kilo artışı (çocuklarda erişkinden belirgin)', 'Dürtü kontrol bozuklukları (patolojik kumar vb.)', 'EPS, geç diskinezi, nöroleptik malign sendrom'],
-    etkilesim: ['Güçlü CYP2D6 (fluoksetin, paroksetin) veya CYP3A4 inhibitörleri: dozu yarıya indirin', 'Karbamazepin: doz iki katına çıkarılabilir', 'Diğer antipsikotiklere eklendiğinde parsiyel agonizm nedeniyle geçici kötüleşme olabilir'],
+    uyari: ['Akatizi, huzursuzluk, uykusuzluk', 'Bulantı, kusma (başlangıçta)', 'Kilo artışı (çocuklarda erişkinden belirgin)', 'Dürtü kontrol bozuklukları (patolojik kumar vb.)', 'EPS, geç diskinezi, nöroleptik malign sendrom', 'Ortostatik hipotansiyon, düşme; nöbet öyküsünde dikkat', 'Lökopeni, nötropeni (nadiren agranülositoz); metabolik değişiklikler'],
+    etkilesim: ['Güçlü CYP2D6 (fluoksetin, paroksetin) veya CYP3A4 inhibitörleri: dozu yarıya indirin', 'Karbamazepin: doz iki katına çıkarılabilir', 'Diğer antipsikotiklere eklendiğinde parsiyel agonizm nedeniyle geçici kötüleşme olabilir', 'CYP2D6 zayıf metabolizörlerinde doz yarıya; ayrıca güçlü CYP3A4 inhibitörü alıyorsa dörtte bire indirilir', 'Güçlü CYP2D6 ve CYP3A4 inhibitörleri birlikte: doz dörtte bire indirilir'],
     oz: ['2d6sub', 'd2p', 'uzun']
   },
   {
@@ -94,7 +94,7 @@
       not: ['Ani kesmede kolinerjik rebound (bulantı, kusma, terleme, uykusuzluk) ve rebound psikoz.', 'Her 1–2 haftada 2,5–5 mg azaltın.'] },
     izlem: 'antipsikotik', profil: { sed: 3, kilo: 3, eps: 1, prl: 1, qt: 1, ach: 2, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Belirgin kilo artışı, hiperglisemi, dislipidemi', 'Sedasyon', 'Karaciğer enzimlerinde artış', 'Antikolinerjik etkiler, ortostatik hipotansiyon', 'DRESS (nadir)'],
+    uyari: ['Belirgin kilo artışı, hiperglisemi, dislipidemi', 'Sedasyon', 'Karaciğer enzimlerinde artış', 'Antikolinerjik etkiler, ortostatik hipotansiyon', 'DRESS (nadir)', 'Hiperprolaktinemi; nöbet öyküsünde dikkat', 'Lökopeni, nötropeni (nadiren agranülositoz); geç diskinezi, nöroleptik malign sendrom'],
     etkilesim: ['Fluvoksamin, siprofloksasin (CYP1A2 inhibitörleri) düzeyi artırır', 'Sigara ve karbamazepin düzeyi düşürür; sigarayı bırakınca doz azaltın', 'Parenteral benzodiazepinle birlikte kullanmayın (IM form)'],
     oz: ['1a2sub', 'd2', 'antikol']
   },
@@ -116,7 +116,7 @@
     },
     eri: {
       bas: '50 mg/gün (bölünmüş)', artis: '2. gün 100, 3. gün 200, 4. gün 300 mg', hedef: 'Şizofreni: 300–750 mg · mani: 400–800 mg · bipolar depresyon: 300 mg', maks: '800 mg/gün',
-      birim: 'mg/gün', adim: [[0, 50], [1, 100], [2, 200], [3, 300], [7, 400]], bant: [300, 750], tavan: 800, not: []
+      birim: 'mg/gün', adim: [[0, 50], [1, 100], [2, 200], [3, 300], [7, 400]], bant: [300, 750], tavan: 800, not: ['FDA etiketinde erişkin şizofrenide üst sınır 750 mg/gün, bipolar depresyonda 300 mg/gün\'dür.', 'Karaciğer yetmezliğinde başlangıç 25 mg/gün, günde 25–50 mg artış. Yaşlıda başlangıç 50 mg/gün.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '2–4 hafta veya daha uzun', adim: [[0, 100], [7, 75], [14, 50], [21, 25], [28, 0]],
@@ -124,8 +124,8 @@
     izlem: 'antipsikotik', izlemEk: [['TSH / sT4', [2, 0, 2, 0, 2], 'Doza bağlı T4 düşüşü; belirti veya tiroid öyküsü varsa.'], ['Kan basıncı / nabız', [1, 1, 1, 1, 1], { ped: 'Çocuk/ergende KB artışı; titrasyonda ortostatik hipotansiyon.', eri: 'Titrasyonda ortostatik hipotansiyon; yaşlıda düşme riski.' }]],
     profil: { sed: 3, kilo: 2, eps: 0, prl: 0, qt: 2, ach: 1, kv: 2, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Sedasyon, baş dönmesi, ortostatik hipotansiyon', 'Kilo artışı, lipid ve glukoz artışı', { ped: 'Çocuk ve ergenlerde kan basıncı artışı', eri: null }, 'QT uzaması', { ped: 'Kötüye kullanım potansiyeli (ergenlerde dikkat)', eri: 'Kötüye kullanım potansiyeli (madde kullanım öyküsünde dikkat)' }],
-    etkilesim: ['Güçlü CYP3A4 inhibitörleri (ketokonazol, klaritromisin): dozu altıda birine indirin', 'Karbamazepin, fenitoin düzeyi belirgin düşürür', 'Diğer QT uzatan ve sedatif ilaçlarla dikkat'],
+    uyari: ['Sedasyon, baş dönmesi, ortostatik hipotansiyon', 'Kilo artışı, lipid ve glukoz artışı', { ped: 'Çocuk ve ergenlerde kan basıncı artışı', eri: null }, 'QT uzaması', { ped: 'Kötüye kullanım potansiyeli (ergenlerde dikkat)', eri: 'Kötüye kullanım potansiyeli (madde kullanım öyküsünde dikkat)' }, 'Lökopeni, nötropeni; hipotiroidi (TSH ve serbest T4 izlemi); katarakt bildirilmiştir', 'Antikolinerjik etkiler; ani kesmede kesilme belirtileri; nöbet öyküsünde dikkat'],
+    etkilesim: ['Güçlü CYP3A4 inhibitörleri (ketokonazol, klaritromisin): dozu altıda birine indirin', 'Karbamazepin, fenitoin düzeyi belirgin düşürür', 'Diğer QT uzatan ve sedatif ilaçlarla dikkat', 'Güçlü CYP3A4 indükleyicileriyle süreğen kullanımda doz 5 katına kadar artırılabilir; indükleyici kesilince 7–14 günde eski doza dönülür'],
     oz: ['qt', 'd2', 'antikol']
   },
   {
@@ -137,19 +137,19 @@
     ped: {
       bas: '6,25–12,5 mg/gün', artis: '3–5 günde bir 12,5–25 mg (tolere edildikçe)', hedef: '150–400 mg/gün (plazma düzeyi ≥ 350 ng/mL)', maks: '600 mg/gün',
       birim: 'mg/gün', adim: [[0, 12.5], [3, 25], [7, 50], [11, 75], [15, 100], [21, 150], [28, 200], [42, 300]], bant: [150, 400], tavan: 600,
-      not: ['Başlamadan önce: lökosit ≥ 3500/mm³, nötrofil ≥ 2000/mm³, EKG, troponin/CRP, metabolik değerler.', 'Titrasyon boyunca nabız, KB, ateş günlük/sık izlenir; mümkünse yatarak başlayın.', 'Çocuk ve ergenlerde nötropeni, akatizi ve nöbet sıklığı erişkinlerden yüksektir.', '48 saatten uzun ara verilirse 12,5 mg\'dan yeniden titre edin.']
+      not: ['Başlamadan önce: lökosit ≥ 3500/mm³, nötrofil ≥ 2000/mm³, EKG, troponin/CRP, metabolik değerler.', 'Titrasyon boyunca nabız, KB, ateş günlük/sık izlenir; mümkünse yatarak başlayın.', 'Çocuk ve ergenlerde nötropeni, akatizi ve nöbet sıklığı erişkinlerden yüksektir.', '48 saatten uzun ara verilirse 12,5 mg\'dan yeniden titre edin.', 'ABD etiketinde başlama eşiği mutlak nötrofil sayısı ≥ 1500/µL\'dir (buradaki ≥ 2000/mm³ eşiği Avrupa ve Türkiye ürün bilgisine dayanır). ABD izlem sıklığı: ilk 6 ay haftada bir, 7–12. aylar iki haftada bir, sonra ayda bir.']
     },
     eri: {
       bas: '12,5 mg ×1–2 (1. gün)', artis: '2. gün 25–50 mg; sonra günde 25–50 mg artışla 2–3 haftada 300 mg', hedef: '300–450 mg/gün', maks: '900 mg/gün',
-      birim: 'mg/gün', adim: [[0, 12.5], [1, 25], [3, 50], [5, 100], [8, 150], [11, 200], [14, 250], [18, 300]], bant: [300, 450], tavan: 900, not: []
+      birim: 'mg/gün', adim: [[0, 12.5], [1, 25], [3, 50], [5, 100], [8, 150], [11, 200], [14, 250], [18, 300]], bant: [300, 450], tavan: 900, not: ['ABD etiketinde başlama eşiği mutlak nötrofil sayısı ≥ 1500/µL\'dir; izlem ilk 6 ay haftada bir, 7–12. aylar iki haftada bir, sonra ayda birdir.', 'Ara verme (ABD etiketi 2025): 1 gün atlandıysa önceki dozun %40–50\'si, 2 gün atlandıysa yaklaşık %25\'i, daha uzun arada 12,5 mg ile yeniden başlanır.']
     },
     surdurum: ['Yanıt değerlendirmesi için yeterli plazma düzeyinde en az 3–6 ay bekleyin.', 'Hematolojik izlemi tedavi boyunca kesintisiz sürdürün.', 'Sigara kullanımındaki değişiklik düzeyi belirgin etkiler: bırakınca dozu %30–50 azaltmak gerekebilir.', 'Kabızlığı her vizitte sorgulayın; gerekirse düzenli laksatif.'],
     kesme: { risk: 3, sure: 'Acil durum dışında en az 1–2 hafta; tercihen daha uzun', adim: [[0, 100], [7, 75], [14, 50], [21, 25], [28, 0]],
       not: ['Ani kesmede rebound psikoz, kolinerjik rebound (terleme, baş ağrısı, bulantı, ishal), katatoni.', 'Agranülositoz veya miyokardit nedeniyle acil kesmede yakın psikiyatrik izlem; kolinerjik rebound için antikolinerjik düşünün.', 'Kesildikten sonra 4 hafta daha hemogram izleyin.'] },
     izlem: 'klozapin', profil: { sed: 3, kilo: 3, eps: 0, prl: 0, qt: 2, ach: 3, kv: 3, kes: 3 },
     kutu: 'Ağır nötropeni/agranülositoz, miyokardit/kardiyomiyopati, nöbet, ortostatik hipotansiyon ve solunum/kalp durması riski. Hematolojik izlem zorunludur. Lökosit < 3000/mm³ veya nötrofil < 1500/mm³ ise ilacı derhal kesin.',
-    uyari: ['Agranülositoz (ilk 18 hafta en riskli)', 'Miyokardit (ilk 4–8 hafta): ateş, taşikardi, göğüs ağrısı, dispne', 'Doza bağlı nöbet', 'Kabızlık, ileus, bağırsak tıkanması', 'Siyalore, taşikardi, sedasyon, enürezis', 'Belirgin kilo artışı ve metabolik sendrom'],
-    etkilesim: ['Karbamazepin ve diğer kemik iliği baskılayıcılarla kullanmayın', 'Fluvoksamin, siprofloksasin düzeyi 5–10 kat artırabilir', 'Sigara düzeyi düşürür', 'Benzodiazepinlerle solunum depresyonu/kollaps riski (başlangıçta)'],
+    uyari: ['Agranülositoz (ilk 18 hafta en riskli)', 'Miyokardit (ilk 4–8 hafta): ateş, taşikardi, göğüs ağrısı, dispne', 'Doza bağlı nöbet', 'Kabızlık, ileus, bağırsak tıkanması', 'Siyalore, taşikardi, sedasyon, enürezis', 'Belirgin kilo artışı ve metabolik sendrom', 'Ortostatik hipotansiyon, bradikardi, senkop (özellikle titrasyonda)', 'QT uzaması; pulmoner emboli; hepatotoksisite; eozinofili', 'Ani kesmede psikoz nüksü ve kolinerjik geri tepme'],
+    etkilesim: ['Karbamazepin ve diğer kemik iliği baskılayıcılarla kullanmayın', 'Fluvoksamin, siprofloksasin düzeyi 5–10 kat artırabilir', 'Sigara düzeyi düşürür', 'Benzodiazepinlerle solunum depresyonu/kollaps riski (başlangıçta)', 'Güçlü CYP1A2 inhibitörleriyle (fluvoksamin, siprofloksasin) klozapin dozu üçte bire indirilir', 'Güçlü CYP3A4 indükleyicileriyle birlikte kullanım önerilmez'],
     oz: ['1a2sub', 'qt', 'nobet', 'antikol', 'kloz']
   },
   {
@@ -186,18 +186,18 @@
     ped: {
       bas: '3 mg/gün (sabah)', artis: '≥ 5 gün arayla 3 mg', hedef: '3–6 mg/gün', maks: '< 51 kg: 6 mg/gün · ≥ 51 kg: 12 mg/gün',
       birim: 'mg/gün', adim: [[0, 3], [7, 6], [21, 9]], bant: [3, 6], tavan: 12,
-      not: ['Başlangıç titrasyonu gerekmez. Tablet bütün yutulmalıdır.', 'Böbrek yetmezliğinde doz azaltın.']
+      not: ['Başlangıç titrasyonu gerekmez. Tablet bütün yutulmalıdır.', 'Böbrek yetmezliğinde doz azaltın.', 'Böbrek: kreatinin klirensi 50–< 80 mL/dk ise başlangıç 3 mg, en çok 6 mg; 10–< 50 mL/dk ise başlangıç 1,5 mg, en çok 3 mg; < 10 mL/dk ise önerilmez.']
     },
     eri: {
       bas: '6 mg/gün (sabah)', artis: '≥ 5 gün arayla 3 mg', hedef: '3–12 mg/gün', maks: '12 mg/gün',
-      birim: 'mg/gün', adim: [[0, 6], [7, 9], [14, 12]], bant: [6, 12], tavan: 12, not: []
+      birim: 'mg/gün', adim: [[0, 6], [7, 9], [14, 12]], bant: [6, 12], tavan: 12, not: ['Böbrek: kreatinin klirensi 50–< 80 mL/dk ise başlangıç 3 mg, en çok 6 mg; 10–< 50 mL/dk ise başlangıç 1,5 mg, en çok 3 mg; < 10 mL/dk ise önerilmez.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '4–8 hafta', adim: [[0, 100], [14, 66], [28, 33], [42, 0]], not: ['3 mg basamaklarla azaltın.', 'Kesilme diskinezisi ve nüks açısından izleyin.'] },
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [2, 0, 1, 2, 2], 'Belirgin prolaktin artışı yapar; 3. ayda veya belirti varsa.'], ['Böbrek işlevi', [1, 0, 0, 0, 2], 'Doz ayarı için.']],
     profil: { sed: 1, kilo: 2, eps: 2, prl: 3, qt: 1, ach: 0, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Hiperprolaktinemi', 'EPS, akatizi, distoni', 'Kilo artışı', 'Taşikardi, somnolans', 'QT uzaması'],
+    uyari: ['Hiperprolaktinemi', 'EPS, akatizi, distoni', 'Kilo artışı', 'Taşikardi, somnolans', 'QT uzaması', 'Ortostatik hipotansiyon, senkop; nöbet öyküsünde dikkat', 'Tablet biçim değiştirmez: gastrointestinal darlıkta tıkanma riski; priapizm (nadir)'],
     etkilesim: ['Karbamazepin düzeyi düşürür', 'Risperidon ile birlikte kullanılmaz (aynı etkin madde)', 'Valproat düzeyi artırabilir'],
     oz: ['d2', 'qt']
   },
@@ -221,8 +221,8 @@
     izlem: 'antipsikotik', izlemEk: [['EKG (QTc)', [1, 1, 0, 0, 1], 'Başlangıçta, hedef doza ulaşınca ve yılda bir. QTc > 500 ms ise kesin.'], ['Potasyum, magnezyum', [1, 2, 0, 0, 2], 'Kusma/ishal, diüretik kullanımı, yeme bozukluğunda.']],
     profil: { sed: 1, kilo: 0, eps: 2, prl: 1, qt: 3, ach: 0, akt: 2, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Doza bağlı QT uzaması: konjenital uzun QT, yeni MI, dekompanse kalp yetmezliğinde kontrendike', 'Akatizi, aktivasyon, uykusuzluk veya somnolans', 'EPS, distoni', 'DRESS ve ağır deri reaksiyonları (nadir)'],
-    etkilesim: ['Diğer QT uzatan ilaçlarla kontrendike', 'Karbamazepin düzeyi düşürür; ketokonazol artırır'],
+    uyari: ['Doza bağlı QT uzaması: konjenital uzun QT, yeni MI, dekompanse kalp yetmezliğinde kontrendike', 'Akatizi, aktivasyon, uykusuzluk veya somnolans', 'EPS, distoni', 'DRESS ve ağır deri reaksiyonları (nadir)', 'Ortostatik hipotansiyon; nöbet öyküsünde dikkat; hiperprolaktinemi; priapizm (nadir)', 'Serotonin sendromu bildirilmiştir (serotonerjik ilaçlarla)'],
+    etkilesim: ['Diğer QT uzatan ilaçlarla kontrendike', 'Karbamazepin düzeyi düşürür; ketokonazol artırır', 'MAOİ ile birlikte ya da MAOİ kesildikten sonraki 14 gün içinde kontrendike (ABD etiketi 2025)'],
     oz: ['qt', 'd2']
   },
   {
@@ -234,17 +234,17 @@
     ped: {
       bas: 'Bipolar depresyon: 20 mg/gün · şizofreni: 40 mg/gün', artis: '≥ 1 hafta arayla 20 mg', hedef: '20–40 mg/gün (bipolar depresyon) · 40–80 mg/gün (şizofreni)', maks: '80 mg/gün',
       birim: 'mg/gün', adim: [[0, 20], [7, 40], [21, 60]], bant: [20, 40], tavan: 80,
-      not: ['En az 350 kcal\'lik öğünle (genellikle akşam yemeği) alınmalıdır.', 'Akatizi ve bulantı doza bağlıdır; yavaş artırın.']
+      not: ['En az 350 kcal\'lik öğünle (genellikle akşam yemeği) alınmalıdır.', 'Akatizi ve bulantı doza bağlıdır; yavaş artırın.', 'Orta-ağır böbrek yetmezliği ve orta karaciğer yetmezliğinde başlangıç 20 mg, en çok 80 mg/gün; ağır karaciğer yetmezliğinde en çok 40 mg/gün.']
     },
     eri: {
       bas: 'Şizofreni: 40 mg/gün · bipolar depresyon: 20 mg/gün', artis: '≥ 1 hafta arayla', hedef: '40–80 mg/gün', maks: 'Şizofreni: 160 mg · bipolar depresyon: 120 mg/gün',
-      birim: 'mg/gün', adim: [[0, 40], [7, 80], [21, 120]], bant: [40, 80], tavan: 160, not: []
+      birim: 'mg/gün', adim: [[0, 40], [7, 80], [21, 120]], bant: [40, 80], tavan: 160, not: ['Orta-ağır böbrek yetmezliği ve orta karaciğer yetmezliğinde başlangıç 20 mg, en çok 80 mg/gün; ağır karaciğer yetmezliğinde en çok 40 mg/gün.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '2–4 hafta', adim: [[0, 100], [14, 50], [28, 0]], not: ['Kademeli azaltın; nüks ve kesilme belirtileri açısından izleyin.'] },
     izlem: 'antipsikotik', profil: { sed: 2, kilo: 1, eps: 2, prl: 1, qt: 0, gis: 2, akt: 1, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Akatizi, somnolans', 'Bulantı, kusma', 'EPS', 'Prolaktin artışı (hafif–orta)'],
+    uyari: ['Akatizi, somnolans', 'Bulantı, kusma', 'EPS', 'Prolaktin artışı (hafif–orta)', 'Ortostatik hipotansiyon, senkop; lökopeni, nötropeni; nöbet öyküsünde dikkat', 'Mani/hipomani kayması; metabolik değişiklikler'],
     etkilesim: ['Güçlü CYP3A4 inhibitörleri (ketokonazol, klaritromisin, ritonavir) ve indükleyicileri (karbamazepin, rifampisin) ile kontrendike', 'Orta düzey inhibitörlerle (diltiazem, eritromisin) dozu yarıya indirin', 'Greyfurt suyundan kaçının'],
     oz: ['d2']
   },
@@ -315,8 +315,8 @@
     kesme: { risk: 2, sure: '4–8 hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]], not: ['Her 1–2 haftada dozun %25\'i kadar azaltın.', 'Ani kesmede rebound uykusuzluk ve belirti alevlenmesi olabilir.'] },
     izlem: 'antipsikotik', profil: { sed: 2, kilo: 2, eps: 2, prl: 1, qt: 1, ach: 0, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Somnolans, baş dönmesi', 'Ağızda uyuşma, tat bozukluğu', 'Kilo artışı ve metabolik değişiklikler', 'Akatizi, distoni', 'Ağır aşırı duyarlılık reaksiyonları (anjiyoödem) bildirilmiştir'],
-    etkilesim: ['Fluvoksamin (CYP1A2) düzeyi artırır', 'Paroksetin düzeyini yaklaşık 2 kat artırır (CYP2D6 inhibisyonu)', 'Antihipertansiflerle additif hipotansiyon'],
+    uyari: ['Somnolans, baş dönmesi', 'Ağızda uyuşma, tat bozukluğu', 'Kilo artışı ve metabolik değişiklikler', 'Akatizi, distoni', 'Ağır aşırı duyarlılık reaksiyonları (anjiyoödem) bildirilmiştir', 'Ağır karaciğer yetmezliğinde (Child-Pugh C) kontrendike', 'Ortostatik hipotansiyon, senkop; QT uzaması; hiperprolaktinemi; lökopeni, nötropeni; nöbet öyküsünde dikkat'],
+    etkilesim: ['Fluvoksamin (CYP1A2) düzeyi artırır', 'Paroksetin düzeyini yaklaşık 2 kat artırır (CYP2D6 inhibisyonu)', 'Antihipertansiflerle additif hipotansiyon', 'Birlikte kullanımda paroksetin dozu yarıya indirilir'],
     oz: ['d2', '1a2sub']
   },
   {
@@ -328,19 +328,19 @@
     ped: {
       bas: '0,5 mg/gün (1–4. gün)', artis: '5–7. gün 1 mg; 8. günden itibaren 2 mg; sonra haftada 1 mg', hedef: '2–4 mg/gün', maks: '4 mg/gün',
       birim: 'mg/gün', adim: [[0, 0.5], [4, 1], [7, 2], [14, 3]], bant: [2, 4], tavan: 4,
-      not: ['Günde tek doz, yemekten bağımsız.', 'Kararlı duruma 10–12 günde ulaşır: doz değişikliğinin etkisini en az 2 hafta bekleyin.', 'Güçlü CYP2D6 veya CYP3A4 inhibitörü kullananlarda dozu yarıya indirin.']
+      not: ['Günde tek doz, yemekten bağımsız.', 'Kararlı duruma 10–12 günde ulaşır: doz değişikliğinin etkisini en az 2 hafta bekleyin.', 'Güçlü CYP2D6 veya CYP3A4 inhibitörü kullananlarda dozu yarıya indirin.', 'Orta-ağır karaciğer yetmezliğinde ve kreatinin klirensi < 60 mL/dk olanlarda şizofrenide en çok 3 mg/gün.']
     },
     eri: {
       bas: 'Şizofreni: 1 mg/gün · depresyonda ek tedavi: 0,5–1 mg/gün', artis: 'Şizofreni: 5. gün 2 mg, 8. gün 4 mg · depresyon: haftada bir', hedef: 'Şizofreni: 2–4 mg/gün · depresyon: 2 mg/gün', maks: 'Şizofreni: 4 mg/gün · depresyon: 3 mg/gün',
-      birim: 'mg/gün', adim: [[0, 1], [4, 2], [7, 4]], bant: [2, 4], tavan: 4, not: []
+      birim: 'mg/gün', adim: [[0, 1], [4, 2], [7, 4]], bant: [2, 4], tavan: 4, not: ['Orta-ağır karaciğer yetmezliğinde ve kreatinin klirensi < 60 mL/dk olanlarda en çok 3 mg/gün (şizofreni) ya da 2 mg/gün (depresyonda ek tedavi).']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 1, sure: '2–4 hafta', adim: [[0, 100], [14, 50], [28, 0]], not: ['Uzun yarı ömür nedeniyle düzey haftalar içinde kendiliğinden düşer; 2–4 haftada azaltmak yeterlidir.'] },
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [0, 0, 2, 0, 0], 'Prolaktini belirgin artırmaz; rutin gerekmez.'], ['Dürtü kontrol sorgusu', [1, 1, 1, 1, 1], 'Kumar, aşırı yeme, alışveriş, hiperseksüalite.']],
     profil: { sed: 1, kilo: 2, eps: 1, prl: 0, qt: 0, akt: 2, kes: 1 },
     kutu: KUTU_AP,
-    uyari: ['Akatizi, huzursuzluk', 'Kilo artışı', 'Baş ağrısı, somnolans', 'Dürtü kontrol bozuklukları (kumar, aşırı yeme)', 'Nöroleptik malign sendrom, geç diskinezi'],
-    etkilesim: ['Güçlü CYP2D6 inhibitörleri (fluoksetin, paroksetin, bupropion) veya güçlü CYP3A4 inhibitörleri (klaritromisin, ketokonazol): dozu yarıya indirin', 'İkisi birlikte: dozu dörtte bire indirin', 'Güçlü CYP3A4 indükleyicileri (karbamazepin, rifampisin): dozu 1–2 haftada iki katına çıkarın'],
+    uyari: ['Akatizi, huzursuzluk', 'Kilo artışı', 'Baş ağrısı, somnolans', 'Dürtü kontrol bozuklukları (kumar, aşırı yeme)', 'Nöroleptik malign sendrom, geç diskinezi', 'Ortostatik hipotansiyon, senkop; lökopeni, nötropeni; nöbet öyküsünde dikkat; metabolik değişiklikler'],
+    etkilesim: ['Güçlü CYP2D6 inhibitörleri (fluoksetin, paroksetin, bupropion) veya güçlü CYP3A4 inhibitörleri (klaritromisin, ketokonazol): dozu yarıya indirin', 'İkisi birlikte: dozu dörtte bire indirin', 'Güçlü CYP3A4 indükleyicileri (karbamazepin, rifampisin): dozu 1–2 haftada iki katına çıkarın', 'CYP2D6 zayıf metabolizörlerinde doz yarıya indirilir'],
     oz: ['2d6sub', 'd2p', 'uzun']
   },
   {
@@ -356,14 +356,14 @@
     },
     eri: {
       bas: '1,5 mg/gün', artis: 'Şizofreni/mani: 2. gün 3 mg, sonra 1,5–3 mg basamaklarla · bipolar depresyon: 15. gün 3 mg', hedef: 'Şizofreni: 1,5–6 mg/gün · mani: 3–6 mg/gün · bipolar depresyon: 1,5–3 mg/gün', maks: '6 mg/gün',
-      birim: 'mg/gün', adim: [[0, 1.5], [1, 3], [7, 4.5], [14, 6]], bant: [1.5, 6], tavan: 6, not: []
+      birim: 'mg/gün', adim: [[0, 1.5], [1, 3], [7, 4.5], [14, 6]], bant: [1.5, 6], tavan: 6, not: ['Bipolar depresyonda ve depresyonda ek tedavide en çok 3 mg/gün; doz 15. günden önce artırılmaz.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 1, sure: 'Kademeli azaltım çoğu kez gerekmez', adim: [[0, 100], [14, 50], [28, 0]], not: ['Aktif metabolitin yarı ömrü 1–3 hafta olduğu için düzey kendiliğinden yavaşça düşer.', 'İlaç kesildikten sonra etki ve etkileşimler haftalarca sürer.'] },
     izlem: 'antipsikotik', izlemEk: [['Prolaktin', [0, 0, 2, 0, 0], 'Prolaktini artırmaz; rutin gerekmez.'], ['EPS, akatizi, diskinezi (AIMS)', [1, 'Her vizit', 1, 1, 1], 'Akatizi sık ve geç başlangıçlı olabilir.']],
     profil: { sed: 1, kilo: 1, eps: 2, prl: 0, qt: 0, akt: 3, gis: 1, kes: 1 },
     kutu: KUTU_AP,
-    uyari: ['Akatizi, huzursuzluk, uykusuzluk', 'EPS', 'Bulantı, kusma', 'Geç ortaya çıkan yan etkiler (uzun yarı ömür)', 'Gebelikte kullanılmaz; kesildikten sonra 10 hafta kontrasepsiyon'],
+    uyari: ['Akatizi, huzursuzluk, uykusuzluk', 'EPS', 'Bulantı, kusma', 'Geç ortaya çıkan yan etkiler (uzun yarı ömür)', 'Gebelikte kullanılmaz; kesildikten sonra 10 hafta kontrasepsiyon', 'Ortostatik hipotansiyon, senkop; lökopeni, nötropeni; nöbet öyküsünde dikkat; metabolik değişiklikler', 'Geç diskinezi, nöroleptik malign sendrom'],
     etkilesim: ['Güçlü CYP3A4 inhibitörleri (klaritromisin, ketokonazol, ritonavir): dozu yarıya indirin', 'CYP3A4 indükleyicileri (karbamazepin, rifampisin): birlikte kullanım önerilmez', 'Greyfurt suyundan kaçının'],
     oz: ['d2p', 'uzun']
   },
@@ -376,19 +376,19 @@
     ped: {
       bas: '0,05 mg/kg gece (0,5–1 mg)', artis: 'Haftada bir 0,5–1 mg (en erken 3 günde bir)', hedef: '2–4 mg/gün', maks: '0,2 mg/kg/gün veya 10 mg/gün (hangisi düşükse)',
       birim: 'mg/gün', adim: [[0, 1], [7, 2], [14, 3], [21, 4]], bant: [2, 4], tavan: 10,
-      not: ['Başlamadan önce EKG, potasyum ve magnezyum bakın; QTc 450 ms üzerindeyse başlamayın.', '0,05 mg/kg/gün üzerine çıkmadan önce CYP2D6 genotipi önerilir: yavaş metabolizörlerde bu doz aşılmaz ve doz en erken 14 günde bir artırılır.', 'Her doz artışından sonra EKG tekrarlayın; QTc 470 ms\'yi (çocuk) aşarsa veya başlangıca göre %25 uzarsa dozu azaltın.', 'Greyfurt suyu yasaktır.']
+      not: ['Başlamadan önce EKG, potasyum ve magnezyum bakın; QTc 450 ms üzerindeyse başlamayın.', '0,05 mg/kg/gün üzerine çıkmadan önce CYP2D6 genotipi önerilir: yavaş metabolizörlerde bu doz aşılmaz ve doz en erken 14 günde bir artırılır.', 'Her doz artışından sonra EKG tekrarlayın; QTc 470 ms\'yi (çocuk) aşarsa veya başlangıca göre %25 uzarsa dozu azaltın.', 'Greyfurt suyu yasaktır.', 'ABD etiketinde 12 yaş altı için güvenilir doz-yanıt verisi bulunmadığı belirtilir; açık bir yaş alt sınırı verilmez.']
     },
     eri: {
       bas: '1–2 mg/gün', artis: 'Gün aşırı veya haftada bir 1–2 mg', hedef: '2–6 mg/gün', maks: '10 mg/gün (yavaş metabolizörde 4 mg/gün)',
-      birim: 'mg/gün', adim: [[0, 2], [7, 4], [14, 6]], bant: [2, 6], tavan: 10, not: []
+      birim: 'mg/gün', adim: [[0, 2], [7, 4], [14, 6]], bant: [2, 6], tavan: 10, not: ['Erişkinde QTc 520 ms\'yi aşarsa ya da başlangıca göre %25\'ten fazla uzarsa doz artırılmaz, azaltma düşünülür. 4 mg/gün üzerine çıkmadan önce CYP2D6 genotipi önerilir.']
     },
     surdurum: SURDURUM_AP.concat(['Tiklerde 6–12 ay iyilikten sonra kademeli azaltım deneyin; tikler dalgalı seyirlidir.']),
     kesme: { risk: 2, sure: '4–8 hafta', adim: [[0, 100], [14, 75], [28, 50], [42, 25], [56, 0]], not: ['Her 1–2 haftada dozun %25\'i kadar azaltın.', 'Ani kesmede kesilme diskinezisi ve tiklerde rebound artış görülür.'] },
     izlem: 'antipsikotik', izlemEk: [['EKG (QTc)', [1, 'Her doz artışı', 1, 1, 1], 'Başlangıçta, her doz artışından sonra ve yılda en az bir kez.'], ['Potasyum / magnezyum', [1, 0, 2, 0, 1], 'Düşük değerler QT riskini artırır; kusma, ishal veya diüretik kullanımında tekrarlayın.']],
     profil: { sed: 1, kilo: 1, eps: 3, prl: 2, qt: 3, ach: 1, kes: 2 },
     kutu: 'QT uzaması ve ani kardiyak ölüm bildirilmiştir: EKG izlemi zorunludur. Makrolid antibiyotikler, azol antifungaller, proteaz inhibitörleri ve birçok SSRI ile birlikte kullanılmaz.',
-    uyari: ['QT uzaması, torsades de pointes', 'EPS, akatizi, akut distoni, geç diskinezi', { ped: 'Sedasyon, okul performansında düşme', eri: 'Sedasyon' }, 'Hiperprolaktinemi', 'Nöroleptik malign sendrom'],
-    etkilesim: ['Güçlü CYP3A4 inhibitörleri (klaritromisin, eritromisin, azol antifungaller, proteaz inhibitörleri) ile kontrendike', 'Paroksetin, fluoksetin (güçlü CYP2D6 inhibitörleri) ile kontrendike', 'Sertralin, sitalopram, essitalopram ile kontrendike', 'QT uzatan tüm ilaçlarla kontrendike', 'Greyfurt suyu düzeyi artırır'],
+    uyari: ['QT uzaması, torsades de pointes', 'EPS, akatizi, akut distoni, geç diskinezi', { ped: 'Sedasyon, okul performansında düşme', eri: 'Sedasyon' }, 'Hiperprolaktinemi', 'Nöroleptik malign sendrom', 'Tik yapabilen ilaçlar (metilfenidat, amfetaminler, pemolin) kesilip tiklerin kaynağı anlaşılana dek kontrendike', 'Hipokalemi ve hipomagnezemide kontrendike; lökopeni, nötropeni'],
+    etkilesim: ['Güçlü CYP3A4 inhibitörleri (klaritromisin, eritromisin, azol antifungaller, proteaz inhibitörleri) ile kontrendike', 'Paroksetin, fluoksetin (güçlü CYP2D6 inhibitörleri) ile kontrendike', 'Sertralin, sitalopram, essitalopram ile kontrendike', 'QT uzatan tüm ilaçlarla kontrendike', 'Greyfurt suyu düzeyi artırır', 'Azitromisin dahil makrolidler ve nefazodon ile kontrendike; fluvoksamin ve zileutondan kaçının'],
     oz: ['d2', 'qt', '2d6sub']
   },
   {
