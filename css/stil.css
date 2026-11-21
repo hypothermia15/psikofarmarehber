@@ -244,6 +244,13 @@ main.kap { padding-top: 26px; padding-bottom: 40px; min-height: 70vh; }
   background: var(--yuzey); border: 2px solid var(--vurgu); color: var(--vurgu); display: grid; place-items: center; }
 .dongu-adim b { display: block; font-size: 14px; }
 .dongu-adim span { font-size: 12px; color: var(--murekkep-2); display: block; line-height: 1.35; }
+/* Telefon: dört adım iki sütuna iner, taşma olmaz (uyarlama, Kasım 2026) */
+@media (max-width: 520px) {
+  .dongu { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px; }
+  .dongu-adim::before { display: none; }
+  .dongu-adim b { overflow-wrap: anywhere; }
+  .dongu-adim span { font-size: 12.5px; }
+}
 
 .arac-cubugu { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
 .arama { flex: 1 1 260px; position: relative; }

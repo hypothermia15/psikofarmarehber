@@ -22,6 +22,7 @@ Bu depo, **lipsumation** tarafından geliştirilen *Psikofarmakoloji Rehberi*'ni
 - Uygulamanın alt bilgisine kaynak, lisans ve uyarlayan bildirimi eklendi.
 - Üst barda, marka adının ve hasta grubu seçicisinin altına uyarlayan satırı eklendi.
 - İlk açılış: hasta grubu daha önce seçilmemişse rehber çocuk-ergen görünümüyle açılır ve karşılama penceresi gösterilmez. Erişkin görünümü üst bardaki seçiciden ya da bağlantıya `?kitle=eri` eklenerek açılır; tasarım, üst bardaki tasarım düğmesinden seçilir.
+- Telefon görünümü: ana sayfadaki dört adımlı süreç şeridi 520 pikselin altında iki sütuna iner (taşma giderildi); klinik içerik değişmedi. Önbellek için dosya sürümü `v=15` yapıldı.
 - README'nin başına uyarlama bildirimi eklendi; bu dosya oluşturuldu.
 - Yayın: Site GitHub Pages ile `main` dalının kökünden yayınlanır. Özgün README'deki "Yayın" bölümü (`gh-pages` dalı) özgün depoya aittir; bu depoda `main` dalına gönderilen her değişiklik siteye yansır.
 
