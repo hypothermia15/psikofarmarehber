@@ -106,7 +106,7 @@ Etiketle rehber arasında fark görülüp **değiştirilmeyen, yalnızca not dü
 
 Karşılaştırılamayan kayıtlar (FDA etiketi yok ya da bulunamadı; Türkiye KÜB'leri bu ortamdan açılamadı): **melatonin, nalmefen (oral), biperiden, triheksifenidil, bornaprin, zuklopentiksol dekanoat, flupentiksol dekanoat**; önceki turdan **haloperidol (oral), klorpromazin, agomelatin, tianeptin, amisulpirid, zuklopentiksol**. Bu on üç kayıt değiştirilmedi.
 
-İlaç kayıtları dışındaki klinik içerik ( titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
+İlaç kayıtları dışındaki klinik içerik (titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
 ## Özgün depodan güncelleme alma
 
