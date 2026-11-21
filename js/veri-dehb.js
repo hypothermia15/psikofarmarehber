@@ -21,7 +21,7 @@
     ],
     ped: {
       bas: 'OROS: 18 mg sabah · MR: 10 mg sabah · IR: 5 mg ×1–2', artis: 'Haftada bir: OROS 18 mg (9 mg ara basamak 27 mg ile), MR 10 mg, IR 5–10 mg', hedef: '0,3–1 mg/kg/gün (IR eşdeğeri); yanıta göre',
-      maks: 'OROS: 54 mg (6–12 yaş), 72 mg (≥ 13 yaş) · IR/MR: 60 mg/gün',
+      maks: 'OROS: 54 mg (6–12 yaş), 72 mg (≥ 13 yaş; 2 mg/kg/günü aşmadan) · IR/MR: 60 mg/gün',
       birim: 'mg/gün (OROS)', adim: [[0, 18], [7, 27], [14, 36], [21, 54]], bant: [18, 54], tavan: 72,
       not: [
         'Okul öncesi (4–5 yaş): endikasyon dışı; önce ebeveyn eğitimi. Gerekirse IR 2,5 mg ile başlayıp çok yavaş titre edin; yan etki duyarlılığı yüksektir.',
@@ -39,24 +39,24 @@
       not: ['Doğrudan kesilebilir; yüksek dozda uzun süreli kullanım sonrası birkaç gün yorgunluk, iştah artışı, disfori görülebilir.', { ped: 'İlaçsız dönem denemesini okul döneminin sakin bir zamanında, öğretmen geri bildirimi alarak yapın.', eri: 'İlaçsız dönem denemesini iş veya akademik yükün görece az olduğu bir dönemde, yakınlarından geri bildirim alarak yapın.' }] },
     izlem: 'stimulan', profil: { sed: 0, kilo: 0, gis: 1, akt: 3, kv: 2, istah: 3, kes: 1 },
     kutu: { ped: 'Kötüye kullanım ve bağımlılık potansiyeli: madde kullanım öyküsünü sorgulayın; ergenlerde ilacın başkasına verilmesi açısından uyarın.', eri: 'Kötüye kullanım, yanlış kullanım ve bağımlılık potansiyeli: madde kullanım öyküsünü sorgulayın; ilacın başkasına verilmesine karşı uyarın, reçete miktarını takip edin.' },
-    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme hızında hafif yavaşlama', eri: 'İştah azalması, kilo kaybı' }, 'Uykuya dalma güçlüğü', 'Kan basıncı ve nabız artışı; yapısal kalp hastalığı/aritmide kaçının', 'Tik, irritabilite, anksiyete, nadiren psikotik/manik belirtiler', 'Priapizm, periferik vaskülopati (Raynaud) – nadir'],
-    etkilesim: ['MAOİ ile kontrendike (14 gün ara)', 'TCA, SSRI, antiepileptik (fenitoin, fenobarbital) ve varfarin düzeylerini artırabilir', 'Klonidin/guanfasin ile birlikte kullanımda KB ve nabız izlenmeli'],
+    uyari: [{ ped: 'İştah azalması, kilo kaybı, büyüme hızında hafif yavaşlama', eri: 'İştah azalması, kilo kaybı' }, 'Uykuya dalma güçlüğü', 'Kan basıncı ve nabız artışı; yapısal kalp hastalığı/aritmide kaçının', 'Tik, irritabilite, anksiyete, nadiren psikotik/manik belirtiler', 'Priapizm, periferik vaskülopati (Raynaud) – nadir', 'Göz içi basıncında artış ve glokom; dar açılı glokom riski olanlarda göz değerlendirmesi', 'OROS tablet sindirim kanalında biçim değiştirmez: gastrointestinal darlığı olanlarda tıkanma riski'],
+    etkilesim: ['MAOİ ile kontrendike (14 gün ara)', 'TCA, SSRI, antiepileptik (fenitoin, fenobarbital) ve varfarin düzeylerini artırabilir (AB ürün bilgilerinde yer alır; güncel ABD OROS etiketinin etkileşim tablosunda yoktur)', 'Antihipertansiflerin etkisini azaltabilir: kan basıncını izleyin, gerekirse antihipertansif dozunu ayarlayın', 'Halojenli anesteziklerle ani kan basıncı ve nabız artışı riski: ameliyat günü vermeyin', 'Risperidonla birlikte kullanımda, ikisinden birinin dozu değiştiğinde ekstrapiramidal belirti riski artabilir', 'Klonidin/guanfasin ile birlikte kullanımda KB ve nabız izlenmeli'],
     oz: ['stim']
   },
   {
     id: 'lisdeksamfetamin', ad: 'Lisdeksamfetamin', sinif: 'dehb', altSinif: 'Psikostimulan (ön ilaç)', grup: 'stimulan',
     mek: 'Kanda d-amfetamine dönüşen ön ilaç; dopamin ve noradrenalin salınımını artırır. Etki süresi 12–14 saattir. Türkiye\'de ruhsat ve erişim durumunu güncel olarak kontrol ediniz.',
-    t12: 'Ön ilaç < 1 saat; d-amfetamin 10–12 saat', t12s: 11, etki: '1–2 saat', form: 'Kapsül 20 / 30 / 40 / 50 / 60 / 70 mg',
+    t12: 'Ön ilaç < 1 saat; d-amfetamin 10–12 saat', t12s: 11, etki: '1–2 saat', form: 'Kapsül 10 / 20 / 30 / 40 / 50 / 60 / 70 mg',
     onay: [['DEHB', '≥ 6 yaş']],
     onayEri: [['DEHB'], ['Tıkınırcasına yeme bozukluğu', 'orta–ağır']],
     ped: {
-      bas: '20–30 mg sabah', artis: 'Haftada bir 10–20 mg', hedef: '30–50 mg/gün', maks: '70 mg/gün',
+      bas: '30 mg sabah', artis: 'Haftada bir 10–20 mg', hedef: '30–50 mg/gün', maks: '70 mg/gün',
       birim: 'mg/gün', adim: [[0, 30], [7, 40], [14, 50], [21, 60]], bant: [30, 50], tavan: 70,
-      not: ['Genellikle metilfenidata yetersiz yanıt veya intolerans sonrası ikinci basamak.', 'Kapsül açılıp suya/yoğurda karıştırılabilir.', 'İştah ve uyku üzerine etkisi metilfenidata göre daha uzun sürebilir.']
+      not: ['Genellikle metilfenidata yetersiz yanıt veya intolerans sonrası ikinci basamak.', 'Kapsül açılıp suya/yoğurda karıştırılabilir.', 'İştah ve uyku üzerine etkisi metilfenidata göre daha uzun sürebilir.', 'Ağır böbrek yetmezliğinde (GFR 15–< 30) en çok 50 mg/gün; son dönem böbrek hastalığında en çok 30 mg/gün.']
     },
     eri: {
       bas: '30 mg sabah', artis: 'Haftada bir 10–20 mg', hedef: '30–70 mg/gün', maks: '70 mg/gün',
-      birim: 'mg/gün', adim: [[0, 30], [7, 50], [14, 70]], bant: [30, 70], tavan: 70, not: []
+      birim: 'mg/gün', adim: [[0, 30], [7, 50], [14, 70]], bant: [30, 70], tavan: 70, not: ['Ağır böbrek yetmezliğinde (GFR 15–< 30) en çok 50 mg/gün; son dönem böbrek hastalığında en çok 30 mg/gün.']
     },
     surdurum: SURDURUM_DEHB,
     kesme: { risk: 1, sure: 'Kademeli azaltım genellikle gerekmez', adim: [[0, 100], [7, 0]], not: ['Uzun süreli yüksek dozdan sonra birkaç günlük yorgunluk, uyku artışı, disfori olabilir; gerekirse 1–2 haftada azaltın.'] },
@@ -214,11 +214,11 @@
     ped: {
       bas: '6–11 yaş: 100 mg/gün · 12–17 yaş: 200 mg/gün', artis: 'Haftada bir 100 mg (6–11 yaş) veya 200 mg (12–17 yaş)', hedef: '200–400 mg/gün', maks: '400 mg/gün',
       birim: 'mg/gün', adim: [[0, 100], [7, 200], [14, 300], [21, 400]], bant: [200, 400], tavan: 400,
-      not: ['Grafik 6–11 yaş şemasını gösterir; 12–17 yaşta 200 mg ile başlanıp bir hafta sonra 400 mg\'a çıkılabilir.', 'Günde tek doz; kapsül açılıp elma püresine serpilebilir, çiğnenmez.', 'Somnolans olursa akşam verin.']
+      not: ['Grafik 6–11 yaş şemasını gösterir; 12–17 yaşta 200 mg ile başlanıp bir hafta sonra 400 mg\'a çıkılabilir.', 'Günde tek doz; kapsül açılıp elma püresine ya da pudinge serpilebilir, çiğnenmez.', 'Somnolans olursa akşam verin.', 'Ağır böbrek yetmezliğinde (eGFR < 30) başlangıç 100 mg/gün, en çok 200 mg/gün.']
     },
     eri: {
       bas: '200 mg/gün', artis: 'Haftada bir 200 mg', hedef: '200–600 mg/gün', maks: '600 mg/gün',
-      birim: 'mg/gün', adim: [[0, 200], [7, 400], [14, 600]], bant: [200, 600], tavan: 600, not: []
+      birim: 'mg/gün', adim: [[0, 200], [7, 400], [14, 600]], bant: [200, 600], tavan: 600, not: ['Ağır böbrek yetmezliğinde (eGFR < 30) başlangıç 100 mg/gün, en çok 200 mg/gün.']
     },
     surdurum: SURDURUM_DEHB,
     kesme: { risk: 1, sure: 'Kademeli azaltım gerekmez', adim: [[0, 100], [7, 0]], not: ['Kesilme sendromu tanımlanmamıştır; doğrudan kesilebilir.'] },

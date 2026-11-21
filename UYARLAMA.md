@@ -26,7 +26,24 @@ Bu depo, **lipsumation** tarafından geliştirilen *Psikofarmakoloji Rehberi*'ni
 - README'nin başına uyarlama bildirimi eklendi; bu dosya oluşturuldu.
 - Yayın: Site GitHub Pages ile `main` dalının kökünden yayınlanır. Özgün README'deki "Yayın" bölümü (`gh-pages` dalı) özgün depoya aittir; bu depoda `main` dalına gönderilen her değişiklik siteye yansır.
 
-Klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
+**21 Kasım 2026: DEHB ilaçlarında klinik içerik değişiklikleri**
+
+Metilfenidat, lisdeksamfetamin ve viloksazin kayıtları güncel FDA etiketleriyle karşılaştırıldı (Concerta 4/2026, Vyvanse 9/2025, Qelbree 1/2025) ve aşağıdaki değişiklikler yapıldı. Değişiklikler uyarlayanın sorumluluğundadır.
+
+| İlaç | Değişiklik | Dayanak |
+|---|---|---|
+| Lisdeksamfetamin | Çocukta başlangıç dozu "20–30 mg" yerine "30 mg" | Vyvanse etiketi, Bölüm 2.3 |
+| Lisdeksamfetamin | Kapsül güçlerine 10 mg eklendi | Bölüm 3 |
+| Lisdeksamfetamin | Böbrek yetmezliğinde üst sınır notu eklendi (ağır: 50 mg; son dönem: 30 mg) | Bölüm 2.5 |
+| Metilfenidat | Uyarılara göz içi basıncı artışı/glokom ve OROS tablette gastrointestinal tıkanma riski eklendi | Concerta etiketi, Bölüm 5.8–5.10 |
+| Metilfenidat | Etkileşimlere antihipertansifler, halojenli anestezikler ve risperidon eklendi | Bölüm 7 |
+| Metilfenidat | "TCA, SSRI, antiepileptik ve varfarin düzeylerini artırabilir" cümlesi korundu; güncel ABD OROS etiketinde yer almadığı notu eklendi | Bölüm 7'de yok. AB ürün bilgilerinde yer aldığı bir arama sonucuna dayanır; AB metni ve Türkiye RİTALİN KÜB'ü okunamadı, **doğrulanmalıdır** |
+| Metilfenidat | Ergende OROS üst sınırına "2 mg/kg/günü aşmadan" eklendi | Bölüm 2.3 |
+| Viloksazin | Böbrek yetmezliği notu (eGFR < 30: başlangıç 100 mg, en çok 200 mg) ve pudinge serpme seçeneği eklendi | Qelbree etiketi, Bölüm 2.3–2.4 |
+
+Halojenli anestezik maddesindeki "ameliyat günü vermeyin" ifadesi etiketin tam cümlesiyle karşılaştırılmadı. Atomoksetin, guanfasin, klonidin, deksmetilfenidat, amfetamin ve modafinil kayıtları okundu ama etiketle karşılaştırılmadı; değiştirilmedi.
+
+DEHB ilaçları dışındaki klinik içerik (ilaç listesi, dozlar, titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 
 ## Özgün depodan güncelleme alma
 
