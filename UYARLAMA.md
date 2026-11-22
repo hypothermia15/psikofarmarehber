@@ -153,7 +153,7 @@ Klinik içerik değişmedi; yalnızca gösterim değişti (`js/app.js` içindeki
 
 Kullanıcı kararıyla olduğu gibi bırakılanlar: tianeptinin 15–18 yaş doz satırı; buspiron ve tianeptinde MAOİ için "kontrendike" ifadesi.
 
-Yeni sayfa: **Onay Yaşları** (`#/onay`; `js/app.js` içinde `sayfaOnay`, `css/stil.css` sonu). Sayfa yeni veri içermez: ilaç kayıtlarındaki `onay` alanından ve `TR_KUB` içindeki `pediatrik` listesinden türetilir. İlaç sınıfına ve hasta yaşına göre süzülür; yaş ifadesi sayıya çevrilemeyen satırlar (ör. "yaş sınırı belirtilmemiş") çubuksuz gösterilir ve her yaşta listelenir. "Ergen" ifadesi çubukta yaklaşık 12–18 yaş olarak çizilir. Türkiye sütunu özgün yazarın KÜB özetlerine dayanır ve bu uyarlamada ayrıca doğrulanmamıştır.
+Yeni sayfa: **Onay Yaşları** (`#/onay`; `js/app.js` içinde `sayfaOnay`, `css/stil.css` sonu). Sayfa yeni veri içermez: ilaç kayıtlarındaki `onay` alanından ve `TR_KUB` içindeki `pediatrik` listesinden türetilir. İlaç sınıfına ve hasta yaşına göre süzülür; "FDA / Avrupa" ve "Türkiye" sekmeleri ayrı ayrı açılıp kapatılabilir; yaş ifadesi sayıya çevrilemeyen satırlar (ör. "yaş sınırı belirtilmemiş") çubuksuz gösterilir ve her yaşta listelenir. "Ergen" ifadesi çubukta yaklaşık 12–18 yaş olarak çizilir. Türkiye sütunu özgün yazarın KÜB özetlerine dayanır ve bu uyarlamada ayrıca doğrulanmamıştır.
 
 ## Özgün depodan güncelleme alma
 

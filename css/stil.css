@@ -587,3 +587,9 @@ table.matris.metin-tablo td:first-child { width: 18%; }
 .onay-yoklar p { margin-top: 8px; line-height: 1.9; color: var(--murekkep-2); }
 @media (max-width: 640px) { .onay-iki { grid-template-columns: 1fr; } .onay-yas { max-width: 22ch; } }
 .onay-ek { display: block; margin-top: 2px; font-size: 12px; color: var(--soluk); }
+.onay-kaynak-sec { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 14px; }
+.onay-kaynak-sec .sekme { padding: 7px 14px 7px 12px; border-radius: 10px; border: 1px solid var(--cizgi); background: var(--yuzey); font-size: 13px; font-weight: 600; color: var(--soluk); cursor: pointer; }
+.onay-kaynak-sec .sekme::before { content: "○ "; }
+.onay-kaynak-sec .sekme.aktif { background: var(--vurgu-zemin); border-color: var(--vurgu); color: var(--vurgu); }
+.onay-kaynak-sec .sekme.aktif::before { content: "● "; }
+.onay-iki.tek { grid-template-columns: 1fr; }
