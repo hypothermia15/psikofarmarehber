@@ -133,7 +133,9 @@ Kaynakla rehber arasında fark görülüp **değiştirilmeyen, yalnızca not dü
 | Tianeptin | MAOİ ile "kontrendike (14 gün ara)" | Tianeptinden MAOİ'ye 2 hafta, MAOİ'den tianeptine 24 saat; "önerilmez" | Not eklendi |
 | Haloperidol | Onay ≥ 3 yaş | Etiket endikasyonda çocukları anar, pediatrik bölümde "belirlenmemiş" der; 3 yaş sınırı okunan metinde yok | Not eklendi |
 
-Hâlâ karşılaştırılamayanlar: **biperiden** (İrlanda ürün bilgisinin klinik bölümleri boş; Türkiye KÜB aynasında metin yüklenmedi), **bornaprin** (aynı nedenle), **oral zuklopentiksol** (ayrı ürün bilgisi aranmadı; depo formun bilgisi okundu). Oral haloperidol ve klorpromazinin doz satırları da doğrulanmadı.
+**Biperiden (kullanıcının eklediği Türkiye KÜB'üyle):** Akineton 2 mg tablet KÜB'ü (taranmış PDF; ilk ruhsat 16.06.2011, KÜB yenileme tarihi boş) sayfa görüntülerinden okundu. Bir düzeltme yapıldı: erişkinde ilaca bağlı ekstrapiramidal belirtilerde doz "1–2 mg ×1–4/gün" yerine KÜB'deki gibi "1–4 mg ×1–4/gün (½–2 tablet; 1–16 mg/gün)". Pediatrik doz (3–15 yaş, günde 1–3 kez ½–1 tablet), erişkin başlangıcı, üst sınır ve kontrendikasyonlar KÜB'le uyumlu bulundu. Kademeli kesme, dikkat gerektiren durumlar, göz içi basıncı ve laboratuvar izlemi eklendi. Ampul KÜB'ü görülmedi; ampul dozları doğrulanmadı.
+
+Hâlâ karşılaştırılamayanlar: **bornaprin** (Türkiye KÜB aynasında metin yüklenmedi), **oral zuklopentiksol** (ayrı ürün bilgisi aranmadı; depo formun bilgisi okundu). Oral haloperidol ve klorpromazinin doz satırları da doğrulanmadı.
 
 İlaç kayıtları dışındaki klinik içerik (titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 

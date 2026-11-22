@@ -123,18 +123,18 @@
     ped: {
       bas: '3–15 yaş: ½–1 tablet (1–2 mg) ×1–3/gün', artis: 'Yanıt ve yan etkiye göre', hedef: '1–6 mg/gün', maks: '6 mg/gün (oral)',
       birim: 'mg/gün', adim: [[0, 1], [2, 2], [5, 4]], bant: [2, 4], tavan: 6,
-      not: ['Akut distonide yavaş IV tek doz: 1 yaşa dek 1 mg, 6 yaşa dek 2 mg, 10 yaşa dek 3 mg (ampul KÜB\'ü); gerekirse 30 dakika sonra tekrarlanır.', 'Çocuklarda deneyim çoğunlukla ilaca bağlı distoninin kısa süreli tedavisiyle sınırlıdır.']
+      not: ['Akut distonide yavaş IV tek doz: 1 yaşa dek 1 mg, 6 yaşa dek 2 mg, 10 yaşa dek 3 mg (ampul KÜB\'ü); gerekirse 30 dakika sonra tekrarlanır.', 'Çocuklarda deneyim çoğunlukla ilaca bağlı distoninin kısa süreli tedavisiyle sınırlıdır.', 'Türkiye KÜB\'ü (Akineton 2 mg tablet; ilk ruhsat 16.06.2011): çocuklarda deneyim, nöroleptik ya da metoklopramid ve benzerlerine bağlı ilaç kökenli distoninin kısa süreli tedavisiyle sınırlıdır.']
     },
     eri: {
-      bas: '1 mg ×2/gün (½ tablet ×2)', artis: 'Günde 2 mg artış (yanıt ve yan etkiye göre)', hedef: 'İlaca bağlı EPS: 1–2 mg ×1–4/gün · Parkinson sendromu: 3–16 mg/gün', maks: '16 mg/gün (oral) · parenteral 10–20 mg/gün',
+      bas: '1 mg ×2/gün (½ tablet ×2)', artis: 'Günde 2 mg artış (yanıt ve yan etkiye göre)', hedef: 'İlaca bağlı EPS: 1–4 mg ×1–4/gün (½–2 tablet; 1–16 mg/gün) · Parkinson sendromu: 3–16 mg/gün', maks: '16 mg/gün (oral) · parenteral 10–20 mg/gün',
       birim: 'mg/gün', adim: [[0, 2], [2, 4], [4, 6]], bant: [2, 6], tavan: 16,
-      not: ['Akut distoni: 2,5–5 mg IM ya da yavaş IV; gerekirse 30 dakika sonra tekrarlanır.', 'Yemek sırasında veya sonrasında alınması mide-bağırsak yan etkilerini azaltır.', 'Yaşlıda deliryum ve bilişsel bozulma riski: mümkünse kaçının, gerekirse en düşük doz ve kısa süre.']
+      not: ['Akut distoni: 2,5–5 mg IM ya da yavaş IV; gerekirse 30 dakika sonra tekrarlanır.', 'Yemek sırasında veya sonrasında alınması mide-bağırsak yan etkilerini azaltır.', 'Yaşlıda deliryum ve bilişsel bozulma riski: mümkünse kaçının, gerekirse en düşük doz ve kısa süre.', 'Türkiye KÜB\'ü: tedavi boyunca göz içi basıncı düzenli aralıklarla kontrol edilir; düzenli biyokimya ve hematoloji izlemi gerekir.', 'Böbrek ve karaciğer yetmezliğinde doz bilgisi yoktur (Türkiye KÜB\'ü).']
     },
     surdurum: SURDURUM_ANTIKOL,
     kesme: KESME_ANTIKOL,
     izlem: 'antikolinerjik', profil: { sed: 1, ach: 3, kes: 2 },
-    uyari: ['Ağız kuruluğu, kabızlık, bulanık görme, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu, deliryum (özellikle yaşlıda)', 'Taşikardi', 'Dar açılı glokom, mekanik bağırsak tıkanıklığı ve megakolonda kontrendike', 'Öforizan etki: kötüye kullanım potansiyeli', 'Geç diskineziyi kötüleştirebilir'],
-    etkilesim: ['Diğer antikolinerjiklerle (trisiklikler, düşük potensli antipsikotikler, antihistaminikler) additif antikolinerjik yük', 'Alkolün etkisini artırır', 'Kinidinle AV iletiye etki artabilir', 'Levodopa ile diskinezi artabilir; metoklopramidin mide-bağırsak etkilerini azaltır'],
+    uyari: ['Ağız kuruluğu, kabızlık, bulanık görme, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu, deliryum (özellikle yaşlıda)', 'Taşikardi', 'Dar açılı glokom, mekanik bağırsak tıkanıklığı ve megakolonda kontrendike', 'Öforizan etki: kötüye kullanım potansiyeli', 'Geç diskineziyi kötüleştirebilir', 'Ani kesilmez: kademeli azaltılarak sonlandırılır (Türkiye KÜB\'ü)', 'Konvülsiyon eğilimi ve epilepside, prostat hipertrofisinde, taşikardi ve aritmide dikkatli kullanılır', 'Hipohidroz; seyrek olarak deliryum, halüsinasyon, uykusuzluk'],
+    etkilesim: ['Diğer antikolinerjiklerle (trisiklikler, düşük potensli antipsikotikler, antihistaminikler) additif antikolinerjik yük', 'Alkolün etkisini artırır', 'Kinidinle AV iletiye etki artabilir', 'Levodopa ile diskinezi artabilir; metoklopramidin mide-bağırsak etkilerini azaltır', 'Petidinin santral yan etkilerini şiddetlendirebilir'],
     gecisNotu: 'Antikolinerjiklerde "geçiş" yerine gereksinim yeniden değerlendirilir: ekstrapiramidal belirtide önce antipsikotik dozu ya da seçimi gözden geçirilir. Biperiden ile bornaprin arasında geçişte biri kademeli azaltılırken diğeri düşük dozdan başlatılabilir.',
     oz: ['antikol']
   },
