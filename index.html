@@ -15,31 +15,11 @@
   .ust .uyarlayan { flex-basis: 100%; font-size: 11px; }
 }
 </style>
-<script>
-/* Tema, tasarım ve hasta grubu ilk boyamadan önce uygulanır (yanıp sönmeyi önler).
-   ?tasarim=bauhaus ve ?kitle=eri (ped | eri) ile bağlantı paylaşılabilir. Hasta grubu seçilmemişse karşılama penceresi açılır. */
-(function () {
-  var k = document.documentElement, T = /^(klasik|bauhaus|isvicre|farmakope)$/;
-  var kq = (location.search.match(/[?&]kitle=(ped|eri)(?:&|$)/) || [])[1];
-  if (kq) k.setAttribute('data-kitle', kq);
-  try {
-    if (kq) localStorage.setItem('pr-kitle', kq);
-    var kd = localStorage.getItem('pr-kitle');
-    if (!kq && (kd === 'ped' || kd === 'eri')) k.setAttribute('data-kitle', kd);
-    var t = localStorage.getItem('pr-tema'); if (t === 'light' || t === 'dark') k.setAttribute('data-theme', t);
-    var q = (location.search.match(/[?&]tasarim=([a-z]+)/) || [])[1];
-    if (q && T.test(q)) localStorage.setItem('pr-tasarim', q);
-    var d = q && T.test(q) ? q : localStorage.getItem('pr-tasarim');
-    if (d && T.test(d) && d !== 'klasik') k.setAttribute('data-tasarim', d);
-  } catch (e) {}
-  /* Uyarlama: hasta grubu seçilmemişse rehber çocuk-ergen görünümüyle açılır, karşılama penceresi gösterilmez */
-  if (!k.hasAttribute('data-kitle')) k.setAttribute('data-kitle', 'ped');
-})();
-</script>
-<link rel="stylesheet" href="css/stil.css?v=32">
-<link rel="stylesheet" href="css/tasarim-bauhaus.css?v=32">
-<link rel="stylesheet" href="css/tasarim-isvicre.css?v=32">
-<link rel="stylesheet" href="css/tasarim-farmakope.css?v=32">
+<script src="js/onyukleme.js?v=33"></script>
+<link rel="stylesheet" href="css/stil.css?v=33">
+<link rel="stylesheet" href="css/tasarim-bauhaus.css?v=33">
+<link rel="stylesheet" href="css/tasarim-isvicre.css?v=33">
+<link rel="stylesheet" href="css/tasarim-farmakope.css?v=33">
 </head>
 <body>
 <header class="ust">
@@ -116,18 +96,18 @@
 
 <div id="ipucu" class="ipucu" role="tooltip" hidden></div>
 
-<script src="js/veri-temel.js?v=32"></script>
-<script src="js/veri-antidepresan.js?v=32"></script>
-<script src="js/veri-dehb.js?v=32"></script>
-<script src="js/veri-antipsikotik.js?v=32"></script>
-<script src="js/veri-diger.js?v=32"></script>
-<script src="js/veri-yardimci.js?v=32"></script>
-<script src="js/veri-metabolizma.js?v=32"></script>
-<script src="js/veri-ek.js?v=32"></script>
-<script src="js/veri-depo.js?v=32"></script>
-<script src="js/veri-turkiye.js?v=32"></script>
-<script src="js/grafik.js?v=32"></script>
-<script src="js/degisim.js?v=32"></script>
-<script src="js/app.js?v=32"></script>
+<script src="js/veri-temel.js?v=33"></script>
+<script src="js/veri-antidepresan.js?v=33"></script>
+<script src="js/veri-dehb.js?v=33"></script>
+<script src="js/veri-antipsikotik.js?v=33"></script>
+<script src="js/veri-diger.js?v=33"></script>
+<script src="js/veri-yardimci.js?v=33"></script>
+<script src="js/veri-metabolizma.js?v=33"></script>
+<script src="js/veri-ek.js?v=33"></script>
+<script src="js/veri-depo.js?v=33"></script>
+<script src="js/veri-turkiye.js?v=33"></script>
+<script src="js/grafik.js?v=33"></script>
+<script src="js/degisim.js?v=33"></script>
+<script src="js/app.js?v=33"></script>
 </body>
 </html>

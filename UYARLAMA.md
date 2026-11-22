@@ -209,6 +209,10 @@ Sınırlar: liste 2019 tarihlidir ve o tarihten sonra değişmiş olabilir; sat�
 
 Gebelik bölümüne üç satır eklendi: sertralin, fluoksetin (emc, 6/2026) ve aripiprazol (emc Abilify, 4/2026); üçünde de ürün bilgisinin 4.6 bölümü okundu, fluoksetinde bölümün sonu (emzirme) okunamadı. Metilfenidat (Concerta XL) ve risperidon ürün bilgilerinde metin 4.6 bölümüne gelmeden kesildi; bu ikisi eklenmedi. "Onay Yaşları" sayfasında ilaç adının yanında reçete türü rozeti gösterilir.
 
+**22 Kasım 2026: satır içi betik ayrı dosyaya alındı**
+
+`index.html` içindeki açılış betiği (tema, tasarım ve hasta grubu ilk boyamadan önce uygulanır) `js/onyukleme.js` dosyasına taşındı; içeriği değişmedi. Neden: rehberi barındıran sitenin güvenlik kuralı (`script-src 'self'`) satır içi betiği engelliyor; bu durumda hasta grubu atanmıyor ve karşılama penceresi açılıyordu. Özgün depodan güncelleme alınırken `index.html` bu satırda çakışabilir.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:
