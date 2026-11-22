@@ -117,6 +117,13 @@
     return '<span class="etiket onaysiz">' + esc(eri() ? (i.onayEriNot || 'Psikiyatrik endikasyonda onay yok') : (i.onayNot || 'Pediatrik onay yok · endikasyon dışı')) + '</span>';
   }
   /* Türkiye ruhsatı (KÜB): FDA bilgisine ek. Seçili hasta grubu öne alınır; doz, organ yetmezliği ve FDA farkları açılır bölümdedir. */
+  /* Uyarlama: TİTCK ek izleme listesi (▼). Veri js/veri-ek.js içindeki EK_IZLEM'dedir. */
+  function ekIzlemSatiri(i) {
+    var e = (window.EK_IZLEM || {})[i.id];
+    if (!e) return '';
+    return '<div class="ek-izlem"><b>▼ Ek izlemeye tabi</b> ' + esc(e.kapsam) + ' · listeye giriş ' + esc(e.tarih) +
+      '<small>TİTCK ek izleme listesi, ' + esc(window.EK_IZLEM_TARIH) + '. Şüpheli advers reaksiyonları TÜFAM\'a bildirin.</small></div>';
+  }
   function trKutusu(i) {
     var t = trKub(i);
     if (!t) return '';
@@ -475,7 +482,7 @@
       (eri() ? '<div class="alt-b" style="margin-top:0">Erişkinde onaylı endikasyonlar (FDA; aksi belirtilmedikçe)</div><div class="onaylar">' + onayRozet(i, false) + '</div>' +
           '<p class="kucuk ped-ozet"><b>Çocuk-ergen:</b> ' + pedOzet(i) + '</p>'
         : '<div class="alt-b" style="margin-top:0">Çocuk ve ergende onay durumu (FDA)</div><div class="onaylar">' + onayRozet(i, false) + '</div>') +
-      trKutusu(i) +
+      trKutusu(i) + ekIzlemSatiri(i) +
       '<div class="kutular">' +
       '<div class="kutu"><div class="ad">Yarı ömür</div><div class="deger">' + esc(i.t12) + '</div>' + G.cetvel(i.t12s) + '</div>' +
       '<div class="kutu"><div class="ad">Etki başlangıcı</div><div class="deger">' + esc(i.etki) + '</div></div>' +

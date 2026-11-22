@@ -171,5 +171,19 @@
     ["Prolaktin", [0, 2, 2, 2, 2], "Belirti varlığında."]
   ] };
 
+  /* TİTCK "Ek izlemeye tabi ilaçlar" listesi (ruhsatlı ilaçlar, 22.07.2026; kullanıcının eklediği Excel dosyası, 466 satır).
+     Yalnızca bu rehberdeki etkin maddelerle eşleşen satırlar alınmıştır. */
+  window.EK_IZLEM_TARIH = "22.07.2026";
+  window.EK_IZLEM = {
+    brekspiprazol: { kapsam: "Rexulti, Rebexip", tarih: "18.05.2022 (Rexulti), 22.07.2026 (Rebexip)" },
+    guanfasin: { kapsam: "Arislow ER, Guago", tarih: "19.10.2021 (Arislow ER), 03.03.2023 (Guago)" },
+    kariprazin: { kapsam: "Kaprazdi", tarih: "06.12.2024" },
+    lurasidon: { kapsam: "lurasidon içeren tüm ilaçlar", tarih: "25.09.2025" },
+    melatonin: { kapsam: "melatonin içeren tüm ilaçlar", tarih: "06.12.2024" },
+    valproat: { kapsam: "valproat içeren tüm ilaçlar", tarih: "18.03.2015" },
+    topiramat: { kapsam: "topiramat içeren tüm ilaçlar", tarih: "20.08.2024" },
+    propranolol: { kapsam: "yalnız Hemangiol (infantil hemanjiyom çözeltisi)", tarih: "20.11.2018" }
+  };
+
   EK.forEach(function (i) { i.metab = METAB_EK[i.id]; window.METAB[i.id] = METAB_EK[i.id]; window.ILACLAR.push(i); });
 })();

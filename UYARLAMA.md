@@ -191,6 +191,12 @@ Kaynaktan alınanlar: onay yaşları, dozlar, böbrek ve karaciğer yetmezliği,
 
 **Türkiye'ye özgü reçete bilgisi yazılmadı.** Kırmızı ve yeşil reçete listeleri ile SUT rapor koşullarının resmî metinleri TİTCK ve SGK sayfalarındadır; TİTCK bu ortamdan açılamıyor, ikincil kaynaklardan (eczacı odası kopyaları, haber siteleri) aktarım yapılmadı. Güncel liste ve SUT eki eklendiğinde yazılabilir.
 
+**22 Kasım 2026: TİTCK ek izleme listesi**
+
+Kullanıcının eklediği "Ek izlemeye tabi ilaçlar" listesi (ruhsatlı ilaçlar, 22.07.2026; 466 satır) rehberdeki 71 etkin maddeyle eşleştirildi. Sekiz ilaçta eşleşme var: brekspiprazol, guanfasin, kariprazin, lurasidon, melatonin, valproat, topiramat ve (yalnız Hemangiol ürünüyle) propranolol. Bu ilaçların sayfasında "▼ Ek izlemeye tabi" satırı gösterilir (`js/veri-ek.js` içinde `EK_IZLEM`). Liste güncellendiğinde bu sekiz satır elle yenilenmelidir. Armodafinil (Nuvigil) ve metformin içeren sabit bileşimler listede vardır ama rehberdeki kayıtlarla aynı ürün olmadığı için işaretlenmedi.
+
+Bu liste reçete türünü (kırmızı, yeşil, normal) göstermez; reçete türü bölümü hâlâ yazılmamıştır.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:
