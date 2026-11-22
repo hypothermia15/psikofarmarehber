@@ -161,6 +161,30 @@ Yeni sayfa: **Onay Yaşları** (`#/onay`; `js/app.js` içinde `sayfaOnay`, `css/
 
 Önerilen "organ yetmezliğinde doz tablosu" ayrıca yapılmadı: özgün rehberde "Metabolizma (CYP)" sayfasında 66 ilacın tamamı için zaten vardır. Yirmi satırı bu denetimde okunan kaynaklarla karşılaştırıldı; çelişki görülmedi.
 
+**22 Kasım 2026: beş yeni ilaç**
+
+Özgün rehberde bulunmayan beş ilaç eklendi: **topiramat, gabapentin, mianserin, sülpirid, tetrabenazin**. Kayıtlar ayrı bir dosyadadır (`js/veri-ek.js`), böylece özgün depodan güncelleme alırken çakışmaz. Dört yeni izlem şablonu da aynı dosyadadır.
+
+| İlaç | Kaynak | Okunan kısım |
+|---|---|---|
+| Topiramat | ABD etiketi (Topamax, 3/2025); İngiltere ürün bilgisi (emc, 6/2024) | İkisinde de ilk yarı; gebelik ve farmakokinetik bölümleri okunamadı |
+| Gabapentin | ABD etiketi (Neurontin, 4/2025); İngiltere ürün bilgisi (emc, 2/2026) | İkisinde de ilk yarı; farmakokinetik yalnızca özetten |
+| Mianserin | İngiltere ürün bilgisi (emc, 6/2026) | Tamamı |
+| Sülpirid | İngiltere ürün bilgisi (emc, 10/2019) | Tamamı; metin 2019 tarihli |
+| Tetrabenazin | İngiltere ürün bilgisi (emc, 12/2022); ABD etiketi (Xenazine, 9/2017) | İngiltere tamamı, ABD ilk yarı |
+
+Kaynaktan alınanlar: onay yaşları, dozlar, böbrek ve karaciğer yetmezliği, kontrendikasyonlar, uyarılar, etkileşimler, izlem önerileri.
+
+**Kaynaktan okunmayan, uyarlayanın yazdığı alanlar** (klinik gözden geçirme ister):
+- Etki düzeneği özetleri (`mek`) ve "etki başlangıcı" satırları.
+- Göreli yan etki puanları (`profil`, 0–3). Özgün rehberdeki puanlarla aynı ölçekte ama yeniden ölçünlenmemiş tahminlerdir.
+- Mianserin ve sülpiridde titrasyon grafiği örnek şemadır; ürün bilgileri artış aralığı vermez. Mianserin ve sülpiridde kesme süresi genel ilkeye göre yazıldı.
+- Topiramatta "yaklaşık %70 değişmeden idrarla" ve yarı ömür, ABD etiketinin otomatik özetinden alındı; tam metinden doğrulanmadı. Gabapentinde "tamamına yakını değişmeden" ifadesi, ürün bilgisindeki "metabolize olmaz" bilgisinden çıkarıldı. Sülpiridde idrar payı kaynakta ayrılmadığı için böbrekle atılım çubuğunda gösterilmedi.
+- Beş ilacın Türkiye KÜB özeti yoktur; "Onay Yaşları" sayfasının Türkiye sütununda görünmezler.
+- Psikiyatrik endikasyon dışı kullanımlar (ör. topiramatın kilo artışında, gabapentinin anksiyetede kullanımı) için doz ya da etkinlik bilgisi yazılmadı: ürün bilgilerinde yoktur.
+
+**N-asetilsistein eklenmedi.** Psikiyatrik endikasyonda ürün bilgisi yoktur; doz yalnızca klinik çalışmalardan gelir ve bu rehberin "ürün bilgisi dayanaklı" ölçütüne uymaz.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:

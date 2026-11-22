@@ -706,7 +706,7 @@
   /* ───────────── SAYFA: tetkik ve izlem ───────────── */
   var IZLEM_SINIF = { ssri: 'ad', snri: 'ad', tca: 'ad', mirtazapin: 'ad', bupropion: 'ad', trazodon: 'ad', stimulan: 'dehb', atomoksetin: 'dehb', alfa2: 'dehb',
     antipsikotik: 'ap', klozapin: 'ap', lityum: 'dd', valproat: 'dd', lamotrijin: 'dd', karbamazepin: 'dd', benzo: 'anks', melatonin: 'anks', hidroksizin: 'anks', buspiron: 'anks',
-    naltrekson: 'diger', nalmefen: 'diger', buprenorfin: 'diger', nalokson: 'diger', antikolinerjik: 'diger', propranolol: 'diger', metformin: 'diger', prazosin: 'diger' };
+    naltrekson: 'diger', nalmefen: 'diger', buprenorfin: 'diger', nalokson: 'diger', antikolinerjik: 'diger', propranolol: 'diger', metformin: 'diger', prazosin: 'diger', topiramat: 'dd', gabapentin: 'anks', mianserin: 'ad', tetrabenazin: 'diger' };
 
   function sayfaIzlem() {
     var h = '<section class="kart bolum"><h2>Tetkik ve izlem çizelgeleri</h2>' +
