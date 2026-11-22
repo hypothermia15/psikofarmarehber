@@ -619,3 +619,12 @@ table.matris.metin-tablo td:first-child { width: 18%; }
 /* Uyarlama: ek izleme satırı */
 .ek-izlem { margin: 12px 0; padding: 9px 12px; border: 1px solid var(--cizgi); border-left: 3px solid var(--murekkep); border-radius: 8px; font-size: 13px; background: var(--yuzey-2); overflow-wrap: anywhere; }
 .ek-izlem small { display: block; margin-top: 3px; color: var(--soluk); font-size: 12px; }
+
+/* Uyarlama: reçete türü satırı */
+.recete { margin: 12px 0; padding: 9px 12px; border: 1px solid var(--cizgi); border-left: 4px solid var(--soluk); border-radius: 8px; font-size: 13px; background: var(--yuzey-2); overflow-wrap: anywhere; }
+.recete-yesil { border-left-color: #1f9d55; }
+.recete-yesil b { color: #1f9d55; }
+.recete-kirmizi { border-left-color: var(--kritik); }
+.recete-kirmizi b { color: var(--kritik); }
+.recete-not { display: block; margin-top: 4px; }
+.recete small { display: block; margin-top: 3px; color: var(--soluk); font-size: 12px; }

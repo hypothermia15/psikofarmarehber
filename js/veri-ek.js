@@ -185,5 +185,20 @@
     propranolol: { kapsam: "yalnız Hemangiol (infantil hemanjiyom çözeltisi)", tarih: "20.11.2018" }
   };
 
+  /* Reçete türü. Yalnızca kullanıcının eklediği resmî listelerde adı geçen etkin maddeler işaretlenir.
+     Yeşil reçete: "Yeşil Reçeteye Tabi İlaçlar" listesi, güncelleme tarihi 29.11.2019 (4 sayfa, taranmış PDF; sayfa görüntülerinden okundu). */
+  window.RECETE_LISTE = {
+    yesil: { ad: "Yeşil reçete", kaynak: "Yeşil Reçeteye Tabi İlaçlar listesi, 29.11.2019", kural: "Her yeşil reçeteye aynı etkin maddeden en fazla 2 kutu yazılır; fazlası için ilgili tek uzman hekim raporu gerekir." }
+  };
+  window.RECETE = {
+    alprazolam: { tur: "yesil", urun: "Xanax, Ansiox, Stabina, Apo-Alpraz, As-Alpralam" },
+    lorazepam: { tur: "yesil", urun: "Ativan Expidet 1 mg ve 2,5 mg" },
+    diazepam: { tur: "yesil", urun: "Diazem, Lizan, Nervium, Diapam, Diazepam Desitin rektal tüp" },
+    klonazepam: { tur: "yesil", urun: "Rivotril tablet ve damla" },
+    pregabalin: { tur: "yesil", urun: "Lyrica ve eşdeğerleri", not: "İlaç kullanım raporu olmadan yalnızca kısa ürün bilgisindeki endikasyonlarda ve ilgili uzman hekimlerce reçete edilebilir." },
+    biperiden: { tur: "yesil", urun: "Akineton tablet ve ampul" },
+    tianeptin: { tur: "yesil", urun: "Stablon 12,5 mg" }
+  };
+
   EK.forEach(function (i) { i.metab = METAB_EK[i.id]; window.METAB[i.id] = METAB_EK[i.id]; window.ILACLAR.push(i); });
 })();

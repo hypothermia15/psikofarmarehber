@@ -195,7 +195,13 @@ Kaynaktan alınanlar: onay yaşları, dozlar, böbrek ve karaciğer yetmezliği,
 
 Kullanıcının eklediği "Ek izlemeye tabi ilaçlar" listesi (ruhsatlı ilaçlar, 22.07.2026; 466 satır) rehberdeki 71 etkin maddeyle eşleştirildi. Sekiz ilaçta eşleşme var: brekspiprazol, guanfasin, kariprazin, lurasidon, melatonin, valproat, topiramat ve (yalnız Hemangiol ürünüyle) propranolol. Bu ilaçların sayfasında "▼ Ek izlemeye tabi" satırı gösterilir (`js/veri-ek.js` içinde `EK_IZLEM`). Liste güncellendiğinde bu sekiz satır elle yenilenmelidir. Armodafinil (Nuvigil) ve metformin içeren sabit bileşimler listede vardır ama rehberdeki kayıtlarla aynı ürün olmadığı için işaretlenmedi.
 
-Bu liste reçete türünü (kırmızı, yeşil, normal) göstermez; reçete türü bölümü hâlâ yazılmamıştır.
+Bu liste reçete türünü (kırmızı, yeşil, normal) göstermez.
+
+**22 Kasım 2026: yeşil reçete**
+
+Kullanıcının eklediği "Yeşil Reçeteye Tabi İlaçlar" listesi (güncelleme tarihi **29.11.2019**; 4 sayfa, taranmış PDF, sayfa görüntülerinden okundu) rehberle eşleştirildi. Yedi ilaç listede yer alıyor: alprazolam, lorazepam, diazepam, klonazepam, pregabalin, biperiden, tianeptin. Bu ilaçların sayfasında "Yeşil reçete" satırı, listedeki iki kutu kuralı ve pregabaline özgü notla birlikte gösterilir (`js/veri-ek.js` içinde `RECETE`).
+
+Sınırlar: liste 2019 tarihlidir ve o tarihten sonra değişmiş olabilir; satırda bu uyarı yazılıdır. Rehberdeki gabapentin, buspiron, hidroksizin, modafinil ve melatonin bu listede yoktur; bu, normal reçeteyle verildikleri anlamına gelebilir ama listeden çıkarım yapılmadı ve işaretlenmedi. Kırmızı reçete listesi henüz okunamadı; metilfenidat gibi ilaçlar bu yüzden işaretsizdir.
 
 ## Özgün depodan güncelleme alma
 
