@@ -205,6 +205,10 @@ Sınırlar: liste 2019 tarihlidir ve o tarihten sonra değişmiş olabilir; sat�
 
 **Kırmızı reçete:** kullanıcının eklediği "Kırmızı Reçeteye Tabi İlaçlar" listesi (güncellenme tarihi **07.08.2024**; 6 sayfa, taranmış PDF) okundu. Rehberdeki iki ilaç listede yer alıyor: metilfenidat (Concerta, Konsenidat, Medikinet, Medikinet Retard, Ritalin) ve buprenorfin/nalokson (Suboxone). Listedeki kutu sınırları, rapor koşulları ve birlikte reçete edilemeyen formlar ilaç sayfasına aynen işlendi. Esketamin (Spravato) ve sodyum oksibat (Xyrem) da listededir ama rehberde kayıtları yoktur. Lisdeksamfetamin, deksmetilfenidat, amfetamin ve modafinil listede yer almaz.
 
+**22 Kasım 2026: gebelik bölümüne ekler ve reçete rozeti**
+
+Gebelik bölümüne üç satır eklendi: sertralin, fluoksetin (emc, 6/2026) ve aripiprazol (emc Abilify, 4/2026); üçünde de ürün bilgisinin 4.6 bölümü okundu, fluoksetinde bölümün sonu (emzirme) okunamadı. Metilfenidat (Concerta XL) ve risperidon ürün bilgilerinde metin 4.6 bölümüne gelmeden kesildi; bu ikisi eklenmedi. "Onay Yaşları" sayfasında ilaç adının yanında reçete türü rozeti gösterilir.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:

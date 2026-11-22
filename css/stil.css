@@ -630,3 +630,6 @@ table.matris.metin-tablo td:first-child { width: 18%; }
 .recete small { display: block; margin-top: 3px; color: var(--soluk); font-size: 12px; }
 .recete-kural { margin: 6px 0 4px; padding-left: 18px; }
 .recete-kural li { margin: 3px 0; }
+.recete-rozet { display: inline-block; margin-left: 6px; padding: 0 7px; border-radius: 999px; font-size: 11px; font-weight: 700; line-height: 18px; border: 1px solid currentColor; vertical-align: 2px; }
+.recete-rozet.recete-yesil { color: #1f9d55; }
+.recete-rozet.recete-kirmizi { color: var(--kritik); }

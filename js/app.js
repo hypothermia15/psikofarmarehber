@@ -127,6 +127,10 @@
       (r.kurallar ? '<ul class="recete-kural">' + r.kurallar.map(function (k) { return '<li>' + esc(k) + '</li>'; }).join('') + '</ul>' : '') +
       '<small>' + esc(L.kural) + ' Kaynak: ' + esc(L.kaynak) + '. ' + esc(L.uyari) + '</small></div>';
   }
+  function receteRozet(i) {
+    var r = (window.RECETE || {})[i.id];
+    return r ? ' <span class="recete-rozet recete-' + r.tur + '">' + esc(window.RECETE_LISTE[r.tur].ad) + '</span>' : '';
+  }
   /* Uyarlama: TİTCK ek izleme listesi (▼). Veri js/veri-ek.js içindeki EK_IZLEM'dedir. */
   function ekIzlemSatiri(i) {
     var e = (window.EK_IZLEM || {})[i.id];
@@ -884,6 +888,9 @@
     ['okskarbazepin', 'Okskarbazepin', 'Gebelikte nöbet denetimi için yakın izlem ve doğum sonrası takip önerilir.', 'Okunamadı.', 'Hormonal kontraseptif etkinliği azalabilir: ek yöntem önerin.', 'FDA Trileptal, 9/2025'],
     ['lityum', 'Lityum', 'Başlamadan önce gebelik durumu değerlendirilir. Rehber kaydı kardiyak malformasyon (Ebstein) riskini anar; ayrıntı okunamadı.', 'Okunamadı.', '—', 'FDA lityum, 10/2022 (ilk bölüm)'],
     ['gabapentin', 'Gabapentin', 'İlk üç ayda 1700\'den fazla maruziyeti içeren Nordik çalışmada majör malformasyon riskinde artış gösterilmemiştir. Yenidoğanda kesilme belirtileri bildirilmiştir; opioidle birlikte maruziyette risk artabilir.', 'Süte geçer; yalnızca yarar riski açıkça aşıyorsa.', 'Hormonal kontraseptiflerle etkileşmez.', 'emc Neurontin, 2/2026; FDA Neurontin, 4/2025'],
+    ['sertralin', 'Sertralin (SSRI)', 'Yarar riski aşmadıkça önerilmez. Geniş veride doğumsal malformasyon kanıtı yok. Son üç ayda kullanımda yenidoğanı gözleyin: solunum sıkıntısı, apne, nöbet, hipoglisemi, tonus değişikliği, irritabilite, beslenme güçlüğü (çoğu ilk 24 saatte). Yenidoğanın kalıcı pulmoner hipertansiyonu SSRI ile yaklaşık 1000 gebelikte 5 (genel toplumda 1–2). Doğumdan önceki ayda kullanımda doğum sonrası kanama riski artar (2 katın altında).', 'Süte geçer; bebekte düzey çoğunlukla ihmal edilebilir. Yarar riski aşmadıkça önerilmez.', '—', 'emc Sertraline 50 mg, 6/2026'],
+    ['fluoksetin', 'Fluoksetin (SSRI)', 'Klinik durum tedaviyi gerektirmedikçe ve fetal riski haklı çıkarmadıkça kullanılmaz; gebelikte ani kesmeyin. İlk üç ayda kullanımda bazı çalışmalar kardiyovasküler defekt riskinde artış düşündürür: yaklaşık 100 gebelikte 2 (genel toplumda 1). Geç gebelikte yenidoğanda irritabilite, tremor, hipotoni, sürekli ağlama, beslenme ve uyku güçlüğü. Kalıcı pulmoner hipertansiyon SSRI ile yaklaşık 1000 gebelikte 5 (genel toplumda 1–2).', 'Okunamadı.', '—', 'emc Fluoxetine 20 mg, 6/2026 (bölümün sonu okunamadı)'],
+    ['aripiprazol', 'Aripiprazol', 'Yeterli kontrollü çalışma yok; yalnızca beklenen yarar fetal riski açıkça haklı çıkarıyorsa. Doğumsal anomali bildirilmiş, nedensellik gösterilmemiştir. Son üç ayda maruz kalan yenidoğanda ekstrapiramidal ve kesilme belirtileri: ajitasyon, hipertoni, hipotoni, tremor, uyuklama, solunum sıkıntısı, beslenme bozukluğu; bebeği yakından izleyin.', 'Süte geçer. Emzirmeyi ya da ilacı bırakma kararı yarar tartılarak verilir.', 'Hasta gebelik ya da gebelik planını hekime bildirmelidir.', 'emc Abilify, 4/2026'],
     ['diazepam', 'Benzodiazepinler', 'Gebeliğin geç döneminde kullanımda yenidoğanda sedasyon ve kesilme belirtileri (etiket uyarısı).', 'Diazepam etiketi emzirmeyi önermez.', '—', 'FDA Valium 2023, Ativan 1/2023, Xanax 1/2023, Klonopin 2/2021'],
     ['buprenorfin', 'Buprenorfin / nalokson', 'Yenidoğanda opioid yoksunluk sendromu (etiket uyarısı). Rehber kaydı: tedavi kesilmez, uzmanla planlanır.', 'Okunamadı.', '—', 'FDA Suboxone, 5/2025 (ilk bölüm)'],
     ['sulpirid', 'Sülpirid (antipsikotik sınıf uyarısı)', 'Yarar gerektirmedikçe önerilmez. Gebeliğin son üç ayında maruz kalan yenidoğanda ekstrapiramidal ve kesilme belirtileri: bebeği izleyin.', 'Süte yüksek oranda geçer (anneye göre ayarlanmış dozun %10\'undan fazlası olabilir).', 'Etkili kontrasepsiyon kullanmayan kadında önerilmez.', 'emc Sulpiride, 10/2019'],
@@ -895,7 +902,7 @@
   function gebelikBolumu() {
     var h = '<section class="kart bolum" id="gebelik"><h2>Gebelik, emzirme ve kontrasepsiyon</h2>' +
       '<div class="alt-baslik">Ergen hastada ilaç seçerken ürün bilgilerinin ne dediği. Yalnızca bu uyarlamada okunan metinlerdeki ifadeler yer alır.</div>' +
-      '<div class="cagri uyari">' + SIMGE.uyari + '<div><b>Liste eksiktir.</b> SSRI\'lar, DEHB ilaçları ve antipsikotiklerin çoğu için gebelik bölümleri okunmadı; bir ilacın burada bulunmaması güvenli olduğu anlamına gelmez. "Okunamadı" yazan yerlerde ürün bilgisinin ilgili bölümüne bakın. Karar için güncel KÜB ve kadın doğum görüşü esastır.</div></div><div class="geb-liste">';
+      '<div class="cagri uyari">' + SIMGE.uyari + '<div><b>Liste eksiktir.</b> DEHB ilaçları, SSRI\'ların çoğu ve antipsikotiklerin çoğu (risperidon dahil) için gebelik bölümleri okunamadı; bir ilacın burada bulunmaması güvenli olduğu anlamına gelmez. "Okunamadı" yazan yerlerde ürün bilgisinin ilgili bölümüne bakın. Karar için güncel KÜB ve kadın doğum görüşü esastır.</div></div><div class="geb-liste">';
     GEBELIK.forEach(function (g) {
       var var_ = window.ILACLAR.some(function (i) { return i.id === g[0]; });
       h += '<div class="geb-ilac"><div class="geb-ad">' + (var_ ? '<a href="#/ilac/' + g[0] + '">' + esc(g[1]) + '</a>' : esc(g[1])) + '</div>' +
@@ -971,7 +978,7 @@
       var trBos = k && k.ruhsatsiz ? 'Türkiye\'de ruhsatlı ürünü yok' : (y != null && tr.length ? 'Bu yaşta endikasyon yok' : 'Pediatrik endikasyon yok');
       var fdaBos = y != null && fda.length ? 'Bu yaşta onay yok' : 'Pediatrik onay yok';
       (grup[i.sinif] = grup[i.sinif] || []).push({ enAz: enAz, ad: i.ad, h:
-        '<div class="onay-ilac"><a class="onay-bas" href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a>' +
+        '<div class="onay-ilac"><a class="onay-bas" href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a>' + receteRozet(i) +
         '<div class="onay-iki' + (onayDurum.fda && onayDurum.tr ? '' : ' tek') + '">' +
         (onayDurum.fda ? '<div><div class="onay-kaynak">FDA / Avrupa</div>' + (fdaG.length ? '<ul>' + fdaG.map(function (r) { return r.h; }).join('') + '</ul>' : '<div class="onay-yok">' + fdaBos + '</div>') + '</div>' : '') +
         (onayDurum.tr ? '<div><div class="onay-kaynak">Türkiye KÜB</div>' + (trG.length ? '<ul>' + trG.map(function (r) { return r.h; }).join('') + '</ul>' : '<div class="onay-yok">' + trBos + '</div>') + '</div>' : '') + '</div></div>' });
