@@ -155,6 +155,12 @@ Kullanıcı kararıyla olduğu gibi bırakılanlar: tianeptinin 15–18 yaş doz
 
 Yeni sayfa: **Onay Yaşları** (`#/onay`; `js/app.js` içinde `sayfaOnay`, `css/stil.css` sonu). Sayfa yeni veri içermez: ilaç kayıtlarındaki `onay` alanından ve `TR_KUB` içindeki `pediatrik` listesinden türetilir. İlaç sınıfına ve hasta yaşına göre süzülür; "FDA / Avrupa" ve "Türkiye" sekmeleri ayrı ayrı açılıp kapatılabilir; yaş ifadesi sayıya çevrilemeyen satırlar (ör. "yaş sınırı belirtilmemiş") çubuksuz gösterilir ve her yaşta listelenir. "Ergen" ifadesi çubukta yaklaşık 12–18 yaş olarak çizilir. Türkiye sütunu özgün yazarın KÜB özetlerine dayanır ve bu uyarlamada ayrıca doğrulanmamıştır.
 
+**22 Kasım 2026: QT özeti**
+
+"Tetkik ve İzlem" sayfasının sonuna **QT uzaması: hangi ilaçlarda dikkat** bölümü eklendi (`js/app.js` içinde `qtBolumu`). Yeni veri içermez: ilaç kayıtlarındaki göreli QT puanı (`profil.qt`), QT geçen uyarı satırları ve EKG geçen notlardan derlenir. Puanlar özgün rehberindir; bu uyarlamada yeniden derecelendirilmedi. Lityum puansızdır, Brugada uyarısı nedeniyle listede yer alır.
+
+Önerilen "organ yetmezliğinde doz tablosu" ayrıca yapılmadı: özgün rehberde "Metabolizma (CYP)" sayfasında 66 ilacın tamamı için zaten vardır. Yirmi satırı bu denetimde okunan kaynaklarla karşılaştırıldı; çelişki görülmedi.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:

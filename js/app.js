@@ -735,6 +735,7 @@
           : ['Büyüme (stimulan)', 'Boy persentilinde ≥ 2 ana eğri düşüş', 'Doz azaltımı, ilaç tatili veya ilaç değişimi; gerekirse pediatrik endokrin.']
       ].map(function (e) { return '<div class="esik"><div class="ad">' + e[0] + '</div><div class="deger">' + e[1] + '</div><div class="not">' + e[2] + '</div></div>'; }).join('') +
       '</div></section>';
+    h += qtBolumu();
     icerik.innerHTML = h;
     izlemCiz();
     $('#izlemCip').onclick = function (e) {
@@ -853,6 +854,33 @@
       h += '<div><a href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a></div><div class="yo-ray"><i class="yo-nokta" style="left:' + p(i.t12s) + '%;--sinif:' + renk(i) + '" data-ipucu="' + esc('<b>' + i.ad + '</b>' + i.t12) + '"></i></div><div class="deger">~' + d + '</div>';
     });
     return h + '</div>';
+  }
+
+  /* ───────────── QT özeti (uyarlama eki) ─────────────
+     Veri yeni değildir: ilaç kayıtlarındaki göreli QT puanı (profil.qt), uyarı satırları ve notlardan derlenir. */
+  function qtBolumu() {
+    var duz = function (x) { return typeof x === 'string' ? x : (x && typeof x === 'object' ? (x[kitle] || x.ped || x.eri || '') : ''); };
+    var sira = [];
+    window.ILACLAR.forEach(function (i) {
+      var p = (i.profil && i.profil.qt) || 0;
+      var u = (i.uyari || []).map(duz).filter(function (x) { return /QT|torsades|Brugada/i.test(x) && !/^Kontrendikasyon/.test(x); });
+      var n = ((i[kitle] && i[kitle].not) || []).map(duz).filter(function (x) { return /EKG|QTc/i.test(x) && !ETIKET_NOT.test(x); });
+      if (!p && !u.length) return;
+      sira.push({ p: p, i: i, u: u, n: n });
+    });
+    sira.sort(function (a, b) { return b.p - a.p || a.i.ad.localeCompare(b.i.ad, 'tr'); });
+    var baslik = { 3: 'Yüksek', 2: 'Orta', 1: 'Düşük', 0: 'Puan verilmemiş, uyarı var' }, son = null;
+    var h = '<section class="kart bolum" id="qt"><h2>QT uzaması: hangi ilaçlarda dikkat</h2>' +
+      '<div class="alt-baslik">Rehberdeki göreli QT puanına (0–3) göre sıralı. EKG gerektiren notlar ilaç kayıtlarından alınmıştır.</div>' +
+      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Puanlar özgün rehberin göreli derecelendirmesidir; mutlak risk ölçüsü değildir ve bu uyarlamada yeniden derecelendirilmemiştir. Risk, iki QT uzatan ilaç birlikte verildiğinde, hipokalemi, hipomagnezemi, bradikardi ve konjenital uzun QT varlığında artar.</div></div>';
+    sira.forEach(function (r) {
+      if (r.p !== son) { h += (son === null ? '' : '</div>') + '<h3 class="qt-grup qt-' + r.p + '">' + baslik[r.p] + '</h3><div class="qt-liste">'; son = r.p; }
+      h += '<div class="qt-ilac" style="--sinif:' + window.SINIFLAR[r.i.sinif].renk + '"><a href="#/ilac/' + r.i.id + '">' + esc(r.i.ad) + '</a>' +
+        '<span class="qt-puan" aria-label="QT puanı ' + r.p + ' / 3">' + [1, 2, 3].map(function (k) { return '<i class="' + (k <= r.p ? 'dolu' : '') + '"></i>'; }).join('') + '</span>' +
+        (r.u.length ? '<p>' + r.u.map(esc).join(' · ') + '</p>' : '') +
+        (r.n.length ? '<p class="qt-ekg"><b>EKG:</b> ' + r.n.map(esc).join(' ') + '</p>' : '') + '</div>';
+    });
+    return h + (son === null ? '' : '</div>') + '</section>';
   }
 
   /* ───────────── onay yaşı çizelgesi (uyarlama eki) ─────────────

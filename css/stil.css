@@ -593,3 +593,15 @@ table.matris.metin-tablo td:first-child { width: 18%; }
 .onay-kaynak-sec .sekme.aktif { background: var(--vurgu-zemin); border-color: var(--vurgu); color: var(--vurgu); }
 .onay-kaynak-sec .sekme.aktif::before { content: "● "; }
 .onay-iki.tek { grid-template-columns: 1fr; }
+
+/* Uyarlama: QT özeti */
+.qt-grup { margin: 20px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--murekkep-2); }
+.qt-grup.qt-3 { color: var(--kritik); }
+.qt-liste { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.qt-ilac { border: 1px solid var(--cizgi); border-left: 3px solid var(--sinif, var(--cizgi)); border-radius: 10px; padding: 10px 12px; background: var(--yuzey); min-width: 0; }
+.qt-ilac a { font-weight: 700; color: var(--murekkep); }
+.qt-puan { float: right; display: inline-flex; gap: 3px; margin-top: 6px; }
+.qt-puan i { width: 14px; height: 6px; border-radius: 3px; background: var(--yuzey-2); border: 1px solid var(--cizgi); }
+.qt-puan i.dolu { background: var(--vurgu); border-color: var(--vurgu); }
+.qt-ilac p { margin: 6px 0 0; font-size: 13px; color: var(--murekkep-2); overflow-wrap: anywhere; }
+.qt-ilac p.qt-ekg { color: var(--murekkep); }
