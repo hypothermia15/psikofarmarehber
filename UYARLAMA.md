@@ -201,7 +201,9 @@ Bu liste reçete türünü (kırmızı, yeşil, normal) göstermez.
 
 Kullanıcının eklediği "Yeşil Reçeteye Tabi İlaçlar" listesi (güncelleme tarihi **29.11.2019**; 4 sayfa, taranmış PDF, sayfa görüntülerinden okundu) rehberle eşleştirildi. Yedi ilaç listede yer alıyor: alprazolam, lorazepam, diazepam, klonazepam, pregabalin, biperiden, tianeptin. Bu ilaçların sayfasında "Yeşil reçete" satırı, listedeki iki kutu kuralı ve pregabaline özgü notla birlikte gösterilir (`js/veri-ek.js` içinde `RECETE`).
 
-Sınırlar: liste 2019 tarihlidir ve o tarihten sonra değişmiş olabilir; satırda bu uyarı yazılıdır. Rehberdeki gabapentin, buspiron, hidroksizin, modafinil ve melatonin bu listede yoktur; bu, normal reçeteyle verildikleri anlamına gelebilir ama listeden çıkarım yapılmadı ve işaretlenmedi. Kırmızı reçete listesi henüz okunamadı; metilfenidat gibi ilaçlar bu yüzden işaretsizdir.
+Sınırlar: liste 2019 tarihlidir ve o tarihten sonra değişmiş olabilir; satırda bu uyarı yazılıdır. Rehberdeki gabapentin, buspiron, hidroksizin, modafinil ve melatonin bu listede yoktur; bu, normal reçeteyle verildikleri anlamına gelebilir ama listeden çıkarım yapılmadı ve işaretlenmedi. 
+
+**Kırmızı reçete:** kullanıcının eklediği "Kırmızı Reçeteye Tabi İlaçlar" listesi (güncellenme tarihi **07.08.2024**; 6 sayfa, taranmış PDF) okundu. Rehberdeki iki ilaç listede yer alıyor: metilfenidat (Concerta, Konsenidat, Medikinet, Medikinet Retard, Ritalin) ve buprenorfin/nalokson (Suboxone). Listedeki kutu sınırları, rapor koşulları ve birlikte reçete edilemeyen formlar ilaç sayfasına aynen işlendi. Esketamin (Spravato) ve sodyum oksibat (Xyrem) da listededir ama rehberde kayıtları yoktur. Lisdeksamfetamin, deksmetilfenidat, amfetamin ve modafinil listede yer almaz.
 
 ## Özgün depodan güncelleme alma
 

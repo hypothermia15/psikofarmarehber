@@ -188,9 +188,23 @@
   /* Reçete türü. Yalnızca kullanıcının eklediği resmî listelerde adı geçen etkin maddeler işaretlenir.
      Yeşil reçete: "Yeşil Reçeteye Tabi İlaçlar" listesi, güncelleme tarihi 29.11.2019 (4 sayfa, taranmış PDF; sayfa görüntülerinden okundu). */
   window.RECETE_LISTE = {
-    yesil: { ad: "Yeşil reçete", kaynak: "Yeşil Reçeteye Tabi İlaçlar listesi, 29.11.2019", kural: "Her yeşil reçeteye aynı etkin maddeden en fazla 2 kutu yazılır; fazlası için ilgili tek uzman hekim raporu gerekir." }
+    yesil: { ad: "Yeşil reçete", kaynak: "Yeşil Reçeteye Tabi İlaçlar listesi, 29.11.2019", kural: "Her yeşil reçeteye aynı etkin maddeden en fazla 2 kutu yazılır; fazlası için ilgili tek uzman hekim raporu gerekir.", uyari: "Liste 2019 tarihlidir; güncel durumu doğrulayın." },
+    kirmizi: { ad: "Kırmızı reçete", kaynak: "Kırmızı Reçeteye Tabi İlaçlar listesi, güncellenme 07.08.2024", kural: "Yalnızca uzman hekimlerin yazabileceği ilaçları, üniversite ve eğitim-araştırma hastanelerinde ilgili branşta ihtisas yapan asistanlar da reçete edebilir.", uyari: "Güncel listeyi doğrulayın." }
   };
+  /* Kırmızı reçete: "Kırmızı Reçeteye Tabi İlaçlar" listesi, güncellenme tarihi 07.08.2024 (6 sayfa, taranmış PDF; sayfa görüntülerinden okundu). */
   window.RECETE = {
+    metilfenidat: { tur: "kirmizi", urun: "Concerta, Konsenidat, Medikinet, Medikinet Retard, Ritalin", kurallar: [
+      "Çocuk ve ergen psikiyatristleri ile yetişkin psikiyatristleri reçete edebilir.",
+      "Concerta ve Konsenidat (18, 27, 36, 54 mg): bir reçeteye 2 kutu (2 aylık).",
+      "72 mg/gün gereken 13 yaş ve üzeri hastada 3 imzalı rapora istinaden 36 mg formdan 2 aylık tedavi için 4 kutu.",
+      "Medikinet Retard: 5, 10, 20, 30 mg için 4 kutu, 40 mg için 2 kutu (2 aylık). Çocukta (6–17 yaş) en çok 60 mg/gün; erişkinde 3 imzalı rapora istinaden en çok 80 mg/gün.",
+      "Kısa etkili formlar (Ritalin 10 mg, Medikinet 5, 10, 20 mg tablet): aynı reçetede toplam en çok 60 mg/gün; 30 tabletlik ambalajda 12 kutuyu geçmez.",
+      "Medikinet Retard, Konsenidat ve Concerta birlikte reçete edilemez."] },
+    buprenorfin: { tur: "kirmizi", urun: "Suboxone 2 mg/0,5 mg ve 8 mg/2 mg dil altı tablet", kurallar: [
+      "Rapora istinaden erişkin ya da çocuk-ergen ruh sağlığı ve hastalıkları uzmanı reçete edebilir.",
+      "Rapor, kamu kurumları ile özel hastanelerdeki erişkin ve çocuk-ergen madde bağımlılığı arındırma ve rehabilitasyon merkezlerince verilir.",
+      "Bir reçeteye 2 mg/0,5 mg formdan 6 kutu, 8 mg/2 mg formdan 2 kutu; günlük 24 mg aşılmamak koşuluyla iki form birlikte yazılabilir.",
+      "İdame tedavisinde her reçeteye \"yapılan idrar tahlilinde opiyat negatif çıkmıştır\" ifadesi yazılır; detoksifikasyonda yalnız ilk reçetede bu ifade aranmaz."] },
     alprazolam: { tur: "yesil", urun: "Xanax, Ansiox, Stabina, Apo-Alpraz, As-Alpralam" },
     lorazepam: { tur: "yesil", urun: "Ativan Expidet 1 mg ve 2,5 mg" },
     diazepam: { tur: "yesil", urun: "Diazem, Lizan, Nervium, Diapam, Diazepam Desitin rektal tüp" },

@@ -124,7 +124,8 @@
     var L = window.RECETE_LISTE[r.tur];
     return '<div class="recete recete-' + r.tur + '"><b>' + esc(L.ad) + '</b> ' + esc(r.urun) +
       (r.not ? '<span class="recete-not">' + esc(r.not) + '</span>' : '') +
-      '<small>' + esc(L.kural) + ' Kaynak: ' + esc(L.kaynak) + '. Liste eskidir; güncel durumu doğrulayın.</small></div>';
+      (r.kurallar ? '<ul class="recete-kural">' + r.kurallar.map(function (k) { return '<li>' + esc(k) + '</li>'; }).join('') + '</ul>' : '') +
+      '<small>' + esc(L.kural) + ' Kaynak: ' + esc(L.kaynak) + '. ' + esc(L.uyari) + '</small></div>';
   }
   /* Uyarlama: TİTCK ek izleme listesi (▼). Veri js/veri-ek.js içindeki EK_IZLEM'dedir. */
   function ekIzlemSatiri(i) {
