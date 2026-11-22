@@ -135,7 +135,9 @@ Kaynakla rehber arasında fark görülüp **değiştirilmeyen, yalnızca not dü
 
 **Biperiden (kullanıcının eklediği Türkiye KÜB'üyle):** Akineton 2 mg tablet KÜB'ü (taranmış PDF; ilk ruhsat 16.06.2011, KÜB yenileme tarihi boş) sayfa görüntülerinden okundu. Bir düzeltme yapıldı: erişkinde ilaca bağlı ekstrapiramidal belirtilerde doz "1–2 mg ×1–4/gün" yerine KÜB'deki gibi "1–4 mg ×1–4/gün (½–2 tablet; 1–16 mg/gün)". Pediatrik doz (3–15 yaş, günde 1–3 kez ½–1 tablet), erişkin başlangıcı, üst sınır ve kontrendikasyonlar KÜB'le uyumlu bulundu. Kademeli kesme, dikkat gerektiren durumlar, göz içi basıncı ve laboratuvar izlemi eklendi. Ampul KÜB'ü görülmedi; ampul dozları doğrulanmadı.
 
-Hâlâ karşılaştırılamayanlar: **bornaprin** (Türkiye KÜB aynasında metin yüklenmedi), **oral zuklopentiksol** (ayrı ürün bilgisi aranmadı; depo formun bilgisi okundu). Oral haloperidol ve klorpromazinin doz satırları da doğrulanmadı.
+**Bornaprin ve oral zuklopentiksol:** bornaprin Almanya ürün bilgisiyle (Sormodren Fachinformation, 4/2019), oral zuklopentiksol İngiltere ürün bilgisiyle (Clopixol tablet, emc, 4/2026) karşılaştırıldı; ikisi de tam metin okundu. Bornaprin dozları, endikasyonları ve kontrendikasyonları uyumlu bulundu. Zuklopentiksolde bir fark not edildi, değiştirilmedi: rehber başlangıcı 10–20 mg/gün (Türkiye KÜB'ü), İngiltere 20–30 mg/gün verir. Her iki kayda kontrendikasyon, uyarı, etkileşim ve özel popülasyon notları eklendi.
+
+Bu turla birlikte rehberdeki 66 ilaç ve 8 depo kaydının tamamı en az bir resmî ürün bilgisiyle karşılaştırılmış oldu. Doğrulanmadan kalanlar: oral haloperidol, klorpromazin, karbamazepin, klonazepam ve diazepamın doz satırları; haloperidol dekanoat dozu; biperiden ampul dozları; nalmefen (yalnızca halk özeti okundu).
 
 İlaç kayıtları dışındaki klinik içerik (titrasyon ve kesme şemaları, tetkik ve izlem, ilaç geçiş kuralları, metabolizma bilgileri ve Türkiye KÜB özetleri) özgün sürümle aynıdır; bu uyarlamada değiştirilmemiş ve ayrıca doğrulanmamıştır. Özgün uyarı metni korunmuştur.
 

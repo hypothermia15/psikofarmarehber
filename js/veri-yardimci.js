@@ -176,13 +176,13 @@
     eri: {
       bas: '2 mg/gün (½ tablet)', artis: 'Yanıta göre kademeli', hedef: '6–12 mg/gün, 2–3 doza bölünmüş', maks: '12 mg/gün',
       birim: 'mg/gün', adim: [[0, 2], [3, 4], [7, 6], [14, 8]], bant: [6, 12], tavan: 12,
-      not: ['Hiperhidrozda idame 4–8 mg/gün.', 'Yemek sırasında veya sonrasında alın.', 'Yaşlıda dozu dikkatle ayarlayın; bellek bozukluğunda kontrendike.']
+      not: ['Hiperhidrozda idame 4–8 mg/gün.', 'Yemek sırasında veya sonrasında alın.', 'Yaşlıda dozu dikkatle ayarlayın; bellek bozukluğunda kontrendike.', 'Almanya ürün bilgisi (Sormodren, 4/2019): başlangıç 2 mg/gün, sürdürüm 6–12 mg/gün, hiperhidrozda 4–8 mg/gün, 2–3 doza bölünmüş; bu rehberdeki dozlarla aynıdır. Böbrek ve karaciğer yetmezliği için doz bilgisi yoktur.']
     },
     surdurum: SURDURUM_ANTIKOL,
     kesme: KESME_ANTIKOL,
     izlem: 'antikolinerjik', profil: { sed: 1, ach: 3, kes: 2 },
-    uyari: ['Ağız kuruluğu, kabızlık, bulanık görme, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu', 'Taşikardi', 'Dar açılı glokom, mekanik bağırsak darlığı, megakolon, ileus ve bellek bozukluğunda kontrendike'],
-    etkilesim: ['Diğer antikolinerjiklerle additif santral ve periferik yan etkiler', 'Alkolün etkisini artırır', 'Kinidinle AV iletiye etki artabilir', 'Levodopa ile diskinezi artabilir; nöroleptiğe bağlı geç diskinezi şiddetlenebilir'],
+    uyari: ['Ağız kuruluğu, kabızlık, bulanık görme, idrar retansiyonu', 'Konfüzyon, bellek bozukluğu', 'Taşikardi', 'Dar açılı glokom, mekanik bağırsak darlığı, megakolon, ileus ve bellek bozukluğunda kontrendike', 'Ani kesilmez: kademeli azaltın', 'Prostat adenomunda, taşikardiye yol açan durumlarda ve beyin damar hastalığı olan yaşlıda dikkat; nöbet eşiğini düşürebilir', 'Göz içi basıncı düzenli aralıklarla kontrol edilir'],
+    etkilesim: ['Diğer antikolinerjiklerle additif santral ve periferik yan etkiler', 'Alkolün etkisini artırır', 'Kinidinle AV iletiye etki artabilir', 'Levodopa ile diskinezi artabilir; nöroleptiğe bağlı geç diskinezi şiddetlenebilir', 'Petidinin santral yan etkilerini artırabilir; metoklopramidin etkisini azaltır', 'Trisiklik antidepresan ve sempatomimetiklerle yakın izlem; MAOİ ile deneyim sınırlıdır'],
     gecisNotu: 'Antikolinerjiklerde "geçiş" yerine gereksinim yeniden değerlendirilir: ekstrapiramidal belirtide önce antipsikotik dozu ya da seçimi gözden geçirilir.',
     oz: ['antikol']
   },

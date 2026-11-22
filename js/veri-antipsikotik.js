@@ -405,7 +405,7 @@
     eri: {
       bas: 'Akut psikoz, şiddetli ajitasyon, mani: 10–20 mg/gün (orta–şiddetli tabloda 20 mg)', artis: '2–3 günde bir 10–20 mg', hedef: 'Akut: 10–50 mg/gün (gerekirse 75 mg ve üzeri) · kronik idame: 20–40 mg/gün', maks: '150 mg/gün; tek seferde en çok 40 mg',
       birim: 'mg/gün', adim: [[0, 20], [3, 30], [6, 40], [9, 50]], bant: [20, 50], tavan: 150,
-      not: ['İdame dozu genellikle tek doz olarak yatmadan önce verilir.', 'Mental retardasyonda ajitasyon: 6–20 mg/gün, gerekirse 25–40 mg.', 'Yaşlıda doz aralığının alt sınırı.', 'Uzun süreli tedavide uyum sorunu varsa dekanoat (depo) formuna geçilebilir.']
+      not: ['İdame dozu genellikle tek doz olarak yatmadan önce verilir.', 'Mental retardasyonda ajitasyon: 6–20 mg/gün, gerekirse 25–40 mg.', 'Yaşlıda doz aralığının alt sınırı.', 'Uzun süreli tedavide uyum sorunu varsa dekanoat (depo) formuna geçilebilir.', 'İngiltere ürün bilgisi (Clopixol tablet, emc, 4/2026): başlangıç 20–30 mg/gün (bölünmüş), sürdürüm 20–50 mg/gün, aralık 4–150 mg/gün; tek seferde en çok 40 mg. Bu rehberdeki daha düşük başlangıç Türkiye KÜB\'ünü izler.', 'Yaşlı ya da düşkün hastada başlangıç dozunun ¼–½\'si. Böbrek yetmezliğinde ve karaciğer yetmezliğinde yarı doz; karaciğer yetmezliğinde serum düzeyi izlemi önerilir.', 'İngiltere\'de tek endikasyon psikozlardır (özellikle şizofreni); çocuklarda endike değildir.']
     },
     surdurum: SURDURUM_AP,
     kesme: { risk: 2, sure: '2–4 hafta veya daha uzun', adim: [[0, 100], [7, 75], [14, 50], [21, 25], [28, 0]],
@@ -413,8 +413,8 @@
     izlem: 'antipsikotik', izlemEk: [['EPS, akatizi, diskinezi (AIMS)', [1, 'Her vizit', 1, 1, 1], 'Ekstrapiramidal yan etkiler sıktır; AIMS 3–6 ayda bir.']],
     profil: { sed: 3, kilo: 2, eps: 3, prl: 3, qt: 1, ach: 1, kes: 2 },
     kutu: KUTU_AP,
-    uyari: ['Belirgin sedasyon', 'Akut distoni, parkinsonizm, akatizi; geç diskinezi', 'Hiperprolaktinemi', 'Ortostatik hipotansiyon', 'Nöroleptik malign sendrom', 'QT uzaması (doza bağlı)'],
-    etkilesim: ['CYP2D6 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Alkol ve diğer sedatiflerle additif sedasyon', 'Levodopa ve dopamin agonistlerinin etkisini azaltır', 'QT uzatan ilaçlarla dikkat'],
+    uyari: ['Belirgin sedasyon', 'Akut distoni, parkinsonizm, akatizi; geç diskinezi', 'Hiperprolaktinemi', 'Ortostatik hipotansiyon', 'Nöroleptik malign sendrom', 'QT uzaması (doza bağlı)', 'Kontrendikasyon: dolaşım kollapsı, herhangi bir nedenle bilinç baskılanması (alkol, barbitürat, opioid zehirlenmesi), koma', 'Nöbet eşiğinde düşme; kan diskrazileri; venöz tromboemboli; yutma güçlüğü', 'Ani kesilmez: kademeli azaltın'],
+    etkilesim: ['CYP2D6 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Alkol ve diğer sedatiflerle additif sedasyon', 'Levodopa ve dopamin agonistlerinin etkisini azaltır', 'QT uzatan ilaçlarla dikkat', 'Lityumla nörotoksisite bildirilmiştir; trisiklik antidepresanlarla karşılıklı metabolizma etkileşimi', 'Adrenalin ve guanetidinin etkisini değiştirir; antikoagülan etkisini artırabilir'],
     oz: ['d2', '2d6sub', 'antikol']
   }
   );
