@@ -855,6 +855,80 @@
     return h + '</div>';
   }
 
+  /* ───────────── onay yaşı çizelgesi (uyarlama eki) ─────────────
+     Veri yeni değildir: ilaç kayıtlarındaki onay alanı ile TR_KUB.pediatrik listesinden türetilir. */
+  var onayDurum = { sinif: 'hepsi', yas: null };
+  function yasAralik(t) {
+    t = String(t || '');
+    if (/tüm yaşlar|yenidoğandan/i.test(t)) return { min: 0, max: 18 };
+    var m = t.match(/(\d+)\s*[–-]\s*(\d+)\s*yaş/);
+    if (m) return { min: +m[1], max: Math.min(18, +m[2]) };
+    m = t.match(/[≥>]\s*(\d+)\s*(yaş|ay)/);
+    if (m) return { min: m[2] === 'ay' ? +m[1] / 12 : +m[1], max: 18 };
+    m = t.match(/(\d+)\s*yaş(ından büyük| ve üstü)/);
+    if (m) return { min: +m[1], max: 18 };
+    if (/^ergen/i.test(t)) return { min: 12, max: 18, yaklasik: true };
+    return null;
+  }
+  function onaySatir(ad, yas) {
+    var a = yasAralik(yas), cubuk = '';
+    if (a) cubuk = '<span class="yas-ray" aria-hidden="true"><i style="left:' + (a.min / 18 * 100).toFixed(1) + '%;width:' + Math.max(3, (a.max - a.min) / 18 * 100).toFixed(1) + '%"></i></span>';
+    var ham = String(yas || 'yaş belirtilmemiş'), ay = ham.search(/ \(|; |, /), kisa = ay > 0 ? ham.slice(0, ay) : ham, ek = ay > 0 ? ham.slice(ay).replace(/^[;, ]+/, '') : '';
+    return { a: a, h: '<li><span class="onay-ad">' + esc(ad) + (ek ? '<small class="onay-ek">' + esc(ek) + '</small>' : '') + '</span><span class="onay-yas' + (a ? '' : ' belirsiz') + '">' + esc(kisa) + '</span>' + cubuk + '</li>' };
+  }
+  function yasUyar(a, y) { return y == null || !a || (a.min <= y && y <= a.max); }
+  function onayCiz() {
+    var y = onayDurum.yas, grup = {}, sayi = 0, yok = [];
+    window.ILACLAR.forEach(function (i) {
+      if (onayDurum.sinif !== 'hepsi' && i.sinif !== onayDurum.sinif) return;
+      var k = trKub(i);
+      var fda = (i.onay || []).map(function (o) { return onaySatir(o[0], o[1]); });
+      var tr = ((k && k.pediatrik) || []).map(function (x) { var b = String(x).indexOf(' · '); return b < 0 ? onaySatir(x, '') : onaySatir(x.slice(0, b), x.slice(b + 3)); });
+      if (!fda.length && !tr.length) { yok.push(i); return; }
+      var fdaG = fda.filter(function (r) { return yasUyar(r.a, y); }), trG = tr.filter(function (r) { return yasUyar(r.a, y); });
+      if (y != null && !fdaG.length && !trG.length) return;
+      sayi++;
+      var enAz = Math.min.apply(null, fda.concat(tr).map(function (r) { return r.a ? r.a.min : 99; }));
+      var trBos = k && k.ruhsatsiz ? 'Türkiye\'de ruhsatlı ürünü yok' : (y != null && tr.length ? 'Bu yaşta endikasyon yok' : 'Pediatrik endikasyon yok');
+      var fdaBos = y != null && fda.length ? 'Bu yaşta onay yok' : 'Pediatrik onay yok';
+      (grup[i.sinif] = grup[i.sinif] || []).push({ enAz: enAz, ad: i.ad, h:
+        '<div class="onay-ilac"><a class="onay-bas" href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a>' +
+        '<div class="onay-iki"><div><div class="onay-kaynak">FDA / Avrupa</div>' + (fdaG.length ? '<ul>' + fdaG.map(function (r) { return r.h; }).join('') + '</ul>' : '<div class="onay-yok">' + fdaBos + '</div>') + '</div>' +
+        '<div><div class="onay-kaynak">Türkiye KÜB</div>' + (trG.length ? '<ul>' + trG.map(function (r) { return r.h; }).join('') + '</ul>' : '<div class="onay-yok">' + trBos + '</div>') + '</div></div></div>' });
+    });
+    var h = '<div class="onay-ozet">' + (y == null ? sayi + ' ilaçta pediatrik onay ya da endikasyon var.' : y + ' yaşında onayı ya da endikasyonu olan ' + sayi + ' ilaç.') + '</div>';
+    Object.keys(window.SINIFLAR).forEach(function (sk) {
+      if (!grup[sk]) return;
+      grup[sk].sort(function (a, b) { return a.enAz - b.enAz || a.ad.localeCompare(b.ad, 'tr'); });
+      h += '<h3 class="onay-sinif" style="--sinif:' + window.SINIFLAR[sk].renk + '"><i class="nokta"></i>' + window.SINIFLAR[sk].ad + '</h3>' + grup[sk].map(function (g) { return g.h; }).join('');
+    });
+    if (yok.length) h += '<details class="onay-yoklar"><summary>Pediatrik onayı ve Türkiye\'de pediatrik endikasyonu olmayanlar (' + yok.length + ')</summary><p>' +
+      yok.map(function (i) { return '<a href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a>'; }).join(' · ') + '</p></details>';
+    $('#onayAlan').innerHTML = h;
+  }
+  function sayfaOnay() {
+    var h = '<section class="kart bolum"><h2>Onay yaşı çizelgesi</h2>' +
+      '<div class="alt-baslik">Hangi ilaç, hangi endikasyonda, kaç yaşından itibaren onaylı. Çubuklar 0–18 yaş eksenini gösterir.</div>' +
+      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Onay yaşı bir kullanım önerisi değildir. Çocuk psikiyatrisinde endikasyon dışı kullanım sıktır; karar hekimindir. Çizelge bu rehberin ilaç kayıtlarından türetilir; yeni veri içermez. Güncel KÜB\'ü ayrıca kontrol edin.</div></div>' +
+      '<div class="cipler" id="onayCip" style="margin:14px 0 12px"><button class="cip aktif" data-k="hepsi">Tümü</button>' +
+      Object.keys(window.SINIFLAR).map(function (k) { return '<button class="cip" data-k="' + k + '" style="--sinif:' + window.SINIFLAR[k].renk + '"><i class="nokta"></i>' + window.SINIFLAR[k].ad + '</button>'; }).join('') + '</div>' +
+      '<div class="onay-yas-sec"><label for="onayYas">Hastanın yaşı: <b id="onayYasEt">tümü</b></label>' +
+      '<input type="range" id="onayYas" min="-1" max="18" step="1" value="-1" aria-describedby="onayYasEt"><button class="cip" id="onayYasSil" type="button">Yaşı temizle</button></div>' +
+      '<div id="onayAlan"></div></section>';
+    $('#icerik').innerHTML = h;
+    onayDurum = { sinif: 'hepsi', yas: null };
+    onayCiz();
+    $('#onayCip').onclick = function (e) {
+      var b = e.target.closest('.cip'); if (!b) return;
+      onayDurum.sinif = b.dataset.k;
+      Array.prototype.forEach.call(this.querySelectorAll('.cip'), function (c) { c.classList.toggle('aktif', c === b); });
+      onayCiz();
+    };
+    var kay = $('#onayYas');
+    kay.oninput = function () { var v = +kay.value; onayDurum.yas = v < 0 ? null : v; $('#onayYasEt').textContent = v < 0 ? 'tümü' : v + ' yaş'; onayCiz(); };
+    $('#onayYasSil').onclick = function () { kay.value = -1; kay.oninput(); };
+  }
+
   /* ───────────── yönlendirici ───────────── */
   function yonlendir() {
     var p = location.hash.replace(/^#\/?/, '').split('/');
@@ -865,6 +939,7 @@
     else if (p[0] === 'ilkeler') { sayfa = 'ilkeler'; sayfaIlkeler(); }
     else if (p[0] === 'depo') { sayfa = 'depo'; sayfaDepo(); }
     else if (p[0] === 'cyp') { sayfa = 'cyp'; sayfaCyp(p[1]); }
+    else if (p[0] === 'onay') { sayfa = 'onay'; sayfaOnay(); }
     else sayfaIlaclar();
     Array.prototype.forEach.call(document.querySelectorAll('#gezinti a'), function (a) { a.classList.toggle('aktif', a.dataset.sayfa === sayfa); });
     var gz = $('#gezinti'), ak = $('#gezinti a.aktif');

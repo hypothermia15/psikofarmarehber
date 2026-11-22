@@ -563,3 +563,27 @@ table.matris.metin-tablo td:first-child { width: 18%; }
   .matris-sar { position: relative; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding-bottom: 4px; }
   .matris-sar::after { content: "Tablo yana kayar →"; display: block; position: sticky; left: 0; margin-top: 6px; font-size: 12px; color: var(--soluk); }
 }
+
+/* Uyarlama: onay yaşı çizelgesi */
+.onay-yas-sec { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-bottom: 14px; font-size: 14px; }
+.onay-yas-sec input[type=range] { flex: 1 1 180px; min-width: 0; accent-color: var(--vurgu); }
+.onay-ozet { font-size: 13px; color: var(--murekkep-2); margin-bottom: 4px; }
+.onay-sinif { display: flex; align-items: center; gap: 8px; margin: 22px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--murekkep-2); }
+.onay-sinif .nokta { width: 9px; height: 9px; border-radius: 50%; background: var(--sinif, var(--soluk)); }
+.onay-ilac { padding: 12px 0; border-top: 1px solid var(--cizgi); }
+.onay-bas { font-weight: 700; font-size: 16px; color: var(--murekkep); }
+.onay-iki { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 22px; margin-top: 6px; }
+.onay-kaynak { font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--soluk); margin-bottom: 4px; }
+.onay-iki ul { list-style: none; margin: 0; padding: 0; }
+.onay-iki li { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 5px 0; font-size: 14px; }
+.onay-ad { min-width: 0; overflow-wrap: anywhere; }
+.onay-yas { font-weight: 650; font-size: 13px; text-align: right; max-width: 16ch; overflow-wrap: anywhere; }
+.onay-yas.belirsiz { font-weight: 400; color: var(--soluk); }
+.yas-ray { grid-column: 1 / -1; position: relative; height: 5px; border-radius: 3px; background: var(--yuzey-2); }
+.yas-ray i { position: absolute; top: 0; bottom: 0; border-radius: 3px; background: var(--vurgu); }
+.onay-yok { font-size: 13px; color: var(--soluk); padding: 5px 0; }
+.onay-yoklar { margin-top: 22px; font-size: 14px; }
+.onay-yoklar summary { cursor: pointer; font-weight: 600; }
+.onay-yoklar p { margin-top: 8px; line-height: 1.9; color: var(--murekkep-2); }
+@media (max-width: 640px) { .onay-iki { grid-template-columns: 1fr; } .onay-yas { max-width: 22ch; } }
+.onay-ek { display: block; margin-top: 2px; font-size: 12px; color: var(--soluk); }
