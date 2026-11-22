@@ -840,6 +840,7 @@
         ['Priapizm', '4 saatten uzun süren ağrılı ereksiyon. Trazodon, antipsikotikler, nadiren atomoksetin ve stimulanlar.', 'Acil üroloji başvurusu; ilacı kesin.']
       ].map(function (x) { return '<div class="ilke acil"><b>' + x[0] + '</b><p>' + x[1] + '</p><div class="ilk-adim"><b style="display:inline">İlk adım:</b> ' + x[2] + '</div></div>'; }).join('') + '</div></section>';
 
+    h += gebelikBolumu();
     icerik.innerHTML = h;
   }
 
@@ -854,6 +855,37 @@
       h += '<div><a href="#/ilac/' + i.id + '">' + esc(i.ad) + '</a></div><div class="yo-ray"><i class="yo-nokta" style="left:' + p(i.t12s) + '%;--sinif:' + renk(i) + '" data-ipucu="' + esc('<b>' + i.ad + '</b>' + i.t12) + '"></i></div><div class="deger">~' + d + '</div>';
     });
     return h + '</div>';
+  }
+
+  /* ───────────── gebelik, emzirme, kontrasepsiyon (uyarlama eki) ─────────────
+     Yalnızca bu uyarlamada okunan ürün bilgilerindeki ifadeleri içerir; liste eksiktir. */
+  var GEBELIK = [
+    ['valproat', 'Valproat', 'Doğumsal malformasyon yaklaşık %11, nörogelişimsel bozukluk %30–40\'a kadar; gebelik yaşına göre düşük doğum ağırlığı. ABD kutulu uyarısı: nöral tüp defekti ve zekâ puanında düşme. Migren profilaksisinde gebelikte kontrendike.', 'Okunamadı.', 'İngiltere: 55 yaş altı kadın ve kız çocukta yalnızca iki uzman başka seçenek olmadığını belgelerse başlanır. Gebelik önleme programı: tedavi öncesi negatif gebelik testi; kesintisiz etkili kontrasepsiyon (tercihen rahim içi araç ya da implant, ya da bariyer içeren iki yöntem); yılda bir risk onam formu ve uzman değerlendirmesi. Menarşta uzmana yeniden yönlendirme. 55 yaş altı erkekte de yeni başlama iki uzman koşuluna bağlıdır. ABD: folik asit desteği.', 'emc Epilim, 10/2026 (ilk bölüm); FDA Depakote, 3/2026'],
+    ['topiramat', 'Topiramat', 'Majör malformasyon (yarık dudak-damak dahil) ve gebelik yaşına göre küçük bebek riski artar. İngiltere: migrende gebelikte kontrendike; epilepside başka uygun seçenek yoksa.', 'Okunamadı.', 'İngiltere gebelik önleme programı: gebelik testi; tedavi boyunca ve kesildikten sonra en az 4 hafta etkili kontrasepsiyon; yılda en az bir gözden geçirme; menarşta uzman değerlendirmesi. 200 mg/gün üzerinde hormonal kontraseptif etkinliği azalabilir.', 'emc Topamax, 6/2024; FDA Topamax, 3/2025'],
+    ['lamotrijin', 'Lamotrijin', 'Gebelik bölümü okunmadı.', 'Okunmadı.', 'Östrojenli kontraseptif lamotrijin düzeyini yaklaşık %50 düşürür: sürdürüm dozunu 2 katına kadar artırmak gerekebilir; kontraseptif kesilince doz azaltılır.', 'FDA Lamictal, 10/2025'],
+    ['karbamazepin', 'Karbamazepin', 'Etikette "gebelikte kullanım" uyarısı vardır; rehber kaydı nöral tüp defekti riskini anar. Ayrıntı okunamadı.', 'Okunamadı.', 'Rehber kaydı: hormonal kontraseptif düzeyini düşürür; ek yöntem gerekir.', 'FDA Tegretol, 2025 (ilk bölüm)'],
+    ['okskarbazepin', 'Okskarbazepin', 'Gebelikte nöbet denetimi için yakın izlem ve doğum sonrası takip önerilir.', 'Okunamadı.', 'Hormonal kontraseptif etkinliği azalabilir: ek yöntem önerin.', 'FDA Trileptal, 9/2025'],
+    ['lityum', 'Lityum', 'Başlamadan önce gebelik durumu değerlendirilir. Rehber kaydı kardiyak malformasyon (Ebstein) riskini anar; ayrıntı okunamadı.', 'Okunamadı.', '—', 'FDA lityum, 10/2022 (ilk bölüm)'],
+    ['gabapentin', 'Gabapentin', 'İlk üç ayda 1700\'den fazla maruziyeti içeren Nordik çalışmada majör malformasyon riskinde artış gösterilmemiştir. Yenidoğanda kesilme belirtileri bildirilmiştir; opioidle birlikte maruziyette risk artabilir.', 'Süte geçer; yalnızca yarar riski açıkça aşıyorsa.', 'Hormonal kontraseptiflerle etkileşmez.', 'emc Neurontin, 2/2026; FDA Neurontin, 4/2025'],
+    ['diazepam', 'Benzodiazepinler', 'Gebeliğin geç döneminde kullanımda yenidoğanda sedasyon ve kesilme belirtileri (etiket uyarısı).', 'Diazepam etiketi emzirmeyi önermez.', '—', 'FDA Valium 2023, Ativan 1/2023, Xanax 1/2023, Klonopin 2/2021'],
+    ['buprenorfin', 'Buprenorfin / nalokson', 'Yenidoğanda opioid yoksunluk sendromu (etiket uyarısı). Rehber kaydı: tedavi kesilmez, uzmanla planlanır.', 'Okunamadı.', '—', 'FDA Suboxone, 5/2025 (ilk bölüm)'],
+    ['sulpirid', 'Sülpirid (antipsikotik sınıf uyarısı)', 'Yarar gerektirmedikçe önerilmez. Gebeliğin son üç ayında maruz kalan yenidoğanda ekstrapiramidal ve kesilme belirtileri: bebeği izleyin.', 'Süte yüksek oranda geçer (anneye göre ayarlanmış dozun %10\'undan fazlası olabilir).', 'Etkili kontrasepsiyon kullanmayan kadında önerilmez.', 'emc Sulpiride, 10/2019'],
+    ['mianserin', 'Mianserin', 'Zorlayıcı neden olmadıkça kullanılmaz.', 'Kontrendike.', '—', 'emc Mianserin, 6/2026'],
+    ['tetrabenazin', 'Tetrabenazin', 'Gebelikte önerilmez; ABD etiketi hayvan verisine dayanarak fetüse zarar verebileceğini yazar.', 'İngiltere: kontrendike.', 'Kontrasepsiyon kullanmayan çocuk doğurma potansiyeli olan kadında önerilmez.', 'emc Xenazine, 12/2022; FDA Xenazine, 9/2017'],
+    ['hidroksizin', 'Hidroksizin', 'Gebeliğin erken döneminde kontrendike (ABD etiketi).', 'Emziren anneye verilmemeli (ABD etiketi).', '—', 'FDA Vistaril, 11/2016'],
+    ['biperiden', 'Biperiden', 'Gebelik kategorisi C; yeterli veri yok, yalnızca zorunluysa.', 'Süte geçer: kullanılmamalı ya da emzirmeye ara verilmeli.', 'Çocuk doğurma potansiyeli olan kadında uygun kontrasepsiyon önerilir.', 'Türkiye KÜB\'ü, Akineton 2 mg tablet']
+  ];
+  function gebelikBolumu() {
+    var h = '<section class="kart bolum" id="gebelik"><h2>Gebelik, emzirme ve kontrasepsiyon</h2>' +
+      '<div class="alt-baslik">Ergen hastada ilaç seçerken ürün bilgilerinin ne dediği. Yalnızca bu uyarlamada okunan metinlerdeki ifadeler yer alır.</div>' +
+      '<div class="cagri uyari">' + SIMGE.uyari + '<div><b>Liste eksiktir.</b> SSRI\'lar, DEHB ilaçları ve antipsikotiklerin çoğu için gebelik bölümleri okunmadı; bir ilacın burada bulunmaması güvenli olduğu anlamına gelmez. "Okunamadı" yazan yerlerde ürün bilgisinin ilgili bölümüne bakın. Karar için güncel KÜB ve kadın doğum görüşü esastır.</div></div><div class="geb-liste">';
+    GEBELIK.forEach(function (g) {
+      var var_ = window.ILACLAR.some(function (i) { return i.id === g[0]; });
+      h += '<div class="geb-ilac"><div class="geb-ad">' + (var_ ? '<a href="#/ilac/' + g[0] + '">' + esc(g[1]) + '</a>' : esc(g[1])) + '</div>' +
+        '<dl><dt>Gebelik</dt><dd>' + esc(g[2]) + '</dd><dt>Emzirme</dt><dd>' + esc(g[3]) + '</dd><dt>Kontrasepsiyon</dt><dd>' + esc(g[4]) + '</dd></dl>' +
+        '<div class="geb-kaynak">Kaynak: ' + esc(g[5]) + '</div></div>';
+    });
+    return h + '</div></section>';
   }
 
   /* ───────────── QT özeti (uyarlama eki) ─────────────

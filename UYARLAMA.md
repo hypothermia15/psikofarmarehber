@@ -185,6 +185,12 @@ Kaynaktan alınanlar: onay yaşları, dozlar, böbrek ve karaciğer yetmezliği,
 
 **N-asetilsistein eklenmedi.** Psikiyatrik endikasyonda ürün bilgisi yoktur; doz yalnızca klinik çalışmalardan gelir ve bu rehberin "ürün bilgisi dayanaklı" ölçütüne uymaz.
 
+**22 Kasım 2026: gebelik, emzirme ve kontrasepsiyon bölümü**
+
+"Genel İlkeler" sayfasının sonuna eklendi (`js/app.js` içinde `GEBELIK` listesi ve `gebelikBolumu`). On dört satır içerir ve yalnızca bu uyarlamada okunan ürün bilgilerindeki ifadelere dayanır; her satırın altında kaynağı yazılıdır. **Liste bilerek eksiktir:** SSRI'lar, DEHB ilaçları ve antipsikotiklerin çoğu için gebelik bölümleri okunmadı. Valproatta oranlar (%11 malformasyon, %30–40'a kadar nörogelişimsel bozukluk) İngiltere ürün bilgisinin 4.4 bölümündeki kutudan alındı; 4.6 bölümü ve erkek hastalara ilişkin ayrıntı okunamadı. Karbamazepin ve lityum satırlarında özgün rehber kaydındaki ifade kullanıldı ve bu açıkça belirtildi.
+
+**Türkiye'ye özgü reçete bilgisi yazılmadı.** Kırmızı ve yeşil reçete listeleri ile SUT rapor koşullarının resmî metinleri TİTCK ve SGK sayfalarındadır; TİTCK bu ortamdan açılamıyor, ikincil kaynaklardan (eczacı odası kopyaları, haber siteleri) aktarım yapılmadı. Güncel liste ve SUT eki eklendiğinde yazılabilir.
+
 ## Özgün depodan güncelleme alma
 
 Özgün depo düzenli olarak güncellenmektedir (doz ve KÜB düzeltmeleri dahil). Güncellemeler GitHub'da bu deponun sayfasındaki **Sync fork** düğmesiyle alınabilir. Komut satırından:
