@@ -902,7 +902,7 @@
   function gebelikBolumu() {
     var h = '<section class="kart bolum" id="gebelik"><h2>Gebelik, emzirme ve kontrasepsiyon</h2>' +
       '<div class="alt-baslik">Ergen hastada ilaç seçerken ürün bilgilerinin ne dediği. Yalnızca bu uyarlamada okunan metinlerdeki ifadeler yer alır.</div>' +
-      '<div class="cagri uyari">' + SIMGE.uyari + '<div><b>Liste eksiktir.</b> DEHB ilaçları, SSRI\'ların çoğu ve antipsikotiklerin çoğu (risperidon dahil) için gebelik bölümleri okunamadı; bir ilacın burada bulunmaması güvenli olduğu anlamına gelmez. "Okunamadı" yazan yerlerde ürün bilgisinin ilgili bölümüne bakın. Karar için güncel KÜB ve kadın doğum görüşü esastır.</div></div><div class="geb-liste">';
+      '<div class="cagri uyari">' + SIMGE.uyari + '<div><b>Liste eksiktir.</b> DEHB ilaçları, SSRI\'ların çoğu ve antipsikotiklerin çoğu (risperidon dahil) için gebelik bölümleri okunamadı. Bir ilacın burada bulunmaması güvenli olduğu anlamına gelmez. "Okunamadı" yazan yerlerde ürün bilgisinin ilgili bölümüne bakın. Karar için güncel KÜB ve kadın doğum görüşü esastır.</div></div><div class="geb-liste">';
     GEBELIK.forEach(function (g) {
       var var_ = window.ILACLAR.some(function (i) { return i.id === g[0]; });
       h += '<div class="geb-ilac"><div class="geb-ad">' + (var_ ? '<a href="#/ilac/' + g[0] + '">' + esc(g[1]) + '</a>' : esc(g[1])) + '</div>' +
@@ -928,7 +928,7 @@
     var baslik = { 3: 'Yüksek', 2: 'Orta', 1: 'Düşük', 0: 'Puan verilmemiş, uyarı var' }, son = null;
     var h = '<section class="kart bolum" id="qt"><h2>QT uzaması: hangi ilaçlarda dikkat</h2>' +
       '<div class="alt-baslik">Rehberdeki göreli QT puanına (0–3) göre sıralı. EKG gerektiren notlar ilaç kayıtlarından alınmıştır.</div>' +
-      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Puanlar özgün rehberin göreli derecelendirmesidir; mutlak risk ölçüsü değildir ve bu uyarlamada yeniden derecelendirilmemiştir. Risk, iki QT uzatan ilaç birlikte verildiğinde, hipokalemi, hipomagnezemi, bradikardi ve konjenital uzun QT varlığında artar.</div></div>';
+      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Puanlar özgün rehberin göreli derecelendirmesidir. Mutlak riski ölçmez ve bu uyarlamada yeniden derecelendirilmemiştir. Risk, iki QT uzatan ilaç birlikte verildiğinde, hipokalemi, hipomagnezemi, bradikardi ve konjenital uzun QT varlığında artar.</div></div>';
     sira.forEach(function (r) {
       if (r.p !== son) { h += (son === null ? '' : '</div>') + '<h3 class="qt-grup qt-' + r.p + '">' + baslik[r.p] + '</h3><div class="qt-liste">'; son = r.p; }
       h += '<div class="qt-ilac" style="--sinif:' + window.SINIFLAR[r.i.sinif].renk + '"><a href="#/ilac/' + r.i.id + '">' + esc(r.i.ad) + '</a>' +
@@ -998,7 +998,7 @@
   function sayfaOnay() {
     var h = '<section class="kart bolum"><h2>Onay yaşı çizelgesi</h2>' +
       '<div class="alt-baslik">Hangi ilaç, hangi endikasyonda, kaç yaşından itibaren onaylı. Çubuklar 0–18 yaş eksenini gösterir.</div>' +
-      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Onay yaşı bir kullanım önerisi değildir. Çocuk psikiyatrisinde endikasyon dışı kullanım sıktır; karar hekimindir. Çizelge bu rehberin ilaç kayıtlarından türetilir; yeni veri içermez. Güncel KÜB\'ü ayrıca kontrol edin.</div></div>' +
+      '<div class="cagri bilgi">' + SIMGE.bilgi + '<div>Onay yaşı bir kullanım önerisi değildir. Çocuk psikiyatrisinde endikasyon dışı kullanım sıktır. Karar hekimindir. Çizelge bu rehberin ilaç kayıtlarından türetilir, yeni veri içermez. Güncel KÜB\'ü ayrıca kontrol edin.</div></div>' +
       '<div class="cipler" id="onayCip" style="margin:14px 0 12px"><button class="cip aktif" data-k="hepsi">Tümü</button>' +
       Object.keys(window.SINIFLAR).map(function (k) { return '<button class="cip" data-k="' + k + '" style="--sinif:' + window.SINIFLAR[k].renk + '"><i class="nokta"></i>' + window.SINIFLAR[k].ad + '</button>'; }).join('') + '</div>' +
       '<div class="onay-kaynak-sec" id="onayKaynak" role="group" aria-label="Kaynak"><span>Kaynak:</span>' +
