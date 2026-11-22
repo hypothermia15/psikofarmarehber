@@ -414,7 +414,7 @@
     profil: { sed: 3, kilo: 2, eps: 3, prl: 3, qt: 1, ach: 1, kes: 2 },
     kutu: KUTU_AP,
     uyari: ['Belirgin sedasyon', 'Akut distoni, parkinsonizm, akatizi; geç diskinezi', 'Hiperprolaktinemi', 'Ortostatik hipotansiyon', 'Nöroleptik malign sendrom', 'QT uzaması (doza bağlı)', 'Kontrendikasyon: dolaşım kollapsı, herhangi bir nedenle bilinç baskılanması (alkol, barbitürat, opioid zehirlenmesi), koma', 'Nöbet eşiğinde düşme; kan diskrazileri; venöz tromboemboli; yutma güçlüğü', 'Ani kesilmez: kademeli azaltın'],
-    etkilesim: ['CYP2D6 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Alkol ve diğer sedatiflerle additif sedasyon', 'Levodopa ve dopamin agonistlerinin etkisini azaltır', 'QT uzatan ilaçlarla dikkat', 'Lityumla nörotoksisite bildirilmiştir; trisiklik antidepresanlarla karşılıklı metabolizma etkileşimi', 'Adrenalin ve guanetidinin etkisini değiştirir; antikoagülan etkisini artırabilir'],
+    etkilesim: ['CYP2D6 inhibitörleri (fluoksetin, paroksetin) düzeyi artırır', 'Alkol ve diğer sedatiflerle additif sedasyon', 'Levodopa ve dopamin agonistlerinin etkisini azaltır', 'QT uzatan ilaçlarla dikkat', 'İngiltere ürün bilgisinde etkileşim olarak ayrıca anılanlar: lityum, trisiklik antidepresanlar, antikonvülzanlar, metoklopramid, antikoagülanlar, adrenalin, guanetidin'],
     oz: ['d2', '2d6sub', 'antikol']
   }
   );
